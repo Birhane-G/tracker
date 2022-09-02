@@ -1,0 +1,44 @@
+:root{
+    --main-color: #19054d;
+    --nav-text: #ffcb22;
+    --service-color:rgb(210, 218, 233);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: fixed;
+    height: 30px;
+    width: 100%;
+}
+.Header-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 45px;
+    height: 45px;
+    padding-left: 40px;
+}
+.navbar{
+    padding-right: 60px;
+}
+.navigation ul{
+    display: flex;
+
+}
+ul a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+    margin-left: 20px;
+    font-size: 20px;
+}
