@@ -39,10 +39,8 @@ function Body() {
           </div>
         </div>
         <div className="working-with"></div>
-        <div className="client-testimonial"></div>
       </div>
     </section>
   );
-}
-
-export default Body;
+  }
+  export default Body;

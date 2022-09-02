@@ -3,6 +3,7 @@ import Header from '../Layout/Header'
 import Footer from '../Layout/Footer'
 import Body from '../Layout/Body'
 import Partner from '../Layout/Partner'
+import Testimonial from '../Layout/Testimonial'
 function Home() {
   return (
     <>
@@ -10,6 +11,7 @@ function Home() {
     <Body />
     <Partner />
     <Footer />
+    <Testimonial />
     </>
   )
 }
