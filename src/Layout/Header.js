@@ -27,8 +27,8 @@ function Header() {
               <a href="/">
                 <li>Help?</li>
               </a>
-              <a href="/">
-                <li className="login">Login</li>
+              <a href="/login">
+                <li className="login-btn">Login</li>
               </a>
             </ul>
           </nav>

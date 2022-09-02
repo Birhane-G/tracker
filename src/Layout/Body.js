@@ -3,7 +3,7 @@ import "../Styles/body_style.css";
 
 function Body() {
   return (
-    <section>
+    <section className="body">
       <div className="front">
         <div className="Enter-site">
           <h1>Welcome to Tracker</h1>

@@ -64,17 +64,16 @@ header{
     margin-right: 10px;
     transition: 0.2s;
 }
-.login{
+.login-btn{
     background: var(--service-color);
     padding: 4px 20px;
     border-radius: 6px;
-    color: var(--main-color);
+    color: white !important;
 }
-.login:hover{
+.login-btn:hover{
     background: none;
-
     border: 2px solid var(--service-color);
-    color: var(--service-color);
+    color: var(--service-color) !important;
     padding: 4px 20px;
     transition: 0.2s;
 }
