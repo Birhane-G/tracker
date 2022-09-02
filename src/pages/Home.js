@@ -4,11 +4,13 @@ import Footer from '../Layout/Footer'
 import Body from '../Layout/Body'
 import Partner from '../Layout/Partner'
 import Testimonial from '../Layout/Testimonial'
+import Discription from '../Layout/Discription'
 function Home() {
   return (
     <>
     <Header />
     <Body />
+    <Discription />
     <Partner />
     <Testimonial />
     <Footer />

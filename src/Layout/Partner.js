@@ -3,6 +3,7 @@ import earald from "../images/partners/Earald.jpg";
 import nibret from "../images/partners/nibret.jpg";
 import erq from "../images/partners/erq.png";
 import creativ from "../images/partners/creativehub.jpeg";
+import "../Styles/partner_style.css";
 function Partner() {
   return (
     <section>

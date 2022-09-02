@@ -9,12 +9,10 @@
     padding: 0;
 }
 section{
-    padding-top: 4rem;
+    padding-top: 6rem;
 }
 .front{
     display: flex;
-    height: 85vh;
-    margin-left: 4vh;
 }
 .backimg{
     background: url("../images/backbody.png");
@@ -26,7 +24,6 @@ section{
 .Enter-site{
     text-align: center;
     padding-top: 20vh;
-    padding-bottom: 5vh;
     width: 50%;
 }
 .Enter-site h1{
@@ -46,23 +43,5 @@ section{
     border: 2px solid rgb(235, 102, 41);
     transition: 0.2s;
     color: rgb(235, 102, 41) ;
-}
-.Tracker-disc{
-    display: flex;
-    position: relative;
-    justify-content: center;
-}
-.why-tracker{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100px;
-    gap: 30px;
-}
-.why-tracker .box{
-    width: 300px;
-    height: 800px;
-}
-.box p{
-    text-align: justify;
 }
 
