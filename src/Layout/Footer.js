@@ -1,7 +1,7 @@
 
 import React from "react"
 
-function footer() {
+function Footer() {
     return ( 
     <section classname="footer">
         <div classname="footer">
@@ -35,4 +35,4 @@ function footer() {
         </section>
     )
 }
-export default footer
+export default Footer
