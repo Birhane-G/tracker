@@ -1,11 +1,12 @@
 import React from "react";
+import logo from "../images/Trackerlogo.png";
 
 function Header() {
   return (
     <header>
       <div className="Header-cont">
         <div className="logo">
-            <img src="" alt="" />
+            <img src={logo} alt="Tracker Logo" />
             <h1>Tracker</h1>
         </div>
         <div className='navbar'>
