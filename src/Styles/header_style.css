@@ -12,6 +12,7 @@ header{
     position: fixed;
     height: 30px;
     width: 100%;
+    z-index: 1;
 }
 .Header-cont{
     display: flex;
