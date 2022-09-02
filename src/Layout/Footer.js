@@ -16,6 +16,7 @@ function Footer() {
         </div>
         <div classname="communications">
           <ul>
+            h3
             <a href="/">Email</a>
             <a href="/">Twitter</a>
             <a href="/">Facebook</a>
