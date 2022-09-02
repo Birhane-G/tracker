@@ -5,7 +5,7 @@ function Body() {
     return(
         <section>
             <div className="Enter-site">
-                <h1>Tracker</h1>
+                <h1>Welcome to Tracker</h1>
                 <button>Let's Start Tracking</button>
             </div>
             <div className="Tracker-disc">
@@ -17,7 +17,11 @@ function Body() {
                 <h2>Sample Text</h2>
                 <p>kmkdmkfslmlkvsdj</p>
                 <h2>Sample Text</h2>
+                <p>The quick Brown fox jumps over the lazy dog</p>
+                <h2>Sample Text</h2>
                 <p>kmkdmkfslmlkvsdj</p>
+                <h2>Sample Text</h2>
+                <p>The quick Brown fox jumps over the lazy dog</p>
                 </div>
                 <div className="working-with">
                     
@@ -27,6 +31,7 @@ function Body() {
 
                 </div>
             </div>
+            
         </section>
 
     )

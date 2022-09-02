@@ -1,3 +1,42 @@
-Enter-site{
+*{
+    margin: 0px;
+    padding: 0;
+}
+section{
+    
+}
+.Enter-site{
     text-align: center;
+    padding-top: 20vh;
+    padding-bottom: 5vh;
+    background: url("../images/backbody.png");
+    background-position: right;
+    background-size: cover;
+}
+.Enter-site h1{
+    font-size: 4rem;
+}
+.Enter-site button{
+    font-size: 2rem;
+    padding: 10px;
+    border: none;
+    background-color: rgb(111, 111, 235);
+    border-bottom-right-radius: 2rem;
+}
+.Enter-site button:hover{
+    background-color: #ffcb22;
+    
+}
+.Tracker-disc{
+  display: flex;
+  align-items: flex-end;
+  
+}
+.why-tracker{
+    font-size: 20px;
+    column-count: 3;
+    column-width: 50px;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    
 }
