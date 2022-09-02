@@ -5,7 +5,26 @@ function Body() {
         <section>
             <div className="Enter-site">
                 <h1>Tracker</h1>
-                <button>Access Tracker</button>
+                <button>Let's Start Tracking</button>
+            </div>
+            <div className="Tracker-disc">
+                <div className="why-tracker"> 
+                <h2>Sample Text</h2>
+                <p>kmkdmkfslmlkvsdj</p>
+                <h2>Sample Text</h2>
+                <p>kmkdmkfslmlkvsdj</p>
+                <h2>Sample Text</h2>
+                <p>kmkdmkfslmlkvsdj</p>
+                <h2>Sample Text</h2>
+                <p>kmkdmkfslmlkvsdj</p>
+                </div>
+                <div className="working-with">
+                    
+
+                </div>
+                <div className="client-testimonial">
+
+                </div>
             </div>
         </section>
 
