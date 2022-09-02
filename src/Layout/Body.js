@@ -1,4 +1,5 @@
 import React from "react"
+import "../Styles/body_style.css";
 
 function Body() {
     return(
