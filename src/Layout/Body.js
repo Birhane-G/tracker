@@ -4,11 +4,14 @@ import "../Styles/body_style.css";
 function Body() {
     return(
         <section>
-            <div className="Enter-site">
+           <div className="front">
+           <div className="Enter-site">
                 <h1>Welcome to Tracker</h1>
                 <button>Let's Start Tracking</button>
             </div>
-            <div className="Tracker-disc">
+            <div class="backimg"></div>
+           </div>
+           <div className="Tracker-disc">
                 <div className="why-tracker"> 
                 <h2>Sample Text</h2>
                 <p>kmkdmkfslmlkvsdj</p>
