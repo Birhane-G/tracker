@@ -1,6 +1,7 @@
 :root{
-    --main-color: #19054d;
+    --main-color: rgb(223, 227, 233);
     --nav-text: #ffcb22;
+    --text-color: black;
     --service-color:rgb(210, 218, 233);
 }
 *{
@@ -16,6 +17,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--main-color);
     height: 70px;
 }
 .logo{
@@ -41,4 +43,6 @@ ul li{
     list-style: none;
     margin-left: 20px;
     font-size: 20px;
+    color: var(--text-color);
+    font-weight: 400;
 }
