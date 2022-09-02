@@ -1,42 +1,48 @@
-import React from "react"
+import React from "react";
 import "../Styles/body_style.css";
 
 function Body() {
-    return(
-        <section>
-           <div className="front">
-           <div className="Enter-site">
-                <h1>Welcome to Tracker</h1>
-                <button>Let's Start Tracking</button>
-            </div>
-            <div class="backimg"></div>
-           </div>
-           <div className="Tracker-disc">
-                <div className="why-tracker"> 
-                <h2>Sample Text</h2>
-                <p>kmkdmkfslmlkvsdj</p>
-                <h2>Sample Text</h2>
-                <p>kmkdmkfslmlkvsdj</p>
-                <h2>Sample Text</h2>
-                <p>kmkdmkfslmlkvsdj</p>
-                <h2>Sample Text</h2>
-                <p>The quick Brown fox jumps over the lazy dog</p>
-                <h2>Sample Text</h2>
-                <p>kmkdmkfslmlkvsdj</p>
-                <h2>Sample Text</h2>
-                <p>The quick Brown fox jumps over the lazy dog</p>
-                </div>
-                <div className="working-with">
-                    
-
-                </div>
-                <div className="client-testimonial">
-
-                </div>
-            </div>
-            
-        </section>
-
-    )
+  return (
+    <section>
+      <div className="front">
+        <div className="Enter-site">
+          <h1>Welcome to Tracker</h1>
+          <button>Let's Start Tracking</button>
+        </div>
+        <div class="backimg"></div>
+      </div>
+      <div className="Tracker-disc">
+        <div className="why-tracker">
+          <div className="box">
+            <h2>Sample Text</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+          </div>
+          <div className="box">
+            <h2>Sample Text</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+          </div>
+          <div className="box">
+            <h2>Sample Text</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+          </div>
+          <div className="box">
+            <h2>Sample Text</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+          </div>
+          <div className="box">
+            <h2>Sample Text</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+          </div>
+          <div className="box">
+            <h2>Sample Text</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+          </div>
+        </div>
+        <div className="working-with"></div>
+        <div className="client-testimonial"></div>
+      </div>
+    </section>
+  );
 }
+
 export default Body;
