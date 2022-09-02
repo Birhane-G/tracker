@@ -1,24 +1,26 @@
 :root{
-    --main-color: rgb(223, 227, 233);
+    --main-color: rgb(233, 234, 235);
     --nav-text: #ffcb22;
     --text-color: black;
     --service-color:rgb(235, 102, 41);
 }
-#footer{
-    background: red;
-    height: 300px;
+.footer{
+    background: var(--service-color);
+    height: 250px;
     display: flex;
     justify-content: center;
 }
-.footer-cont{
+.footer .footer-cont{
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 100px;
-    justify-content: center;
-
-
+    gap: 80px;
 }
-h3{
-    color: red;
-    background-color: black;
+ul a{
+    text-decoration: none;
+}
+ul a li{
+    font-size: 18px;
+    list-style: none;
+    color: var(--main-color);
 }

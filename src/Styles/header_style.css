@@ -38,13 +38,13 @@ header{
     display: flex;
     align-items: center;
 }
-ul a{
+.navigation ul a{
     text-decoration: none;
 }
-ul a:hover li{
+.navigation ul a:hover li{
     color: var(--service-color);
 }
-ul li{
+.navigation ul li{
     list-style: none;
     margin-left: 20px;
     font-size: 20px;
