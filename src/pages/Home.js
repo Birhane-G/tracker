@@ -10,9 +10,9 @@ function Home() {
     <Header />
     <Body />
     <Partner />
-    <Footer />
     <Testimonial />
-    </>
+    <Footer />
+     </>
   )
 }
 
@@ -20,7 +20,7 @@ window.onscroll = function(){sticky()};
 
 let navbar = document.getElementById("navbar");
 function sticky(){
-  if(window.pageYOffset >= 15)
+  if(window.pageYOffset >= 10)
   {
       navbar.classList.add('sticky');
   }

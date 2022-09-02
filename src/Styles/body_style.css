@@ -1,3 +1,9 @@
+:root{
+    --main-color: rgb(223, 227, 233);
+    --nav-text: #ffcb22;
+    --text-color: black;
+    --service-color:rgb(235, 102, 41);
+}
 *{
     margin: 0px;
     padding: 0;
