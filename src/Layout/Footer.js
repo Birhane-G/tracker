@@ -2,7 +2,7 @@ import React from "react";
 import '../Styles/footer_style.css';
 function Footer() {
   return (
-    <section classname="footer">
+    <section id="footer">
       <div classname="footer-cont">
         <div classname="importantlinks">
           <h3>Important Links</h3>

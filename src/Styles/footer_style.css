@@ -4,8 +4,21 @@
     --text-color: black;
     --service-color:rgb(235, 102, 41);
 }
+#footer{
+    background: red;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
 .footer-cont{
-    width: 100%;
-    height: 600px;
-    background: var(--main-color);
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 100px;
+    justify-content: center;
+
+
+}
+h3{
+    color: red;
+    background-color: black;
 }
