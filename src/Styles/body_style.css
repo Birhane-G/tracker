@@ -31,12 +31,16 @@ section{
     font-size: 2rem;
     padding: 10px;
     border: none;
-    background-color: rgb(111, 111, 235);
-    border-bottom-right-radius: 2rem;
+    background: rgb(235, 102, 41);
+    border-radius: 0.5rem;
+    transition: 0.2s;
+    color: white;
 }
 .Enter-site button:hover{
-    background-color: #ffcb22;
-    
+    background: none;
+    border: 2px solid rgb(235, 102, 41);
+    transition: 0.2s;
+    color: rgb(235, 102, 41) ;
 }
 .Tracker-disc{
   display: flex;
