@@ -3,7 +3,7 @@ import logo from "../images/Trackerlogo.png";
 import "../Styles/header_style.css";
 function Header() {
   return (
-    <header>
+    <header id="navbar">
       <div className="Header-cont">
         <div className="logo">
           <img src={logo} alt="Tracker Logo" />
@@ -16,7 +16,7 @@ function Header() {
                 <li>Home</li>
               </a>
               <a href="/">
-                <li>Portifolio</li>
+                <li>Partners</li>
               </a>
               <a href="/">
                 <li>Service</li>
@@ -25,7 +25,10 @@ function Header() {
                 <li>About us</li>
               </a>
               <a href="/">
-                <li>Contact</li>
+                <li>Help?</li>
+              </a>
+              <a href="/">
+                <li className="login">Login</li>
               </a>
             </ul>
           </nav>

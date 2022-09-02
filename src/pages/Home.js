@@ -12,4 +12,17 @@ function Home() {
   )
 }
 
+window.onscroll = function(){sticky()};
+
+let navbar = document.getElementById("navbar");
+function sticky(){
+  if(window.pageYOffset >= 15)
+  {
+      navbar.classList.add('sticky');
+  }
+  else
+  {
+      navbar.classList.remove('sticky');
+  }
+}
 export default Home

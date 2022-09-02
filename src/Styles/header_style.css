@@ -2,7 +2,7 @@
     --main-color: rgb(223, 227, 233);
     --nav-text: #ffcb22;
     --text-color: black;
-    --service-color:rgb(210, 218, 233);
+    --service-color:rgb(235, 102, 41);
 }
 *{
     margin: 0;
@@ -17,12 +17,12 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--main-color);
-    height: 70px;
+    height: 70px;      
 }
 .logo{
     display: flex;
     align-items: center;
+    transition: 0.5s;
 }
 .logo img{
     width: 45px;
@@ -31,13 +31,17 @@ header{
 }
 .navbar{
     padding-right: 60px;
+    transition: 0.5s;
 }
 .navigation ul{
     display: flex;
-
+    align-items: center;
 }
 ul a{
     text-decoration: none;
+}
+ul a:hover li{
+    color: var(--service-color);
 }
 ul li{
     list-style: none;
@@ -45,4 +49,31 @@ ul li{
     font-size: 20px;
     color: var(--text-color);
     font-weight: 400;
+}
+.sticky{
+    background: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    height: 70px;
+}
+.sticky .logo{
+    margin-left: 10px;
+    transition: 0.5s;
+}
+.sticky .navbar{
+    margin-right: 10px;
+    transition: 0.2s;
+}
+.login{
+    background: var(--service-color);
+    padding: 4px 20px;
+    border-radius: 6px;
+    color: var(--main-color);
+}
+.login:hover{
+    background: none;
+
+    border: 2px solid var(--service-color);
+    color: var(--service-color);
+    padding: 4px 20px;
+    transition: 0.2s;
 }
