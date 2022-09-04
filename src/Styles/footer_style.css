@@ -1,26 +1,118 @@
-:root{
-    --main-color: rgb(233, 234, 235);
-    --nav-text: #ffcb22;
-    --text-color: black;
-    --service-color:rgb(235, 102, 41);
+:root {
+  --main-color: rgb(233, 234, 235);
+  --nav-text: #ffcb22;
+  --text-color: black;
+  --service-color: rgb(235, 102, 41);
+  --service-color-dark: rgba(211, 40, 40, 0.2);
 }
-.footer{
-    background: var(--service-color);
-    height: 250px;
-    display: flex;
-    justify-content: center;
+body {
+  line-height: 1.1;
+  font-family: "Poppins", sans-serif;
 }
-.footer .footer-cont{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100px;
-    gap: 80px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-ul a{
-    text-decoration: none;
+
+.container {
+  max-width: 1170px;
+  margin: auto;
 }
-ul a li{
-    font-size: 18px;
-    list-style: none;
-    color: var(--main-color);
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: var(--service-color);
+  padding: 20px 0;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 8px 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: var(--main-color);
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: var(--nav-text);
+  height: 3px;
+  box-sizing: border-box;
+  width: 150px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: var(--main-color);
+  text-decoration: none;
+  font-weight: 300;
+  color: var(--nav-text);
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: black;
+  transition: 0.8s;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: var(--service-color-dark);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: var(--main-color);
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: var(--main-color);
+}
+
+.footer-col .partners img {
+  width: 120px;
+  height: 60px;
+  margin-left: -50%;
+}
+
+/*responsive*/
+/* @media(max-width: 767px){
+.footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+.footer-col{
+    width: 100%;
+}
+} */
