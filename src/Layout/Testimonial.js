@@ -5,7 +5,7 @@ import "../Styles/testimonial_style.css";
 function Testimonial() {
   return (
     <section>
-      <div className="client-testimonial">
+      <div className="testimonial_header">
     <h1>Testimonials of our customers</h1>
     <figure class="customer_tetsimonial">
   <figcaption>
