@@ -20,7 +20,7 @@ function Login() {
             <form action="" method="POST">
                 
                 <input type="text" name="uname" placeholder="Username or Email" /><br />
-                <input type="text" name="pass" placeholder="Password" />
+                <input type="password" name="pass" placeholder="Password" />
                 <button type="submit" className="loginbtn">Login</button>
               
 

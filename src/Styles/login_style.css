@@ -41,6 +41,7 @@ form:hover{
     transform: scale(1.05);
     box-shadow: 10px 10px 5px rgb(132, 109, 98);
 }
+
 input{
     width: 100%;
     padding: 10px 0;
