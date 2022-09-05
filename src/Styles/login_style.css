@@ -35,11 +35,11 @@ form{
     border: 4px solid rgb(235, 102, 41);
     padding: 50px;
     border-radius: 30px;
-    
+    transition: 2s;
 }
 form:hover{
-    transform: scale(1.1);
-    
+    transform: scale(1.05);
+    box-shadow: 10px 10px 5px rgb(132, 109, 98);
 }
 input{
     width: 100%;
