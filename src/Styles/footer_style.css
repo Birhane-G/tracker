@@ -5,17 +5,9 @@
   --service-color: rgb(235, 102, 41);
   --service-color-dark: rgba(211, 40, 40, 0.2);
 }
-
 body {
   line-height: 1.1;
   font-family: "Poppins", sans-serif;
-}
-.footer{
-    background: var(--service-color);
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
 }
 
 * {
@@ -60,7 +52,7 @@ ul {
 .footer-col h4::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: 55px;
   bottom: -10px;
   background-color: var(--nav-text);
   height: 3px;
