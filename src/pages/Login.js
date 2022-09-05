@@ -18,10 +18,12 @@ function Login() {
       <div className="content">
         <div className="form-cont">
             <form action="" method="POST">
-                <label for="uname">username</label>
-                <input type="text" name="uname" placeholder="username" /><br />
-                <label for="pass">password</label>
-                <input type="text" name="pass" placeholder="password" />
+                
+                <input type="text" name="uname" placeholder="Username or Email" /><br />
+                <input type="text" name="pass" placeholder="Password" />
+                <button type="submit" className="loginbtn">Login</button>
+              
+
             </form>
         </div>
       </div>
