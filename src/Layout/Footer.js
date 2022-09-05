@@ -4,10 +4,12 @@ import earald from "../images/partners/Earald.jpg";
 import nibret from "../images/partners/nibret.jpg";
 import erq from "../images/partners/erq.png";
 import creativ from "../images/partners/creativehub.jpeg";
-<script
+{
+  /* <script
   src="https://kit.fontawesome.com/bd079e5eb5.js"
   crossorigin="anonymous"
-></script>;
+></script>; */
+}
 function Footer() {
   return (
     <footer class="footer">
@@ -79,19 +81,19 @@ function Footer() {
             <h4>follow us</h4>
             <div class="social-links">
               <a href="#">
-                <i class="fab fa-facebook-f"></i>
+                <i class="facebook-icon"></i>
               </a>
               <a href="#">
-                <i class="fab fa-twitter"></i>
+                <i class="twitter-icon"></i>
               </a>
               <a href="#">
-                <i class="fab fa-instagram"></i>
+                <i class="instagram-icon"></i>
               </a>
               <a href="#">
-                <i class="fab fa-linkedin-in"></i>
+                <i class="linkedin-icon"></i>
               </a>
               <a href="#">
-                <i class="fab fa-telegram"></i>
+                <i class="telegram-icon"></i>
               </a>
             </div>
           </div>
