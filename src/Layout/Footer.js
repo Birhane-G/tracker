@@ -4,6 +4,10 @@ import earald from "../images/partners/Earald.jpg";
 import nibret from "../images/partners/nibret.jpg";
 import erq from "../images/partners/erq.png";
 import creativ from "../images/partners/creativehub.jpeg";
+<script
+  src="https://kit.fontawesome.com/bd079e5eb5.js"
+  crossorigin="anonymous"
+></script>;
 function Footer() {
   return (
     <footer class="footer">
