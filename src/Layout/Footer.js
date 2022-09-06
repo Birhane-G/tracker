@@ -33,7 +33,6 @@ function Footer() {
               </li>
             </ul>
           </div>
-
           <div class="footer-col">
             <h4>Address</h4>
             <ul>

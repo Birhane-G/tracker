@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 :root{
     --main-color: rgb(223, 227, 233);
     --nav-text: #ffcb22;
@@ -5,8 +7,9 @@
     --service-color:rgb(235, 102, 41);
 }
 *{
-    margin: 0px;
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .body{
     padding-top: 6rem;
@@ -85,6 +88,7 @@
 }
 
 /*  Testimonial stylesheet */
+
 .testimonial_header{
     text-align: center;
 }

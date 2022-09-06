@@ -3,43 +3,28 @@
   --nav-text: #ffcb22;
   --text-color: black;
   --service-color: rgb(235, 102, 41);
-  --service-color-dark: rgba(211, 40, 40, 0.2);
+  --service-color-dark: rgb(255, 202, 28);
 }
 body {
   line-height: 1.1;
   font-family: "Poppins", sans-serif;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.footer {
+  background-color: var(--service-color);
+  padding: 40px 0;
 }
-
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   margin: auto;
 }
-
-.row {
+.container .row {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 ul {
   list-style: none;
 }
-
-.footer {
-  background-color: var(--service-color);
-  padding: 20px 0;
-}
-
-.footer-col {
-  width: 25%;
-  padding: 8px 15px;
-}
-
 .footer-col h4 {
   font-size: 18px;
   color: var(--main-color);
@@ -52,12 +37,12 @@ ul {
 .footer-col h4::before {
   content: "";
   position: absolute;
-  left: 55px;
   bottom: -10px;
   background-color: var(--nav-text);
   height: 3px;
   box-sizing: border-box;
-  width: 150px;
+  width: 100px;
+  left: 10px;
 }
 
 .footer-col ul li:not(:last-child) {
@@ -67,16 +52,15 @@ ul {
 .footer-col ul li a {
   font-size: 16px;
   text-transform: capitalize;
-  color: var(--main-color);
+  color: var(--text-color);
   text-decoration: none;
-  font-weight: 300;
-  color: var(--nav-text);
+  font-weight: 400;
   display: block;
   transition: all 0.3s ease;
 }
 
 .footer-col ul li a:hover {
-  color: black;
+  color: var(--service-color-dark);
   transition: 0.8s;
 }
 
@@ -87,12 +71,10 @@ ul {
   background-color: var(--service-color-dark);
   margin: 0 10px 10px 0;
   text-align: center;
-  line-height: 40px;
   border-radius: 50%;
   color: var(--main-color);
   transition: all 0.5s ease;
 }
-
 .footer-col .social-links a:hover {
   color: #24262b;
   background-color: var(--main-color);
@@ -100,7 +82,6 @@ ul {
 
 .footer-col .partners img {
   width: 120px;
-  height: 60px;
   margin-left: -50%;
 }
 
