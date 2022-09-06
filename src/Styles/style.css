@@ -1,6 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
-
 :root{
     --main-color: rgb(223, 227, 233);
     --nav-text: #ffcb22;
@@ -10,6 +7,86 @@
 *{
     margin: 0px;
     padding: 0;
+}
+.body{
+    padding-top: 6rem;
+}
+.front{
+    display: flex;
+}
+.backimg{
+    background: url("../images/backbody.png");
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    font-size: 50px;
+}
+.Enter-site{
+    text-align: center;
+    padding-top: 20vh;
+    width: 50%;
+}
+.Enter-site h1{
+    font-size: 5rem;
+}
+.Enter-site button{
+    font-size: 2rem;
+    padding: 10px;
+    border: none;
+    background: rgb(235, 102, 41);
+    border-radius: 0.5rem;
+    transition: 0.2s;
+    color: white;
+}
+.Enter-site button:hover{
+    background: none;
+    border: 2px solid rgb(235, 102, 41);
+    transition: 0.2s;
+    color: rgb(235, 102, 41) ;
+}
+/* Discription component style */
+
+.Tracker-disc{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+.why-tracker{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px;
+    gap: 30px;
+}
+.why-tracker .box{
+    width: 300px;
+}
+.box p{
+    text-align: justify;
+}
+
+/* Partner component stylesheet */
+
+.partners{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+
+}
+.partner-cont{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px;
+    gap: 30px;
+}
+.partner-cont .box img{
+    width: 140px;
+    height: 100px;
+}
+
+/*  Testimonial stylesheet */
+.testimonial_header{
+    text-align: center;
 }
 .testimonial_header h1{
     font-size: 50px; 
@@ -82,7 +159,4 @@
   font-style: italic;
   font-weight: 300;
   margin: 0 0 20px;
-}
-body {
-  text-align: center;
 }

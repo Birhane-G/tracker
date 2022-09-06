@@ -1,34 +1,31 @@
-import React from 'react'
-import Header from '../Layout/Header'
-import Footer from '../Layout/Footer'
-import Body from '../Layout/Body'
-import Partner from '../Layout/Partner'
-import Testimonial from '../Layout/Testimonial'
-import Discription from '../Layout/Discription'
+import React from "react";
+import Header from "../Layout/Header";
+import Footer from "../Layout/Footer";
+import { Body, Discription, Partner, Testimonial } from "../Layout/Body";
+
 function Home() {
   return (
     <>
-    <Header />
-    <Body />
-    <Discription />
-    <Partner />
-    <Testimonial />
-    <Footer />
-     </>
-  )
+      <Header />
+      <Body />
+      <Discription />
+      <Partner />
+      <Testimonial />
+      <Footer />
+    </>
+  );
 }
 
-window.onscroll = function(){sticky()};
+window.onscroll = function () {
+  sticky();
+};
 
 let navbar = document.getElementById("navbar");
-function sticky(){
-  if(window.pageYOffset >= 10)
-  {
-      navbar.classList.add('sticky');
-  }
-  else
-  {
-      navbar.classList.remove('sticky');
+function sticky() {
+  if (window.pageYOffset >= 10) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
   }
 }
-export default Home
+export default Home;
