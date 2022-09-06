@@ -2,15 +2,12 @@
     --main-color: rgb(223, 227, 233);
     --nav-text: #f7efd6;
     --text-color: black;
-    --service-color:rgb(235, 102, 41);
+    --service-color:#eb6629;
 }
 *{
     margin: 0;
     padding: 0;
     
-}
-body{
-    background-color: var(--nav-text);
 }
 .login-cont{
     display: flex;
