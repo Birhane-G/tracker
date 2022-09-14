@@ -98,6 +98,7 @@ function Partner() {
     </section>
   );
 }
+
 function Testimonial() {
   return (
     <section>

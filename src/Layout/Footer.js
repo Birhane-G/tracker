@@ -4,6 +4,12 @@ import earald from "../images/partners/Earald.jpg";
 import nibret from "../images/partners/nibret.jpg";
 import erq from "../images/partners/erq.png";
 import creativ from "../images/partners/creativehub.jpeg";
+import telegram from "../images/icons/telegram.svg"
+import twitter from "../images/icons/twitter.svg";
+import linkedin from "../images/icons/linkedin.svg";
+import instagram from "../images/icons/instagram.svg";
+import facebook from "../images/icons/facebook.svg";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Footer() {
   return (
@@ -74,20 +80,22 @@ function Footer() {
           <div class="footer-col">
             <h4>follow us</h4>
             <div class="social-links">
-              <a href="#">
-                <i class="facebook-icon"></i>
+              <a href="/">
+                <i class="facebook-icon">
+                  <img src={facebook} alt="facebook" />
+                </i>
               </a>
-              <a href="#">
-                <i class="twitter-icon"></i>
+              <a href="/">
+                <i class="twitter-icon">
+                  {" "}
+                  <img src={twitter} alt="facebook" />
+                </i>
               </a>
-              <a href="#">
-                <i class="instagram-icon"></i>
+              <a href="/">
+                <i class="instagram-icon"> <img src={instagram} alt="facebook" /></i>
               </a>
-              <a href="#">
-                <i class="linkedin-icon"></i>
-              </a>
-              <a href="#">
-                <i class="telegram-icon"></i>
+              <a href="/">
+                <i class="linkedin-icon"> <img src={linkedin} alt="facebook" /></i>
               </a>
             </div>
           </div>
