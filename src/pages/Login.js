@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Styles/login_style.css";
 import logo from "../images/Trackerlogo.png";
 function Login() {
+  const [email, setemail] = useState("");
+  const [password, setpassword] = useState("");
+async function login(){
+    console.warn(email, password);
+    let items={email, password};
+    let result = await fetch("http://localhost:8000/api/signin", {
+      method: 'POST',
+      headers: {
+        "content-Type":"application./json",
+        "Accept":"application/json"
+      },
+      body: JSON.stringify(items)
+    });
+    result = await result.json();
+    localStorage.setItem( "user-info",JSON.stringify(result) )
+  }
   return (
     <section>
       <div className="Back"> </div>
@@ -21,15 +37,19 @@ function Login() {
                 New user? <a href="/">signUp</a>
               </h1>
             </div>
-            <form action="" method="POST">
-              <input type="text" name="uname" placeholder="Username or Email" />
+              <input type="text" name="uname" 
+              onChange={(e)=>setemail(e.target.value)} 
+              value={email}
+              placeholder="Email" />
               <br />
-              <input type="password" name="pass" placeholder="Password" />
+              <input type="password" name="pass" 
+              onChange={(e)=>setpassword(e.target.value)} 
+              value={password}
+              placeholder="Password" />
               <div className="btn_login">
-                <a href="/">Login</a>
+                <button  onClick={login} className="btn-login">Login</button>
               </div>
               <h4 className="forget">Forget Password?</h4>
-            </form>
           </div>
         </div>
       </div>

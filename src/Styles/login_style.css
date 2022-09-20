@@ -52,7 +52,7 @@ input{
 .btn_login{
     margin: 10px 0 20px 0;
 }
-.btn_login a{
+.btn_login .btn-login{
     background-color: var(--service-color);
     padding: 8px 16px;
     border-radius: 5px;
@@ -61,7 +61,7 @@ input{
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
 }
-.btn_login a:hover{
+.btn_login .btn-login:hover{
     background: none;
     border: 2px solid var(--service-color);
     color: var(--service-color);
