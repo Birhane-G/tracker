@@ -1,12 +1,11 @@
-import React from 'react'
-import '../style/header.css'
+import React from "react";
+import "../style/header.css";
 function Header() {
   return (
-    <section className='Dashboard-header'>
-        <div className='Dashboard-header-content'>
-        </div>
-    </section>
-  )
+      <div className="Every-page-header">
+        <div className="Every-page-header-content"></div>
+      </div>
+  );
 }
 
-export default Header
+export default Header;
