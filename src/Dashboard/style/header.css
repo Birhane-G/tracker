@@ -9,17 +9,16 @@
     --text-color: black;
     --background-color: #00032c;
 }
-.Dashboard-header{
+.Every-page-header{
     position: relative;
     display: flex;
     justify-content: right;
     top: 5px;
     right: 20px;
 }
-.Dashboard-header-content{
+.Every-page-header-content{
     width: 78%;
     height: 50px;
     background: var(--background-color);
-    position: fixed;
     border-radius: 10px;
 }
