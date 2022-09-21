@@ -4,7 +4,7 @@ import Error from "./pages/Error";
 import Login from './pages/Login';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Register from './pages/Register';
-import Dashboard from './pages/Dashboard';
+import Dashboard from './Dashboard/pages/Dashboard';
 // import { library } from "@fortawesome/fontawesome-svg-core";
 // import { faMoon, faRocket } from "@fortawesome/free-solid-svg-icons";
 // library.add(faRocket);
