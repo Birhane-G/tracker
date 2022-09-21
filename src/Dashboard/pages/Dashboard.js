@@ -12,6 +12,7 @@ function Dashboard() {
         <div className="dashboard">
           <div className="">
             <h1>Dashboard</h1>
+            <h1>Dashboard</h1>
           </div>
         </div>
       </section>
