@@ -6,11 +6,10 @@ import "../style/dashboard.css";
 function Dashboard() {
   return (
     <section>
-      <div className="dashboard">
         <Sidebar />
+      <div className="dashboard-contents">
         <Header />
       </div>
-      <div className="dashboard-contents">Dashboard Test</div>
     </section>
   );
 }

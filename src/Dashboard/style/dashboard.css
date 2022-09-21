@@ -9,8 +9,3 @@
     --text-color: black;
     --background-color: #00032c;
 }
-.dashboard{
-    display: flex;
-    justify-content: space-between;
-    
-}
