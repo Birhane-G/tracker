@@ -10,7 +10,7 @@ function Dashboard() {
         <Sidebar />
         <Header />
       </div>
-      <div className="dashboard-contents">Dashboard</div>
+      <div className="dashboard-contents">Dashboard Test</div>
     </section>
   );
 }
