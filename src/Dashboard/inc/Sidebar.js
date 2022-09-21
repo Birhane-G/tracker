@@ -9,9 +9,9 @@ function Sidebar() {
           <div className="side-bar-center-content">
             <div className="side-bar-top-content-nav">
               <ul>
-              <a href="/"><li>Dashboard</li></a>
+              <a href="/dashboard"><li>Dashboard</li></a>
               <a href="/"><li>Visitor</li></a>
-              <a href="/"><li>PageView</li></a>
+              <a href="/pageview"><li>PageView</li></a>
               <a href="/"><li>Device</li></a>
               <a href="/"><li>Location</li></a>
               </ul>
