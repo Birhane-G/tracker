@@ -36,7 +36,7 @@ async function login(){
           <div className="form-cont">
             <div className="newusr">
               <h1>
-                New user? <a href="/">signUp</a>
+                New user? <a href="/reg">signUp</a>
               </h1>
             </div>
               <input type="text" name="uname" 

@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Error from "./pages/Error";
 import Login from './pages/Login';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Register from './pages/Register';
 // import { library } from "@fortawesome/fontawesome-svg-core";
 // import { faMoon, faRocket } from "@fortawesome/free-solid-svg-icons";
 // library.add(faRocket);
@@ -13,6 +14,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route path="*" element={<Error />} />
+      <Route path='/reg' element={<Register />} />
     </Routes>
   </BrowserRouter>
   );
