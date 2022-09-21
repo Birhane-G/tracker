@@ -9,6 +9,7 @@ function Dashboard() {
         <Sidebar />
       <div className="dashboard-contents">
         <Header />
+        <h1>there is something</h1>
       </div>
     </section>
   );
