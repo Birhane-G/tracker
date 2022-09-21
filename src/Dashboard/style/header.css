@@ -15,10 +15,12 @@
     justify-content: right;
     top: 5px;
     right: 20px;
+    z-index: 1;
 }
 .Every-page-header-content{
     width: 78%;
     height: 50px;
     background: var(--background-color);
+    position: fixed;
     border-radius: 10px;
 }

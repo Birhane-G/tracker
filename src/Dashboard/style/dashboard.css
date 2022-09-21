@@ -9,7 +9,7 @@
     --text-color: black;
     --background-color: #00032c;
 }
-.Every-page{
+/* .Every-page{
     display: flex;
     position: relative;
 }
@@ -17,5 +17,8 @@
     display: flex;
     position: relative;
     left: 280px;
-    top: 10px;
-}
+    top: 60px;
+    background-color: var(--nav-text);
+    width: 79%;
+    height: 800px;
+} */
