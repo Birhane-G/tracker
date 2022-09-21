@@ -9,3 +9,13 @@
     --text-color: black;
     --background-color: #00032c;
 }
+.Every-page{
+    display: flex;
+    position: relative;
+}
+.dashboard{
+    display: flex;
+    position: relative;
+    left: 280px;
+    top: 10px;
+}

@@ -1,17 +1,18 @@
 import React from "react";
 import Sidebar from "../inc/Sidebar";
-import Header from "../inc/Header";
+// import Header from "../inc/Header";
 import "../style/dashboard.css";
 
 function Dashboard() {
   return (
-    <>
-        <Sidebar />
-      <section className="dashboard-contents">
-        <Header />
-        <h1>there is something</h1>
-      </section>
-    </>
+    <section className="Every-page">
+      <Sidebar />
+      <div className="dashboard">
+        <div className="">
+          <h1>Dashboard</h1>
+        </div>
+      </div>
+    </section>
   );
 }
 
