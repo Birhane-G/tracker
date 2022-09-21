@@ -5,13 +5,13 @@ import "../style/dashboard.css";
 
 function Dashboard() {
   return (
-    <section>
+    <>
         <Sidebar />
-      <div className="dashboard-contents">
+      <section className="dashboard-contents">
         <Header />
         <h1>there is something</h1>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 
