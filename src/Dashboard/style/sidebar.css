@@ -10,7 +10,7 @@
     --background-color: #00032c;
 }
 .sidebar{
-    position: absolute;
+    position: fixed;
     top: 5px;
     left: 5px;
     width: 18%;
@@ -45,9 +45,6 @@
     padding: 6px 50px;
     border-radius: 0 5px 5px 0;
     color: var(--background-color);
-}
-hr{
-    width: 100%;
 }
 .side-bar-center-content-nav{
     position: relative;

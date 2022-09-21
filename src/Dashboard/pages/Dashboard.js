@@ -1,14 +1,18 @@
-import React from 'react'
-import Sidebar from '../inc/Sidebar'
+import React from "react";
+import Sidebar from "../inc/Sidebar";
+import Header from "../inc/Header";
+import "../style/dashboard.css";
+
 function Dashboard() {
   return (
-    <section className='dashboar'>
-      <Sidebar />
-        <div className='dashboard-contents'>
-            
-        </div>
+    <section>
+      <div className="dashboard">
+        <Sidebar />
+        <Header />
+      </div>
+      <div className="dashboard-contents">Dashboard Test</div>
     </section>
-  )
+  );
 }
 
-export default Dashboard
+export default Dashboard;
