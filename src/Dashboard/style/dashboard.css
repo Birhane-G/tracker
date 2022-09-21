@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:   #8db9fa;
+    --nav-text: #ffcb22;
+    --text-color: black;
+    --background-color: #00032c;
+}
+.dashboard{
+    display: flex;
+    justify-content: space-between;
+}
