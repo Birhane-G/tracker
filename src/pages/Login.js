@@ -49,7 +49,7 @@ async function login(){
               value={password}
               placeholder="Password" />
               <div className="btn_login">
-                <button  onClick={login} className="btn-login">Login</button>
+                <a href="/dashboard"><button  onClick={login} className="btn-login">Login</button></a>
               </div>
               <h4 className="forget">Forget Password?</h4>
           </div>
