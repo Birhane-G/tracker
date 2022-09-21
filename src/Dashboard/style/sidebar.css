@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:   #8db9fa;
+    --nav-text: #ffcb22;
+    --text-color: black;
+    --background-color: #00032c;
+}
+.sidebar{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 18%;
+    height: 645px;
+    background: var(--background-color);
+    border-radius: 20px;
+}
+.side-top-logo-container{
+    background: var(--main-color);
+    height: 120px;
+    width: 95%;
+    border-radius: 20px 20px 50px 0;
+}

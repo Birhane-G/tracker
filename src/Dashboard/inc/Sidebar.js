@@ -1,9 +1,14 @@
-import React from 'react'
-
+import React from "react";
+import "../style/sidebar.css";
 function Sidebar() {
   return (
-    <div>Sidebar</div>
-  )
+    <section>
+      <div className="sidebar">
+        <div className="side-top-logo-container"></div>
+        <div></div>
+      </div>
+    </section>
+  );
 }
 
-export default Sidebar
+export default Sidebar;
