@@ -9,19 +9,22 @@
     --text-color: black;
     --background-color: #00032c;
 }
-.Every-page-header{
-    position: relative;
+.test{
+    position: fixed;
     display: flex;
-    justify-content: right;
+    
+}
+.Every-page-header{
+    position: relative; /* it must be  fixed*/
+    background: var(--background-color);
+    border-radius: 10px;
+    width: 98%;
+    height: 50px;
     top: 5px;
-    right: 20px;
     z-index: 1;
+
 }
 .Every-page-header-content{
-    width: 78%;
-    height: 50px;
-    background: var(--background-color);
-    position: fixed;
-    border-radius: 10px;
+
     
 }

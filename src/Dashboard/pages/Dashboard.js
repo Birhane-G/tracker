@@ -1,22 +1,42 @@
 import React from "react";
-import Sidebar from "../inc/Sidebar";
-import Header from "../inc/Header";
 import "../style/dashboard.css";
 
 function Dashboard() {
   return (
     <>
-      <Sidebar />
-      <Header />
-      <section className="Every-page">
-        <div className="dashboard">
-          <div className="">
-            <h1>Dashboard</h1>
-            <h1>Dashboard</h1>
+      <div className="Dashboard-include-content">
+        <Sidebar />
+        <div className="Dashboard-all-contents">
+          <h1>text</h1>
+        </div>
+      </div>
+    </>
+  );
+}
+function Sidebar() {
+  return (
+      <div className="sidebar">
+        <div className="side-top-logo-container"></div>
+        <div className="side-bar-content">
+          <div className="side-bar-center-content">
+            <div className="side-bar-top-content-nav">
+              <ul>
+              <a href="/dashboard"><li>Dashboard</li></a>
+              <a href="/"><li>Visitor</li></a>
+              <a href="/pageview"><li>PageView</li></a>
+              <a href="/"><li>Device</li></a>
+              <a href="/"><li>Location</li></a>
+              </ul>
+            </div>
+            <div className="side-bar-center-content-nav">
+              <ul>
+              <a href="/"><li>Dashboard</li></a>
+              <a href="/"><li>Setting</li></a>
+              </ul>
+            </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
   );
 }
 
