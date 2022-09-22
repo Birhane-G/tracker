@@ -45,7 +45,7 @@ function Sidebar() {
               <a href="/pageview">
                 <li>PageView</li>
               </a>
-              <a href="/">
+              <a href="/device">
                 <li>Device</li>
               </a>
               <a href="/location">

@@ -11,12 +11,12 @@ function Location() {
             <h1>Location</h1>
             <div className="loc">
               <div className="continent">
-                <a id="af">Africa</a>
-                <a id="as">Asia</a>
-                <a id="au">Australia</a>
-                <a id="eu">Europe</a>
-                <a id="na">North America</a>
-                <a id="sa">South America</a>
+                <a href="/" id="af">Africa</a>
+                <a href="/" id="as">Asia</a>
+                <a href="/" id="au">Australia</a>
+                <a href="/" id="eu">Europe</a>
+                <a href="/" id="na">North America</a>
+                <a href="/" id="sa">South America</a>
               </div>
             </div>
           </div>
