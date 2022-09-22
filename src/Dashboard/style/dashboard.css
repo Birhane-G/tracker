@@ -19,6 +19,68 @@
     top: 5px;
     background-color: var(--main-color);
 }
+.Dashboard-box-contents{
+    display: flex;
+}
+.Dashboard-first-box-contents{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 1fr));
+    gap: 10px;
+    position: absolute;
+}
+.Dashboard-first-box-contents .Box{
+    background-color: var(--background-color);
+}
+.Dashboard-first-box-contents .one ,
+.Dashboard-first-box-contents .two, 
+.Dashboard-first-box-contents .three{
+    width: 260px;
+    height: 200px;
+}
+.Dashboard-first-box-contents .four{
+    width: 250px;
+    height: 630px;
+}
+.Dashboard-second-box-contents {
+   position: absolute;
+   top: 220px;
+   display: grid;
+   grid-template-columns: repeat(2, minmax(auto, 300px));
+   gap: 10px;
+}
+.Dashboard-second-box-contents .Box{
+    width: 250px;
+    height: 300px;
+    background-color: var(--text-color);
+}
+.Dashboard-second-box-contents .five{
+    width: 460px;
+    height: 200px;
+}
+.Dashboard-second-box-contents .six{
+    width: 300px;
+    height: 410px;
+}
+.Dashboard-thired-box-contents {
+    position: relative;
+    top: 430px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 200px));
+    gap: 10px;
+ }
+ .Dashboard-thired-box-contents .Box{
+    width: 225px;
+    height: 200px;
+    background-color: var(--nav-text);
+}
+.Dashboard-thired-box-contents .five{
+    width: 460px;
+    height: 200px;
+}
+.Dashboard-thired-box-contents .six{
+    width: 300px;
+    height: 400px;
+}
 .sidebar{
     position: relative;
     top: 5px;
