@@ -4,7 +4,7 @@ import earald from "../images/partners/Earald.jpg";
 import nibret from "../images/partners/nibret.jpg";
 import erq from "../images/partners/erq.png";
 import creativ from "../images/partners/creativehub.jpeg";
-import telegram from "../images/icons/telegram.svg"
+// import telegram from "../images/icons/telegram.svg"
 import twitter from "../images/icons/twitter.svg";
 import linkedin from "../images/icons/linkedin.svg";
 import instagram from "../images/icons/instagram.svg";
@@ -43,7 +43,7 @@ function Footer() {
             <h4>Address</h4>
             <ul>
               <li>
-                <a href="#">
+                <a href="/">
                   <i class="fab fa-location"></i>
                   Mexico Addis Ababa Ethiopia <i class="fab fa-ethiopia"></i>
                 </a>
@@ -55,22 +55,22 @@ function Footer() {
             <div class="partners">
               <ul>
                 <li>
-                  <a href="#">
+                  <a href="/">
                     <img src={earald} alt="Earald Ict " />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/">
                     <img src={nibret} alt="Nibret" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/">
                     <img src={erq} alt="erq maed" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/">
                     <img src={creativ} alt="creative hub" />
                   </a>
                 </li>

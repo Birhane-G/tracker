@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:   #8db9fa;
+    --nav-text: #ffcb22;
+    --text-color: black;
+    --background-color: #00032c;
+}
+.Every-page-header{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    top: 5px;
+    right: 20px;
+    z-index: 1;
+}
+.Every-page-header-content{
+    width: 78%;
+    height: 50px;
+    background: var(--background-color);
+    position: fixed;
+    border-radius: 10px;
+    
+}
