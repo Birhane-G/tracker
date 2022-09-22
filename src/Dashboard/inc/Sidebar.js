@@ -2,7 +2,7 @@ import React from "react";
 import "../style/sidebar.css";
 function Sidebar() {
   return (
-      <div className="sidebar">
+    <div className="sidebar">
         <div className="side-top-logo-container"></div>
         <div className="side-bar-content">
           <div className="side-bar-center-content">
