@@ -27,8 +27,6 @@ export function AllPageview() {
       <div className="card-brand"><h1>Device brand</h1></div>
       <div className="card-model"><h1>Device model</h1></div>
       <div className="card-screenResolution"><h1>Screen resolution</h1></div>
-       
-
     </div>
   );
 }
