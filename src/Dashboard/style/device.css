@@ -5,6 +5,11 @@
     --text-color: black;
     --background-color: #00032c;
 }
+
+.cards{
+    display: flex;
+    gap: 20px;
+}
 .device-page{
     display: grid;
     position: relative;
