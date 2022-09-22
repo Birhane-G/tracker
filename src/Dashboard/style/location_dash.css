@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:   #8db9fa;
+    --nav-text: #ffcb22;
+    --text-color: black;
+    --background-color: #00032c;
+}
+.map{
+    width: 70%;
+    height: 500px;
+    float: left;
+    background: url(../../images/map.jpg);
+    margin: 10px;
+}
+.continent,
+.country,
+.rigsta{
+    float: right;
+    margin-top: 10px;
+}
+select#con{ 
+    width: 340px;
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    background: url(../../images/391977.jpg);
+    background-position: center;
+    background-size: cover;
+    vertical-align: middle;
+  -webkit-appearance: none;
+}
+select#cou{ 
+    width: 340px;
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    background: #00032c;
+    background-position: center;
+    background-size: cover;
+    vertical-align: middle;
+  -webkit-appearance: none;
+}
+select#rs{ 
+    width: 340px;
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    background: #00032c;
+    background-position: center;
+    background-size: cover;
+    vertical-align: middle;
+  -webkit-appearance: none;
+}
+
+
