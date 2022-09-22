@@ -21,8 +21,9 @@ function App() {
       <Route path="/pageview" element={<Pageview />} />
       <Route path="/device" element={<Device/>}/>
       <Route path="/reg" element={<Register />} />
-      <Route path="*" element={<Error />} />
       <Route path="/location" element={<Location />} />
+      <Route path="*" element={<Error />} />
+
     </Routes>
   </BrowserRouter>
   );

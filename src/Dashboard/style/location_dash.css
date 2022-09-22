@@ -9,54 +9,44 @@
     --text-color: black;
     --background-color: #00032c;
 }
-.map{
-    width: 70%;
-    height: 500px;
-    float: left;
-    background: url(../../images/map.jpg);
-    margin: 10px;
+.continent{
+    margin-top: 30px;
+    margin-left: 5px;
 }
-.continent,
-.country,
-.rigsta{
-    float: right;
-    margin-top: 10px;
-}
-select#con{ 
-    width: 340px;
-    height: 100px;
-    text-align: center;
-    font-size: 30px;
-    font-style: italic;
-    background: url(../../images/391977.jpg);
-    background-position: center;
-    background-size: cover;
-    vertical-align: middle;
-  -webkit-appearance: none;
-}
-select#cou{ 
-    width: 340px;
-    height: 100px;
-    text-align: center;
-    font-size: 30px;
-    font-style: italic;
-    background: #00032c;
-    background-position: center;
-    background-size: cover;
-    vertical-align: middle;
-  -webkit-appearance: none;
-}
-select#rs{ 
-    width: 340px;
-    height: 100px;
-    text-align: center;
-    font-size: 30px;
-    font-style: italic;
-    background: #00032c;
-    background-position: center;
-    background-size: cover;
-    vertical-align: middle;
-  -webkit-appearance: none;
+.continent :hover{
+transform: scale(1.05);
 }
 
+.continent a{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    padding-top: 120px;
+    text-align: center;
+    margin-right: 5px;
+    color: #1b1a18;
+    
+    
+}
+.continent a#af{
+    background: url(../../images/map/2148748.jpg);
+    background-size: cover;
+}
+.continent a#as{
+    background: url(../../images/map/28182713.jpg);
+    background-size: cover;
+}.continent a#au{
+    background: url(../../images/map/19468956.jpg);
+    background-size: cover;
+}.continent a#eu{
+    background: url(../../images/map/2148753.jpg);
+    background-size: cover;
+}.continent a#na{
+    background: url(../../images/map/2148759.jpg);
+    background-size: cover;
+}
+.continent a#sa{
+    background: url(../../images/map/2148749.jpg);
+    background-size: cover;
+}
 
