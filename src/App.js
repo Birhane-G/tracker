@@ -6,6 +6,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Register from './pages/Register';
 import Dashboard from './Dashboard/pages/Dashboard';
 import Pageview from './Dashboard/pages/Pageview';
+import Device from './Dashboard/pages/Device';
 import Location from './Dashboard/pages/Location';
 // import { library } from "@fortawesome/fontawesome-svg-core";
 // import { faMoon, faRocket } from "@fortawesome/free-solid-svg-icons";
@@ -18,6 +19,7 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/pageview" element={<Pageview />} />
+      <Route path="/device" element={<Device/>}/>
       <Route path="/reg" element={<Register />} />
       <Route path="*" element={<Error />} />
       <Route path="/location" element={<Location />} />

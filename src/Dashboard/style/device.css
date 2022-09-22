@@ -1,0 +1,26 @@
+
+:root{
+    --main-color:   #8db9fa;
+    --nav-text: #ffcb22;
+    --text-color: black;
+    --background-color: #00032c;
+}
+.device-page{
+    display: grid;
+    position: relative;
+    top: 20px;
+    
+}
+.device-page .cards{
+    width: 250px;
+    height: 300px;
+    background-color: var(--background-color);
+    margin-left: 10px;
+}
+.card-brand{
+    width: 250px;
+    height: 300px;
+    background-color: var(--background-color);
+    padding-left: 10px;
+    margin-left: 300px;
+}

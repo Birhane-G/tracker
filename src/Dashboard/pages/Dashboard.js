@@ -24,7 +24,7 @@ function Sidebar() {
               <a href="/dashboard"><li>Dashboard</li></a>
               <a href="/"><li>Visitor</li></a>
               <a href="/pageview"><li>PageView</li></a>
-              <a href="/"><li>Device</li></a>
+              <a href="/device"><li>Device</li></a>
               <a href="/"><li>Location</li></a>
               </ul>
             </div>
