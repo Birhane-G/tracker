@@ -30,27 +30,6 @@ function Dashboard() {
 }
 function Sidebar() {
   return (
-<<<<<<< HEAD
-      <div className="sidebar">
-        <div className="side-top-logo-container"></div>
-        <div className="side-bar-content">
-          <div className="side-bar-center-content">
-            <div className="side-bar-top-content-nav">
-              <ul>
-              <a href="/dashboard"><li>Dashboard</li></a>
-              <a href="/"><li>Visitor</li></a>
-              <a href="/pageview"><li>PageView</li></a>
-              <a href="/device"><li>Device</li></a>
-              <a href="/"><li>Location</li></a>
-              </ul>
-            </div>
-            <div className="side-bar-center-content-nav">
-              <ul>
-              <a href="/"><li>Dashboard</li></a>
-              <a href="/"><li>Setting</li></a>
-              </ul>
-            </div>
-=======
     <div className="sidebar">
       <div className="side-top-logo-container"></div>
       <div className="side-bar-content">
@@ -83,7 +62,6 @@ function Sidebar() {
                 <li>Setting</li>
               </a>
             </ul>
->>>>>>> refs/remotes/origin/main
           </div>
         </div>
       </div>
