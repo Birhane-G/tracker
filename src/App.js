@@ -19,8 +19,9 @@ function App() {
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/pageview" element={<Pageview />} />
       <Route path="/reg" element={<Register />} />
-      <Route path="*" element={<Error />} />
       <Route path="/location" element={<Location />} />
+      <Route path="*" element={<Error />} />
+
     </Routes>
   </BrowserRouter>
   );
