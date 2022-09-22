@@ -35,14 +35,13 @@ ul {
 }
 
 .footer-col h4::before {
-  content: "";
+  content: " ";
   position: absolute;
-  bottom: -10px;
+  bottom: -7px;
   background-color: var(--nav-text);
   height: 3px;
   box-sizing: border-box;
   width: 100px;
-  left: 10px;
 }
 
 .footer-col ul li:not(:last-child) {
@@ -82,7 +81,7 @@ ul {
 
 .footer-col .partners img {
   width: 120px;
-  margin-left: -50%;
+  border-radius:30px;
 }
 .footer-col .social-links img{
   padding-top: 9px;
