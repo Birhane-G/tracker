@@ -13,7 +13,7 @@ function Sidebar() {
               <a href="/"><li>Visitor</li></a>
               <a href="/pageview"><li>PageView</li></a>
               <a href="/"><li>Device</li></a>
-              <a href="/"><li>Location</li></a>
+              <a href="/location"><li>Location</li></a>
               </ul>
             </div>
             <div className="side-bar-center-content-nav">
