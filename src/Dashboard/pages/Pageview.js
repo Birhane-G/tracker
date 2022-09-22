@@ -1,12 +1,30 @@
-import React from 'react'
-import Sidebar from '../inc/Sidebar'
+import React from "react";
+import Sidebar from "../inc/Sidebar";
+
+import "../style/pageview.css";
 function Pageview() {
   return (
-    <section>
-      <Sidebar />
-      <div>Pageview</div>
-    </section>
-  )
+    <>
+      <div className="Dashboard-include-content">
+        <Sidebar />
+        <div className="Dashboard-all-contents">
+          {/* <Header /> */}
+          <div className="page-view-page">
+            <AllPageview />
+            <div className="one"></div>
+            <div className="one"></div>
+            <div className="one"></div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
-
-export default Pageview
+export function AllPageview() {
+  return (
+    <div className="one">
+      <h1>teext</h1>
+    </div>
+  );
+}
+export default Pageview;

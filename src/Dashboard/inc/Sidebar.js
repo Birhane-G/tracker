@@ -2,7 +2,6 @@ import React from "react";
 import "../style/sidebar.css";
 function Sidebar() {
   return (
-    <div>
       <div className="sidebar">
         <div className="side-top-logo-container"></div>
         <div className="side-bar-content">
@@ -25,7 +24,6 @@ function Sidebar() {
           </div>
         </div>
       </div>
-    </div>
   );
 }
 
