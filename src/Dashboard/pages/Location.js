@@ -18,6 +18,44 @@ function Location() {
                 <a id="na">North America</a>
                 <a id="sa">South America</a>
               </div>
+             <div className="table-container">
+             <div className="country">
+                <table id="con">
+                  <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Country</th>
+                    <th>Number of Users</th>
+                </tr>
+                  </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ethiopia</td>
+                    <td>56</td>
+                 </tr>
+                </tbody>
+                </table>
+              </div>
+              <div className="regsta">
+                <table id="rs">
+                  <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Region/State</th>
+                    <th>Number of Users</th>
+                </tr>
+                  </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Addis Ababa</td>
+                    <td>24</td>
+                 </tr>
+                </tbody>
+                </table>
+              </div>
+             </div>
             </div>
           </div>
         </div>
