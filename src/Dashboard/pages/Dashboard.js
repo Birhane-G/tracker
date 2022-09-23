@@ -39,7 +39,7 @@ function Sidebar() {
               <a href="/dashboard">
                 <li>Dashboard</li>
               </a>
-              <a href="/">
+              <a href="/visitor">
                 <li>Visitor</li>
               </a>
               <a href="/pageview">
