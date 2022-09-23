@@ -34,6 +34,11 @@ function Location() {
                     <td>Ethiopia</td>
                     <td>56</td>
                  </tr>
+                 <tr>
+                    <td>2</td>
+                    <td>Nigeria</td>
+                    <td>42</td>
+                 </tr>
                 </tbody>
                 </table>
               </div>
@@ -51,6 +56,11 @@ function Location() {
                     <td>1</td>
                     <td>Addis Ababa</td>
                     <td>24</td>
+                 </tr>
+                 <tr>
+                    <td>2</td>
+                    <td>Lagos</td>
+                    <td>22</td>
                  </tr>
                 </tbody>
                 </table>
