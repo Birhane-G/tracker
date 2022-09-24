@@ -1,6 +1,7 @@
 
 :root{
     --main-color:   #8db9fa;
+    --chart-background:  #f3f3f4 ;
     --nav-text: #ffcb22;
     --text-color: black;
     --background-color: #00032c;
@@ -11,5 +12,5 @@
 .pageview-overview{
     width: 90%;
     height: 250px;
-    background-color: var(--main-color);
+    background-color: var(--chart-background);
 }
