@@ -6,46 +6,81 @@ import {LineChart, CartesianGrid, XAxis,
 import "../style/pageview.css";
 const data = [
   {
-    "date": 11-10-2022,
-    "Avg page load Time": 4000,
-    "Avg Network Time": 2400,
-    "Avg Completion Time": 2400
+    "date": 2022,
+    "time": 1,
+    "Avg page load Time": 0.1,
+    "Avg Network Time": 0.5,
+    "Avg Completion Time": 0.18
   },
   {
-    "date": 11-10-2022,
-    "Avg page load Time": 3000,
-    "Avg Network Time": 1398,
-    "Avg Completion Time": 2210
+    "date": 2022,
+    "time": 2,
+    "Avg page load Time": 0.2,
+    "Avg Network Time": 0.25,
+    "Avg Completion Time": 0.14
   },
   {
-    "date": 11-10-2022,
-    "Avg page load Time": 2000,
-    "Avg Network Time": 9800,
-    "Avg Completion Time": 2290
+    "date": 2022,
+    "time": 2,
+    "Avg page load Time": 0.14,
+    "Avg Network Time": 0.4,
+    "Avg Completion Time": 0.19
   },
   {
-    "date": 11-10-2022,
-    "Avg page load Time": 2780,
-    "Avg Network Time": 3908,
-    "Avg Completion Time": 2000
+    "date": 2022,
+    "time": 1,
+    "Avg page load Time": 0.2,
+    "Avg Network Time": 0.1,
+    "Avg Completion Time": 0.3
   },
   {
-    "date": 11-10-2022,
-    "Avg page load Time": 1890,
-    "Avg Network Time": 4800,
-    "Avg Completion Time": 2181
+    "date": 2022,
+    "time": 2,
+    "Avg page load Time": 0.1,
+    "Avg Network Time": 0.3,
+    "Avg Completion Time": 0.37
   },
   {
-    "date": 11-10-2022,
-    "Avg page load Time": 2390,
-    "Avg Network Time": 3800,
-    "Avg Completion Time": 2500
+    "date": 2022,
+    "time": 1,
+    "Avg page load Time": 0.04,
+    "Avg Network Time": 0.2,
+    "Avg Completion Time": 0.4
   },
   {
-    "name": "Page G",
-    "Avg page load Time": 3490,
-    "Avg Network Time": 4300,
-    "Avg Completion Time": 2100
+    "date": 2022,
+    "time": 0.4,
+    "Avg page load Time": 0.2,
+    "Avg Network Time": 0.15,
+    "Avg Completion Time": 0.32
+  },
+  {
+    "date": 2022,
+    "time": 0.2,
+    "Avg page load Time": 0.23,
+    "Avg Network Time": 0.3,
+    "Avg Completion Time": 0.2
+  },
+  {
+    "date": 2022,
+    "time": 0.1,
+    "Avg page load Time": 0.12,
+    "Avg Network Time": 0.24,
+    "Avg Completion Time": 0.16
+  },
+  {
+    "date": 2022,
+    "time": 1,
+    "Avg page load Time": 0.08,
+    "Avg Network Time": 0.2,
+    "Avg Completion Time": 0.16
+  },
+  {
+    "date": 2022,
+    "time": 2,
+    "Avg page load Time": 0.15,
+    "Avg Network Time": 0.22,
+    "Avg Completion Time": 0.3
   }
 ]
 function Pageview() {
@@ -71,16 +106,16 @@ export function AllPageview() {
             width={900}
             height={250}
             data={data}
-            margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+            // margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
           >
             <CartesianGrid strokeDasharray="7 1" />
             <XAxis dataKey="date" />
-            <YAxis />
-            <Tooltip />
+            <YAxis dataKey="time" />
+            <Tooltip color="#FF5733"/>
             <Legend />
-            <Line type="monotone" dataKey="Avg page load Time" stroke="#8884d8" />
-            <Line type="monotone" dataKey="Avg Network Time" stroke="#82ca9d" />
-            <Line type="monotone" dataKey="Avg Completion Time" stroke="#8884d8" />
+            <Line type="" dataKey="Avg page load Time" stroke="#8884d8" />
+            <Line type="" dataKey="Avg Network Time" stroke="#82ca9d" />
+            <Line type="" dataKey="Avg Completion Time" stroke=" #FF5733" />
           </LineChart>
         </div>
       </div>
