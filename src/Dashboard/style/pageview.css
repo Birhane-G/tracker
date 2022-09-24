@@ -5,19 +5,11 @@
     --text-color: black;
     --background-color: #00032c;
 }
-.page-view-page{
-    display: grid;
-    grid-template-columns: repeat(4 , minmax(auto, 2fr));
-    position: relative;
-    top: 20px;
-    
+.pageview{
+    margin: 20px 20px 20px 80px;
 }
-.page-view-page .one{
-    width: 250px;
-    height: 100px;
-    background-color: var(--background-color);
-    margin-left: 10px;
-}
-.one:last-child{
-    height: 600px;
+.pageview-overview{
+    width: 90%;
+    height: 250px;
+    background-color: var(--main-color);
 }
