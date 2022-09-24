@@ -6,37 +6,37 @@ import {LineChart, CartesianGrid, XAxis,
 import "../style/pageview.css";
 const data = [
   {
-    "name": "Page A",
+    "date": 11-10-2022,
     "Avg page load Time": 4000,
     "Avg Network Time": 2400,
     "Avg Completion Time": 2400
   },
   {
-    "name": "Page B",
+    "date": 11-10-2022,
     "Avg page load Time": 3000,
     "Avg Network Time": 1398,
     "Avg Completion Time": 2210
   },
   {
-    "name": "Page C",
+    "date": 11-10-2022,
     "Avg page load Time": 2000,
     "Avg Network Time": 9800,
     "Avg Completion Time": 2290
   },
   {
-    "name": "Page D",
+    "date": 11-10-2022,
     "Avg page load Time": 2780,
     "Avg Network Time": 3908,
     "Avg Completion Time": 2000
   },
   {
-    "name": "Page E",
+    "date": 11-10-2022,
     "Avg page load Time": 1890,
     "Avg Network Time": 4800,
     "Avg Completion Time": 2181
   },
   {
-    "name": "Page F",
+    "date": 11-10-2022,
     "Avg page load Time": 2390,
     "Avg Network Time": 3800,
     "Avg Completion Time": 2500
@@ -74,7 +74,7 @@ export function AllPageview() {
             margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
           >
             <CartesianGrid strokeDasharray="7 1" />
-            <XAxis dataKey="name" />
+            <XAxis dataKey="date" />
             <YAxis />
             <Tooltip />
             <Legend />
