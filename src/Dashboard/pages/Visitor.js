@@ -1,5 +1,5 @@
 import React from 'react'
-import Sidebar from '../inc/Sidebar'
+import { Sidebar } from './Dashboard'
 function Visitor() {
   return (
     <>
