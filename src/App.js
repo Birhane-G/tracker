@@ -4,7 +4,7 @@ import Error from "./pages/Error";
 import Login from './pages/Login';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Register from './pages/Register';
-import Dashboard from './Dashboard/pages/Dashboard';
+import { Dashboard } from './Dashboard/pages/Dashboard';
 import Pageview from './Dashboard/pages/Pageview';
 import Device from './Dashboard/pages/Device';
 import Location from './Dashboard/pages/Location';

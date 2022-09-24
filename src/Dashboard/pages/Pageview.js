@@ -1,20 +1,15 @@
 import React from "react";
-import Sidebar from "../inc/Sidebar";
-
+import { Sidebar } from "./Dashboard";
 import "../style/pageview.css";
 function Pageview() {
   return (
     <>
       <div className="Dashboard-include-content">
-        <Sidebar />
-        <div className="Dashboard-all-contents">
-          {/* <Header /> */}
-          <div className="page-view-page">
-            <AllPageview />
-            <div className="one"></div>
-            <div className="one"></div>
-            <div className="one"></div>
-          </div>
+        <div className="dashboard-sidebar">
+          <Sidebar />
+        </div>
+        <div className="dashboard-content">
+          <AllPageview />
         </div>
       </div>
     </>
@@ -22,8 +17,10 @@ function Pageview() {
 }
 export function AllPageview() {
   return (
-    <div className="one">
-      <h1>teext</h1>
+    <div className="pageview">
+      <div className="pageview-content">
+          <div className="pageview-overview"></div>
+      </div>
     </div>
   );
 }
