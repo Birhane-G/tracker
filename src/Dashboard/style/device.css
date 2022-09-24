@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 :root{
-    --main-color:   #8db9fa;
+    --main-color: #8db9fa;
     --nav-text: #ffcb22;
     --text-color: black;
     --background-color: #00032c;
@@ -29,7 +29,7 @@
     position: absolute;
 }
 .device-cards .device{
-    background-color: var(--background-color);
+    background-color: var(--main-color);
 }
 .device-cards .type ,
 .device-cards .brand, 

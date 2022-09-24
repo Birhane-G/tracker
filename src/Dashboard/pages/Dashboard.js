@@ -27,7 +27,7 @@ function Sidebar() {
         <div className="side-bar-center-content">
           <div className="side-bar-top-content-nav">
             <ul>
-              <a href="/">
+              <a href="/dashboard">
                 <li><AiFillDashboard  style={{fontSize: '26px'}}/>Dashboard</li>
               </a>
               <a href="/visitor">

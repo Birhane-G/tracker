@@ -4,8 +4,11 @@ function Visitor() {
   return (
     <>
       <div className="Dashboard-include-content">
-        <Sidebar />
-        <div className="Dashboard-all-contents">
+        <div className="dashboard-sidebar">
+          <Sidebar />
+        </div>
+        <div className="dashboard-content">
+          
         </div>
       </div>
     </>
