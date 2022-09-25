@@ -67,7 +67,7 @@ function Content() {
             </table>
           </div>
           <div className="regsta">
-            <table id="rs">
+            <table id="con">
               <thead>
                 <tr>
                   <th>Rank</th>

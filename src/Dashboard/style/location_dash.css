@@ -57,7 +57,7 @@ transform: scale(1.05);
     background: url(../../images/map/2148749.jpg);
     background-size: cover;
 }
-table{
+#con{
     border-radius: 5px;
     border-collapse: collapse;
     width: 450px;
@@ -67,14 +67,14 @@ table{
     overflow-x: auto;
     box-shadow: 4px 4px 8px ;
 }
-thead{
+#con thead{
     border-bottom: 1px solid ;  
 }
-td {
+#con td {
     border-bottom: 1px solid ; 
     padding-left: 50px; 
   }
-tr:hover {background-color: var(--service-color);
+#con tr:hover {background-color: var(--service-color);
 }
 
 
