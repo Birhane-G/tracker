@@ -2,6 +2,7 @@
 :root{
     --main-color:   #8db9fa;
     --chart-background:  #e3e3fc;
+    --table-title: rgb(97, 93, 93);
     --thead-background:  #d6d6da;
     --nav-text: #ffcb22;
     --text-color: black;
@@ -21,7 +22,7 @@
 }
 .pageview-overview h3{
     font-size: 25px;
-    color: var(--background-color);
+    color: var(--table-title);
     float: right;
     margin-right: 10px;
 }
@@ -30,6 +31,7 @@
     margin-left: 40px;
     background-color: var(--chart-background);
     border-radius: 10px;
+    margin-right: 20px; /* other div tag will be changed*/
 }
 .pageview-table{
     width: 95%;
@@ -38,7 +40,7 @@
 }
 .individual-pageview h3{
     font-size: 20px;
-    color: var(--background-color);
+    color: var(--table-title);
     float: right;
     margin-right: 10px;
     padding-bottom: 20px;
@@ -47,11 +49,24 @@
     background-color: var(--thead-background);
 }
 .table-header th{
-    color: rgb(97, 93, 93);
+    color: var(--table-title);
     background-color: var(--thead-background);
     padding: 5px 20px;
 }
 .table-body tr:hover
 {
     background-color: var(--thead-background);
+}
+.other-contents{
+    display: flex;
+}
+.other{
+    width: 28%;
+}
+.otherone{
+    width: 100%;
+    height: 170px;
+    margin-bottom: 20px;
+    background-color: var(--thead-background);
+    border-radius: 15px;
 }

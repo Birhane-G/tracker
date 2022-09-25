@@ -100,8 +100,9 @@ function Pageview() {
         </div>
         <div className="dashboard-content">
           <PageViewPerformance />
-          <div>
+          <div className="other-contents">
             <PageView />
+            <Other />
           </div>
         </div>
       </div>
@@ -254,4 +255,13 @@ function PageView() {
     </div>
   );
 }
+function Other() {
+  return (
+    <div className="other">
+      <div className="otherone"></div>
+      <div className="otherone"></div>
+    </div>
+  );
+}
+
 export default Pageview;
