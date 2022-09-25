@@ -45,7 +45,6 @@
 }
 .table-header{
     background-color: var(--thead-background);
-    
 }
 .table-header th{
     color: rgb(97, 93, 93);
