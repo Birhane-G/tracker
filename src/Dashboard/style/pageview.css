@@ -7,7 +7,7 @@
     --background-color: #00032c;
 }
 .pageview{
-    margin: 20px 20px 20px 80px;
+    margin: 20px 20px 20px 40px;
 }
 .pageview-overview{
     width: 95%;
@@ -23,4 +23,13 @@
     color: var(--background-color);
     float: right;
     margin-right: 10px;
+}
+.individual-pageview{
+    width: 60%;
+    margin-left: 40px;
+    background-color: var(--chart-background);
+    border-radius: 10px;
+}
+.pageview-table{
+    width: 95%;
 }

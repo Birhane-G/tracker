@@ -141,17 +141,15 @@ export function PageViewPerformance() {
 
 function PageView() {
   return (
-    <div>
-      <table>
-        <thead>
+    <div className="individual-pageview">
+      <h3>PageView</h3>
+      <table className="pageview-table">
           <tr>
             <th>Page Url</th>
             <th>Pageview</th>
             <th>Unique Pageview</th>
             <th>Bounce Rate</th>
           </tr>
-        </thead>
-        <tbody>
           <tr>
             <td>/index</td>
             <td>400</td>
@@ -176,7 +174,6 @@ function PageView() {
             <td>100</td>
             <td>80%</td>
           </tr>
-        </tbody>
       </table>
     </div>
   );
