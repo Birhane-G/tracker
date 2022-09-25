@@ -1,7 +1,8 @@
 
 :root{
     --main-color:   #8db9fa;
-    --chart-background:  #e3e3fc ;
+    --chart-background:  #e3e3fc;
+    --thead-background:  #d6d6da;
     --nav-text: #ffcb22;
     --text-color: black;
     --background-color: #00032c;
@@ -32,4 +33,26 @@
 }
 .pageview-table{
     width: 95%;
+    border-collapse: collapse;
+    margin: 15px;
+}
+.individual-pageview h3{
+    font-size: 20px;
+    color: var(--background-color);
+    float: right;
+    margin-right: 10px;
+    padding-bottom: 20px;
+}
+.table-header{
+    background-color: var(--thead-background);
+    
+}
+.table-header th{
+    color: rgb(97, 93, 93);
+    background-color: var(--thead-background);
+    padding: 5px 20px;
+}
+.table-body tr:hover
+{
+    background-color: var(--thead-background);
 }
