@@ -1,7 +1,7 @@
 
 :root{
     --main-color:   #8db9fa;
-    --chart-background:  #f3f3f4 ;
+    --chart-background:  #e3e3fc ;
     --nav-text: #ffcb22;
     --text-color: black;
     --background-color: #00032c;
@@ -10,7 +10,17 @@
     margin: 20px 20px 20px 80px;
 }
 .pageview-overview{
-    width: 90%;
-    height: 250px;
+    width: 95%;
+    height: 160px;
     background-color: var(--chart-background);
+    border-radius: 15px;
+}
+.pageview .text{
+    padding-bottom: 30px;
+}
+.pageview-overview h3{
+    font-size: 25px;
+    color: var(--background-color);
+    float: right;
+    margin-right: 10px;
 }

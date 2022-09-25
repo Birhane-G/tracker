@@ -25,7 +25,6 @@ function App() {
       <Route path="/reg" element={<Register />} />
       <Route path="/location" element={<Location />} />
       <Route path="*" element={<Error />} />
-
     </Routes>
   </BrowserRouter>
   );
