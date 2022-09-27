@@ -1,5 +1,4 @@
 import React from "react";
-import { Sidebar } from "./Dashboard";
 import {PieChart,
   Pie,
   Tooltip,
@@ -68,16 +67,15 @@ function piechart(){
 
  function Device() {
    return (
-     <>
+  
        <div className="Dashboard-include-content">
          <div className="dashboard-sidebar">
-           <Sidebar />
          </div>
          <div className="dashboard-content">
            <AllPageview />
          </div>
        </div>
-     </>
+  
    );
  }
  export function AllPageview() {

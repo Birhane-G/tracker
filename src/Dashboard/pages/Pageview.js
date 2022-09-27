@@ -1,5 +1,4 @@
 import React from "react";
-import { Sidebar } from "./Dashboard";
 import {
   LineChart,
   CartesianGrid,
@@ -93,11 +92,8 @@ const data = [
 ];
 function Pageview() {
   return (
-    <>
+
       <div className="Dashboard-include-content">
-        <div className="dashboard-sidebar">
-          <Sidebar />
-        </div>
         <div className="dashboard-content">
           <PageViewPerformance />
           <div className="other-contents">
@@ -106,7 +102,6 @@ function Pageview() {
           </div>
         </div>
       </div>
-    </>
   );
 }
 export function PageViewPerformance() {
