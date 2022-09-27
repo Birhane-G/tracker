@@ -21,20 +21,28 @@
     background-color: var(--main-color);
 }
 .device-cards{
-    left: 15px;
+    left:25px;
     top: 2px;
     display: grid;
     grid-template-columns: repeat(4, minmax(auto, 1fr));
-    gap: 10px;
+    gap: 40px;
     position: absolute;
 }
 .device-cards .device{
     background-color: var(--main-color);
 }
-.device-cards .type ,
+.device-cards .type {
+    position: absolute;
+    width: 1000px;
+    height: 330px;
+    border-radius: 15px;
+}
 .device-cards .brand, 
 .device-cards .model,
 .device-cards .screenResolution{
+    top: 350px;
+    position: relative;
+    padding-left: 22px;
     width: 260px;
     height: 630px;
     border-radius: 15px;
