@@ -2,10 +2,7 @@ import React from 'react'
 function Visitor() {
   return (
       <div className="Dashboard-include-content">
-        <div className="dashboard-sidebar">
-        </div>
-        <div className="dashboard-content">
-        </div>
+        <h1>Visitor page</h1>
       </div>
   )
 }
