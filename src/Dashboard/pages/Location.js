@@ -85,6 +85,29 @@ function Content() {
               </tbody>
             </table>
           </div>
+          <div className="continent">
+            <table id="con">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Continent</th>
+                  <th>Number of Users</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Europe</td>
+                  <td>142</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Africa</td>
+                  <td>137</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
