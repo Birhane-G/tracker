@@ -6,7 +6,23 @@
 :root{
     --main-color:   #8db9fa;
     --nav-text: #ffcb22;
+    --chart-background:  #e3e3fc;
     --text-color: black;
     --background-color: #00032c;
     --service-color:rgb(235, 102, 41);
+}
+.Visitor-Real-time{
+    width: 70%;
+    height: 300px;
+    background-color: var(--chart-background);
+}
+.Visitor-contaner{
+    display: flex;
+}
+.Real-Time{
+    margin-left: 10px;
+    width: 30%;
+    height: 250px;
+    background-color: var(--chart-background);
+    border-radius: 15px;
 }
