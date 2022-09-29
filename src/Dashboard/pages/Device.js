@@ -1,14 +1,14 @@
 import React from "react";
-import {PieChart,
-  Pie,
-  Tooltip,
-  BarChart,
-  XAxis,
-  YAxis,
-  Legend,
-  CartesianGrid,
-  Bar,
- } from "recharts";
+// import {PieChart,
+//   Pie,
+//   Tooltip,
+//   BarChart,
+//   XAxis,
+//   YAxis,
+//   Legend,
+//   CartesianGrid,
+//   Bar,
+//  } from "recharts";
 
 
 import "../style/device.css";
@@ -24,7 +24,7 @@ function piechart(){
     <div style={{ textAlign: "center" }}>
       <h1>Socail Media Users</h1>
       <div className="App">
-        <PieChart width={400} height={400}>
+        {/* <PieChart width={400} height={400}>
           <Pie
             dataKey="users"
             isAnimationActive={false}
@@ -59,7 +59,7 @@ function piechart(){
           <Legend />
           <CartesianGrid strokeDasharray="3 3" />
           <Bar dataKey="users" fill="#8884d8" background={{ fill: "#eee" }} />
-        </BarChart>
+        </BarChart> */}
       </div>
     </div>
   );
@@ -86,7 +86,7 @@ function piechart(){
            <h1>Device type</h1>
            <div style={{ textAlign: "center" }}>
       <div className="App">
-        <PieChart width={400} height={400}>
+        {/* <PieChart width={400} height={400}>
           <Pie
             dataKey="users"
             isAnimationActive={true}
@@ -98,7 +98,7 @@ function piechart(){
             label
           />
           <Tooltip />
-        </PieChart>
+        </PieChart> */}
         
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import "../style/visitor.css";
-import { PieChart, Pie, ResponsiveContainer, Tooltip } from "recharts";
+// import { PieChart, Pie, ResponsiveContainer, Tooltip } from "recharts";
 function Visitor() {
   return (
     <div className="Visitor-content">
@@ -13,16 +13,16 @@ function Visitor() {
   );
 }
 function RealTime() {
-  const data02 = [
-    {
-      name: "Actions",
-      value: 2400,
-    },
-    {
-      name: "Visits",
-      value: 4567,
-    },
-  ];
+  // const data02 = [
+  //   {
+  //     name: "Actions",
+  //     value: 2400,
+  //   },
+  //   {
+  //     name: "Visits",
+  //     value: 4567,
+  //   },
+  // ];
   return (
     <div className="Real-Time">
       <div>
@@ -30,7 +30,7 @@ function RealTime() {
           <h3>Last 24 hours</h3>
         </div>
         <div>
-          <ResponsiveContainer height={200}>
+          {/* <ResponsiveContainer height={200}>
             <PieChart width={350}>
               <Tooltip />
               <Pie
@@ -43,7 +43,7 @@ function RealTime() {
                 label
               />
             </PieChart>
-          </ResponsiveContainer>
+          </ResponsiveContainer> */}
         </div>
       </div>
     </div>
