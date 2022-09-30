@@ -21,11 +21,9 @@ function Visitor() {
 export const ChanalType = () => {
   return (
     <div className="Visitor-Channel-type">
-      <div>
-        <h3>Channel Type</h3>
-      </div>
-      <div>
-        <table className="channel-type-table">
+      <div className="channel-table">
+      <h3>Channel Type</h3>
+        <table cellPadding="0" cellspacing="0" border="0" className="channel-type-table">
           <thead>
             <tr>
               <th>Channel</th>

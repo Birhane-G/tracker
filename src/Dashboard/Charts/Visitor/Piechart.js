@@ -13,8 +13,8 @@ export const Piechart = () => {
       datasets: [
         {
           label: "Visits",
-          backgroundColor: ["#10dc92", "#10dg92"],
-          borderColor: "#dc105a",
+          backgroundColor: ["#8db9fa", "#00032c"],
+          borderColor:[ "#00032c", "#00032c"],
           data: [4567,2400],
         },
       ],

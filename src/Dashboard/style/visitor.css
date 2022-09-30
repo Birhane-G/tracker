@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@600&family=Overpass&family=Space+Mono&family=Ubuntu+Mono&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
 }
 :root{
     --main-color:   #8db9fa;
+    --table-border-color:   #c3d7f5;
     --nav-text: #ffcb22;
     --chart-background:  #e3e3fc;
     --text-color: black;
@@ -28,7 +30,40 @@
     background-color: var(--chart-background);
     border-radius: 15px;
 }
+.channel-table{
+    overflow: auto;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+}
 .channel-type-table{
     width: 100%;
     border-collapse: separate;
+    table-layout: fixed;
+}
+.channel-table h3{
+    color: var(--background-color);
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: bolder;
+    text-align: center;
+}
+.channel-type-table th {
+    padding: 6px 5px;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: var(--main-color);
+    font-family: 'Ubuntu Mono', monospace;
+}
+.channel-type-table td {
+    padding: 3px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 16px;
+    border: 1px solid var(--table-border-color);
+    font-family: 'Overpass', sans-serif;
+}
+.channel-type-table tbody tr:hover{
+    background-color: var(--table-border-color);
 }
