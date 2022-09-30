@@ -1,0 +1,22 @@
+:root{
+    --main-color:   #8db9fa;
+    --chart-background:  #e3e3fc;
+    --table-title: rgb(97, 93, 93);
+    --thead-background:  #d6d6da;
+    --nav-text: #ffcb22;
+    --text-color: black;
+    --background-color: #00032c;
+}
+.page-performance-line-chart{
+    width: 100%;
+    background-color: var(--chart-background);
+    border-radius: 15px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.page-performance-line-chart h3{
+    font-size: 25px;
+    color: var(--table-title);
+    float: right;
+    margin-right: 10px;
+}

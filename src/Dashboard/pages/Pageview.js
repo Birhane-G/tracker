@@ -1,113 +1,18 @@
 import React from "react";
 import "../style/pageview.css";
+import LineChart from "../Charts/LineChart";
 
-// const data = [
-//   {
-//     date: 2022,
-//     time: 1,
-//     "Avg page load Time": 0.1,
-//     "Avg Network Time": 0.5,
-//     "Avg Completion Time": 0.18,
-//   },
-//   {
-//     date: 2022,
-//     time: 1.4,
-//     "Avg page load Time": 0.2,
-//     "Avg Network Time": 0.25,
-//     "Avg Completion Time": 0.14,
-//   },
-//   {
-//     date: 2022,
-//     time: 1.2,
-//     "Avg page load Time": 0.14,
-//     "Avg Network Time": 0.4,
-//     "Avg Completion Time": 0.19,
-//   },
-//   {
-//     date: 2022,
-//     time: 1,
-//     "Avg page load Time": 0.2,
-//     "Avg Network Time": 0.1,
-//     "Avg Completion Time": 0.3,
-//   },
-//   {
-//     date: 2022,
-//     time: 0.9,
-//     "Avg page load Time": 0.1,
-//     "Avg Network Time": 0.3,
-//     "Avg Completion Time": 0.37,
-//   },
-//   {
-//     date: 2022,
-//     time: 1,
-//     "Avg page load Time": 0.04,
-//     "Avg Network Time": 0.2,
-//     "Avg Completion Time": 0.4,
-//   },
-//   {
-//     date: 2022,
-//     time: 0.4,
-//     "Avg page load Time": 0.2,
-//     "Avg Network Time": 0.15,
-//     "Avg Completion Time": 0.32,
-//   },
-//   {
-//     date: 2022,
-//     time: 0.2,
-//     "Avg page load Time": 0.23,
-//     "Avg Network Time": 0.3,
-//     "Avg Completion Time": 0.2,
-//   },
-//   {
-//     date: 2022,
-//     time: 0.1,
-//     "Avg page load Time": 0.12,
-//     "Avg Network Time": 0.24,
-//     "Avg Completion Time": 0.16,
-//   },
-//   {
-//     date: 2022,
-//     time: 1,
-//     "Avg page load Time": 0.08,
-//     "Avg Network Time": 0.2,
-//     "Avg Completion Time": 0.16,
-//   },
-//   {
-//     date: 2022,
-//     time: 0.2,
-//     "Avg page load Time": 0.15,
-//     "Avg Network Time": 0.22,
-//     "Avg Completion Time": 0.3,
-//   },
-// ];
 function Pageview() {
   return (
-      <div className="pageview-include-content">
-          <PageViewPerformance />
-          <div className="other-contents">
-            <PageView />
-            <Other />
-        </div>
-      </div>
-  );
-}
-export function PageViewPerformance() {
-  return (
-    <div className="pageview">
-      <div className="pageview-content">
-        <div className="pageview-overview">
-          <div className="text">
-            <h3>Page View Performance</h3>
-          </div>
-          <div className="data">
-          
-          </div>
-        </div>
+    <div className="pageview-include-content">
+      <LineChart />
+      <div className="other-contents">
+        <PageView />
+        <Other />
       </div>
     </div>
   );
 }
-
 function PageView() {
   return (
     <div className="individual-pageview">
