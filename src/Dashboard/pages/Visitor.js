@@ -22,8 +22,13 @@ export const ChanalType = () => {
   return (
     <div className="Visitor-Channel-type">
       <div className="channel-table">
-      <h3>Channel Type</h3>
-        <table cellPadding="0" cellspacing="0" border="0" className="channel-type-table">
+        <h3>Channel Type</h3>
+        <table
+          cellPadding="0"
+          cellspacing="0"
+          border="0"
+          className="channel-type-table"
+        >
           <thead>
             <tr>
               <th>Channel</th>
@@ -62,7 +67,11 @@ export const ChanalType = () => {
   );
 };
 export const Visitorlog = () => {
-  return <div>Visitor log</div>;
+  return (
+    <div className="Visitor-log-title">
+      <h3>Visitor log</h3>
+    </div>
+  );
 };
 
 export default Visitor;

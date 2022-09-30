@@ -1,6 +1,7 @@
 :root{
     --main-color:   #8db9fa;
     --chart-background:  #e3e3fc;
+    --table-border-color:   #c3d7f5;
     --table-title: rgb(97, 93, 93);
     --thead-background:  #d6d6da;
     --nav-text: #ffcb22;
@@ -9,35 +10,43 @@
 }
 .pageview-include-content{
     position: relative;
-}
-.individual-pageview{
     width: 60%;
     background-color: var(--chart-background);
+    border: 1px solid var(--main-color);
     border-radius: 10px;
     margin-right: 20px; /* other div tag will be changed*/
 }
 .pageview-table{
-    width: 95%;
+    width: 100%;
     border-collapse: collapse;
-    margin: 15px;
 }
-.individual-pageview h3{
+.pageview-title{
+    width: 100%;
+    height: 35px;
+    background-color: var(--main-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.pageview-title h3{
     font-size: 20px;
-    color: var(--table-title);
+    color: var(--background-color);
     float: right;
+    margin-right: 10px;
     padding-bottom: 20px;
 }
-.table-header{
-    background-color: var(--thead-background);
-}
 .table-header th{
-    color: var(--table-title);
-    background-color: var(--thead-background);
-    padding: 5px 20px;
+    font-family: 'Convergence', sans-serif;
+    text-align: left;
+    font-weight: 900;
+    background-color: var(--main-color);
+    padding: 4px 8px;
+}
+.table-body td{
+    padding: 1px 2px;
 }
 .table-body tr:hover
 {
-    background-color: var(--thead-background);
+    background-color: var(--table-border-color);
 }
 .other-contents{
     display: flex;
