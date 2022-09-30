@@ -9,13 +9,12 @@
     box-shadow: var(--card-shadow);
     border: none;
 }
-
 .popular-page-title h3{
     font-size: var(--card-title);
     color: var(--card-title-color);
     font-weight: 300;
     font-family: var(--card-title-font);
-    margin-left: 10px;
+    padding: 10px;
 }
 .popularpage-content:hover {
     border-bottom: 3px solid var(--card-border-bottom);
@@ -23,6 +22,7 @@
 }
 .popular-page-table{
     width: 100%;
+    padding-bottom: 50px;
 }
 .popular-page-table thead th{
     background-color: var( --table-head-bg);
@@ -36,13 +36,21 @@
     font-weight: 'Convergence', sans-serif;
     padding: 2px 3px;
 }
-
-
+.popular-page-table tbody tr:hover td{
+    background-color: var(--table-head-bg);
+    color: var(--table-head-color);
+}
 .Totla-visits{
-    width: 23%;
+    width: 100%;
     height: 100px;
-    background-color: var(--chart-background);
-    margin-left: 10px;
+    background-color: var(--card-bg);
+    margin-left: 20px;
+    box-shadow: var(--card-shadow);
+    border-radius: var(--card-border-size);
+}
+.Totla-visits:hover{
+    border-bottom: 3px solid var(--card-border-bottom);
+    cursor: pointer;
 }
 .Number{
     margin-top: 10px;
@@ -57,4 +65,18 @@
     font-size: 20px;
     font-weight: 500;
     text-align: center;
+}
+.dashboard-right-include{
+    width: 50%;
+}
+.dashboard-right{
+    display: flex;
+}
+.Visitor-over-time{
+    width: 97%;
+    height: 200px;
+    background-color: var(--card-bg);
+    margin: 20px 20px;
+    border-radius: var(--card-border-size);
+    box-shadow: var(--card-shadow);
 }

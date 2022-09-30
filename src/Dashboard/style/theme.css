@@ -10,6 +10,7 @@
     --background-color: #00032c;
     --service-color:rgb(235, 102, 41);
     /*  card style */
+    --card-bg:#e3e3fc;
     --card-title: 18px;
     --card-title-color: #961823;
     --card-title-font: 'Roboto', sans-serif;
