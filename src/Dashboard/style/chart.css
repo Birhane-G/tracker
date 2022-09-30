@@ -21,11 +21,13 @@
     margin-right: 10px;
 }
 .real-time-visitor-pie-chart{
-    width: 70%;
+    position: relative;
+    background-color: var(--chart-background);
+    border-radius: 15px;
+    margin-bottom: 10px;
 }
 .real-time-text h3{
-    font-size: 25px;
+    font-size: 20px;
     color: var(--table-title);
     float: right;
-    margin-right: 10px;
 }

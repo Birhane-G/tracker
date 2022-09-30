@@ -11,19 +11,24 @@
     --background-color: #00032c;
     --service-color:rgb(235, 102, 41);
 }
-.Visitor-Real-time{
+.Visitor-contaner{
+    display: flex;
+    width: 100%;
+}
+.Visitor-log{
     width: 80%;
     background-color: var(--chart-background);
 }
-.Visitor-contaner{
-    display: flex;
-}
 .Real-Time{
-    position: relative;
-    display: flex;
-    justify-content: center;
     margin-left: 10px;
-    width: 30%;
+    width: 20%;
+}
+.Visitor-Channel-type{
+    width: 100%;
     background-color: var(--chart-background);
     border-radius: 15px;
+}
+.channel-type-table{
+    width: 100%;
+    border-collapse: separate;
 }
