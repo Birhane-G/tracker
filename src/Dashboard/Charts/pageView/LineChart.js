@@ -39,9 +39,11 @@ const LineChart = () => {
   };
   return (
     <div className="page-performance-line-chart">
-      <div>
+      <div className="page-performance-title">
         <h3>page performance</h3>
       </div>
+      <div className="page-performance-data">
+        </div>
       <Line width={"10%"} height={2} data={data} />
     </div>
   );

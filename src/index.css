@@ -8,7 +8,7 @@
   --nav-text: #ffcb22;
   --text-color: black;
   --background-color: #00032c;
-  --body-color: #cee4f8;
+  --body-color: #d5d5dd;
 }
 body{
   background-color: var(--body-color);
