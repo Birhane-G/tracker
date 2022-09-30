@@ -19,19 +19,19 @@ const LineChart = () => {
     datasets: [
       {
         label: "Avg page load Time",
-        backgroundColor: "#10dc92",
+        backgroundColor: "#dc105a",
         borderColor: "#dc105a",
         data: [0.15, 0.2, 0.7, 0.4, 1, 0.77, 0.57],
       },
       {
         label: "Avg Network Time",
-        backgroundColor: "#dba20f",
+        backgroundColor: "#0f48db",
         borderColor: "#0f48db",
         data: [0.5, 0.2, 0.66, 0.1, 0.8, 0.7, 0.24],
       },
       {
         label: "Avg Completion Time",
-        backgroundColor: "#b20fdb",
+        backgroundColor: "#38db0f",
         borderColor: "#38db0f",
         data: [0.2, 0.9, 0.55, 0.29, 0.6, 0.9, 0.02],
       },

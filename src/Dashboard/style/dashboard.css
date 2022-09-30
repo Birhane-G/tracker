@@ -72,11 +72,18 @@
 .dashboard-right{
     display: flex;
 }
-.Visitor-over-time{
+.Visitor-over-day{
     width: 97%;
     height: 200px;
     background-color: var(--card-bg);
     margin: 20px 20px;
     border-radius: var(--card-border-size);
     box-shadow: var(--card-shadow);
+}
+.visitor-Over-title h3{
+    font-size: var(--card-title);
+    color: var(--card-title-color);
+    font-weight: 300;
+    font-family: var(--card-title-font);
+    padding: 10px;
 }
