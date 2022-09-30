@@ -1,0 +1,55 @@
+:root{
+    --main-color:   #8db9fa;
+    --chart-background:  #e3e3fc;
+    --table-border-color:   #c3d7f5;
+    --table-title: rgb(97, 93, 93);
+    --thead-background:  #d6d6da;
+    --nav-text: #ffcb22;
+    --text-color: black;
+    --background-color: #00032c;
+}
+.Dashboard-include-content{
+    display: flex;
+}
+.popularpage-content{
+    width: 35%;
+    background-color: var(--chart-background);
+    border-radius: 10px;
+}
+.popular-page-table{
+    width: 100%;
+}
+.popular-page-table thead th{
+    background-color: var(--main-color);
+    text-align: left;
+    font-size: 18px;
+    color: var(--background-color);
+    font-family: 'Convergence', sans-serif;
+}
+.popular-page-table tbody td{
+    font-size: 16px;
+    font-weight: 'Convergence', sans-serif;
+    font-weight: 400;
+}
+
+
+.Totla-visits{
+    width: 23%;
+    height: 100px;
+    background-color: var(--chart-background);
+    margin-left: 10px;
+}
+.Number{
+    margin-top: 10px;
+}
+.Number h3{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 800;
+    color: var(--background-color);
+}
+.title h3{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}

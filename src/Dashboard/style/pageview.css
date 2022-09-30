@@ -58,6 +58,6 @@
     width: 100%;
     height: 200px;
     margin-bottom: 20px;
-    background-color: var(--thead-background);
+    background-color: var(--chart-background);
     border-radius: 15px;
 }
