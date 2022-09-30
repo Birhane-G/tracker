@@ -4,11 +4,7 @@
   box-sizing: border-box;
 }
 :root{
-  --main-color:   #8db9fa;
-  --nav-text: #ffcb22;
-  --text-color: black;
-  --background-color: #00032c;
-  --body-color: #d5d5dd;
+  --body-color: #cccbe9;
 }
 body{
   background-color: var(--body-color);
