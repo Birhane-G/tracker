@@ -1,13 +1,4 @@
-:root{
-    --main-color:   #8db9fa;
-    --chart-background:  #e3e3fc;
-    --table-border-color:   #c3d7f5;
-    --table-title: rgb(97, 93, 93);
-    --thead-background:  #d6d6da;
-    --nav-text: #ffcb22;
-    --text-color: black;
-    --background-color: #00032c;
-}
+@import "theme.css";
 .pageview-include-content{
     position: relative;
     width: 60%;

@@ -1,6 +1,6 @@
 import React from "react";
 import "../style/visitor.css";
-import { Piechart } from "../Charts/Visitor/Piechart";
+import { Piechart } from "../Components/Visitor/Piechart";
 
 function Visitor() {
   return (

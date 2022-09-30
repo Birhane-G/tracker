@@ -1,35 +1,40 @@
-:root{
-    --main-color:   #8db9fa;
-    --chart-background:  #e3e3fc;
-    --table-border-color:   #c3d7f5;
-    --table-title: rgb(97, 93, 93);
-    --thead-background:  #d6d6da;
-    --nav-text: #ffcb22;
-    --text-color: black;
-    --background-color: #00032c;
-}
+@import "theme.css";
 .Dashboard-include-content{
     display: flex;
 }
 .popularpage-content{
     width: 35%;
     background-color: var(--chart-background);
-    border-radius: 10px;
+    border-radius: var( --card-border-size);
+    box-shadow: var(--card-shadow);
+    border: none;
+}
+
+.popular-page-title h3{
+    font-size: var(--card-title);
+    color: var(--card-title-color);
+    font-weight: 300;
+    font-family: var(--card-title-font);
+    margin-left: 10px;
+}
+.popularpage-content:hover {
+    border-bottom: 3px solid var(--card-border-bottom);
+    cursor: pointer;
 }
 .popular-page-table{
     width: 100%;
 }
 .popular-page-table thead th{
-    background-color: var(--main-color);
+    background-color: var( --table-head-bg);
     text-align: left;
     font-size: 18px;
-    color: var(--background-color);
-    font-family: 'Convergence', sans-serif;
+    color: var(--table-head-color);
+    font-family: var(--table-head-font);
 }
 .popular-page-table tbody td{
     font-size: 16px;
     font-weight: 'Convergence', sans-serif;
-    font-weight: 400;
+    padding: 2px 3px;
 }
 
 
