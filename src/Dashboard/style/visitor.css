@@ -12,17 +12,18 @@
     --service-color:rgb(235, 102, 41);
 }
 .Visitor-Real-time{
-    width: 70%;
-    height: 300px;
+    width: 80%;
     background-color: var(--chart-background);
 }
 .Visitor-contaner{
     display: flex;
 }
 .Real-Time{
+    position: relative;
+    display: flex;
+    justify-content: center;
     margin-left: 10px;
     width: 30%;
-    height: 250px;
     background-color: var(--chart-background);
     border-radius: 15px;
 }

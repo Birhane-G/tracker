@@ -20,3 +20,12 @@
     float: right;
     margin-right: 10px;
 }
+.real-time-visitor-pie-chart{
+    width: 70%;
+}
+.real-time-text h3{
+    font-size: 25px;
+    color: var(--table-title);
+    float: right;
+    margin-right: 10px;
+}
