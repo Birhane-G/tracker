@@ -1,6 +1,6 @@
 import React from "react";
 import "../style/pageview.css";
-import LineChart from "../Charts/LineChart";
+import LineChart from "../Charts/pageView/LineChart";
 
 function Pageview() {
   return (
