@@ -15,7 +15,7 @@
     color: var(--card-title-color);
     font-weight: 300;
     font-family: var(--card-title-font);
-    margin-left: 10px;
+    padding: 10px;
 }
 .popularpage-content:hover {
     border-bottom: 3px solid var(--card-border-bottom);
@@ -23,6 +23,7 @@
 }
 .popular-page-table{
     width: 100%;
+    padding-bottom: 50px;
 }
 .popular-page-table thead th{
     background-color: var( --table-head-bg);
@@ -36,13 +37,21 @@
     font-weight: 'Convergence', sans-serif;
     padding: 2px 3px;
 }
-
-
+.popular-page-table tbody tr:hover td{
+    background-color: var(--table-head-bg);
+    color: var(--table-head-color);
+}
 .Totla-visits{
     width: 23%;
     height: 100px;
-    background-color: var(--chart-background);
-    margin-left: 10px;
+    background-color: var(--card-bg);
+    margin-left: 20px;
+    box-shadow: var(--card-shadow);
+    border-radius: var(--card-border-size);
+}
+.Totla-visits:hover{
+    border-bottom: 3px solid var(--card-border-bottom);
+    cursor: pointer;
 }
 .Number{
     margin-top: 10px;
