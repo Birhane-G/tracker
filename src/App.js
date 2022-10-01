@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./Dashboard/pages/Dashboard";
 import Pageview from "./Dashboard/pages/Pageview";
 import Device from "./Dashboard/pages/Device";
+import { Software } from "./pages/Software";
 import Location from "./Dashboard/pages/Location";
 import Visitor from "./Dashboard/pages/Visitor";
 import Sidebar from "./Dashboard/inc/Sidebar";
@@ -24,6 +25,7 @@ function App() {
             <Route exact path="/visitor" element={<Visitor />} />
             <Route exact path="/pageview" element={<Pageview />} />
             <Route exact path="/device" element={<Device />} />
+            <Route exact path="/software" element={<Software />} />
             <Route exact path="/location" element={<Location />} />
           </Routes>
         </Sidebar>
