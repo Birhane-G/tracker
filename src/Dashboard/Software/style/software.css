@@ -10,4 +10,36 @@
     width: 100%;
     height: 390px;
     background-color: var(--card-bg);
+    box-shadow: var(--card-shadow);
+    border-radius: var(--card-border-size);
+}
+.Browser-title h3{
+    font-size: var(--card-title);
+    color: var(--card-title-color);
+    font-family: var(--card-title-font);
+    padding: 15px 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.icons{
+    width: 23px;
+    height: 23px;
+}
+.Browser-data-table{
+    width: 100%;
+    border-collapse: separate;
+    table-layout: fixed;
+}
+.Browser-data-table th{
+    text-align: left;
+    color: var(--table-head-color);
+    background-color: var(--table-head-bg);
+    font-family: var(--table-head-font);
+    padding: 8px 25px;
+}
+.Browser-data-table td{
+    font-size: var(--table-body-font-size);
+    font-weight: var(--table-body-font);
+    padding: 2px 3px;
+
 }

@@ -21,5 +21,7 @@
     --table-head-bg: #515874;
     --table-head-color: white;
     --table-head-font: 'Roboto', sans-serif;
+
     --table-body-font: 'Inter Tight', sans-serif;
+    --table-body-font-size: 15px
 }
