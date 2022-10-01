@@ -4,7 +4,7 @@ import "./index.css";
 // import Login from "./pages/Login";
 // import Register from "./pages/Register";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Dashboard from "./Dashboard/pages/Dashboard";
+import Dashboard from "./Dashboard/Dashboard/Dashboard";
 import Pageview from "./Dashboard/pages/Pageview";
 import Device from "./Dashboard/pages/Device";
 import { Software } from "./Dashboard/Software/Software";
