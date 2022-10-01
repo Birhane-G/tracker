@@ -37,9 +37,25 @@
     font-family: var(--table-head-font);
     padding: 8px 25px;
 }
+.Browser-data-table th:last-child {
+    text-align: right;
+}
 .Browser-data-table td{
     font-size: var(--table-body-font-size);
     font-weight: var(--table-body-font);
-    padding: 2px 3px;
-
+    border-bottom: var(--table-body-border);
+    padding: 6px 20px;
+}
+.Browser-data-table td:first-child {
+    display: flex;
+    align-items: center;
+}
+.Browser-data-table tbody tr:hover{
+    background-color: var(--table-body-hover);
+}
+.Browser-data-table td:first-child img{
+    margin-right: 10px;
+}
+.Browser-data-table td:last-child {
+    text-align: right;
 }
