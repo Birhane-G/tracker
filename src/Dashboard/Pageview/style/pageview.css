@@ -6,6 +6,31 @@
     border-radius: 10px;
     margin-right: 20px; /* other div tag will be changed*/
 }
+.page-performance-line-chart{
+    width: 100%;
+    background-color: var(--chart-background);
+    border-radius: 15px;
+    margin-bottom: 10px;
+    border: 1px solid var(--table-border-color);
+}
+.page-performance-title{
+    width: 100%;
+    height: 35px;
+    background-color: var(--main-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.page-performance-title h3{
+    font-size: 25px;
+    color: var(--table-title);
+    float: right;
+    font-weight: 800;
+    margin-right: 10px;
+    font-family: 'Convergence', sans-serif;
+}
+.page-performance-data{
+    padding: 5px;
+}
 .other-contents{
     display: flex;
 }

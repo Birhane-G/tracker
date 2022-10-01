@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/location_dash.css";
+import "./style/location.css";
 function Location() {
   return (
     <section>

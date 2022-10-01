@@ -10,8 +10,7 @@ import React from "react";
 //   Bar,
 //  } from "recharts";
 
-
-import "../style/device.css";
+import "./style/device.css";
 
   const data = [
     { name: "Samsung", users: 70 },

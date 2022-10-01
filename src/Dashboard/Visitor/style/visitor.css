@@ -25,6 +25,29 @@
     font-family: 'Convergence', sans-serif;
     font-size: 23px;
 }
+
+.real-time-visitor-pie-chart{
+    position: relative;
+    background-color: var(--chart-background);
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.real-time-text{
+    width: 100%;
+    height: 25px;
+    background-color: var(--main-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.real-time-text h3{
+    font-size: 20px;
+    color: var(--background-color);
+    float: right;
+    font-weight: 900;
+    margin-right: 10px;
+    font-family: 'Convergence', sans-serif; 
+}
 .Real-Time{
     margin-left: 10px;
     width: 20%;

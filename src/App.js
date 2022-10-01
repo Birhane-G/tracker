@@ -6,9 +6,9 @@ import "./index.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./Dashboard/Dashboard/Dashboard";
 import Pageview from "./Dashboard/Pageview/Pageview";
-import Device from "./Dashboard/pages/Device";
+import Device from "./Dashboard/Device/Device";
 import { Software } from "./Dashboard/Software/Software";
-import Location from "./Dashboard/pages/Location";
+import Location from "./Dashboard/Location/Location";
 import Visitor from "./Dashboard/Visitor/Visitor";
 import Sidebar from "./Dashboard/inc/Sidebar";
 
