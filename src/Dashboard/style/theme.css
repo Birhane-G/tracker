@@ -23,5 +23,7 @@
     --table-head-font: 'Roboto', sans-serif;
 
     --table-body-font: 'Inter Tight', sans-serif;
-    --table-body-font-size: 15px
+    --table-body-font-size: 15px;
+    --table-body-border: 1px solid #cccbe9;
+    --table-body-hover: #cccbe9;
 }
