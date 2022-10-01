@@ -1,6 +1,6 @@
 import React from "react";
-import "../style/pageview.css";
-import LineChart from "../Components/pageView/LineChart";
+import "./style/pageview.css";
+import LineChart from "./Components/LineChart";
 
 function Pageview() {
   return (
@@ -16,11 +16,12 @@ function Pageview() {
 function PageView() {
   return (
     <div className="pageview-include-content">
-      <div className="pageview-title">
+      <div className="table-title">
         <h3>PageView</h3>
         </div>
-        <table className="pageview-table">
-          <thead className="table-header">
+        <div className="table-data">
+        <table cellSpacing={0} cellPadding={0} className="table-data-table">
+          <thead>
             <tr>
               <th>Page Url</th>
               <th>Pageview</th>
@@ -28,7 +29,7 @@ function PageView() {
               <th>Bounce Rate</th>
             </tr>
           </thead>
-          <tbody className="table-body">
+          <tbody>
             <tr>
               <td>/index</td>
               <td>400</td>
@@ -235,7 +236,7 @@ function PageView() {
             </tr>
           </tbody>
         </table>
-     
+        </div>
     </div>
   );
 }
