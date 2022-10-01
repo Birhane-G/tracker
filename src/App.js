@@ -7,9 +7,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./Dashboard/pages/Dashboard";
 import Pageview from "./Dashboard/pages/Pageview";
 import Device from "./Dashboard/pages/Device";
-import { Software } from "./pages/Software";
+import { Software } from "./Dashboard/Software/Software";
 import Location from "./Dashboard/pages/Location";
-import Visitor from "./Dashboard/pages/Visitor";
+import Visitor from "./Dashboard/Visitor/Visitor";
 import Sidebar from "./Dashboard/inc/Sidebar";
 
 function App() {
