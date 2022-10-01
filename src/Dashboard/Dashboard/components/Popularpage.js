@@ -3,11 +3,11 @@ import React from 'react'
 export const Popularpage = () => {
   return (
     <div className="popularpage-content">
-    <div className="popular-page-title">
-      <h3>popular page(7 days)</h3>
-    </div>
-    <div className="popular-page-data">
-      <table cellPadding="0" cellspacing="0" border="0" className="popular-page-table">
+      <div className="table-title">
+        <h3>Popular page(7 days)</h3>
+      </div>
+      <div className="table-data">
+        <table cellSpacing={0} cellPadding={0} className="table-data-table">
         <thead>
           <tr>
             <th>Url</th>
@@ -60,8 +60,8 @@ export const Popularpage = () => {
             <td>200</td>
           </tr>
         </tbody>
-      </table>
+        </table>
+      </div>
     </div>
-  </div>
   )
 }

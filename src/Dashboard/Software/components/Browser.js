@@ -7,11 +7,11 @@ import IE from "../icons/browsers/IE.png";
 const Browser = () => {
   return (
     <div className="Browser-container">
-      <div className="Browser-title">
+      <div className="table-title">
         <h3>Browser</h3>
       </div>
-      <div className="Browser-data">
-        <table cellSpacing={0} cellPadding={0} className="Browser-data-table">
+      <div className="table-data">
+        <table cellSpacing={0} cellPadding={0} className="table-data-table">
           <thead>
             <tr>
               <th>Browser</th>

@@ -1,9 +1,10 @@
 import React from "react";
-import "../style/dashboard.css";
-import { Popularpage } from "../Components/Dashboard/Popularpage";
-import { Visits } from "../Components/Dashboard/Visits";
-import { Actions } from "../Components/Dashboard/Actions";
-import { VisirorsT } from "../Components/Dashboard/VisirorsT";
+import "./style/dashboard.css";
+import { Popularpage } from "./components/Popularpage";
+import { VisirorsT } from "./components/VisirorsT";
+import { Visits } from "./components/Visits";
+import { Actions } from "./components/Actions";
+
 function Dashboard() {
   return (
     <div className="Dashboard-include-content">

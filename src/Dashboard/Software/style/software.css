@@ -13,7 +13,7 @@
     box-shadow: var(--card-shadow);
     border-radius: var(--card-border-size);
 }
-.Browser-title h3{
+.table-title h3{
     font-size: var(--card-title);
     color: var(--card-title-color);
     font-family: var(--card-title-font);
@@ -25,37 +25,37 @@
     width: 23px;
     height: 23px;
 }
-.Browser-data-table{
+.table-data-table{
     width: 100%;
     border-collapse: separate;
     table-layout: fixed;
 }
-.Browser-data-table th{
+.table-data-table th{
     text-align: left;
     color: var(--table-head-color);
     background-color: var(--table-head-bg);
     font-family: var(--table-head-font);
     padding: 8px 25px;
 }
-.Browser-data-table th:last-child {
+.table-data-table th:last-child {
     text-align: right;
 }
-.Browser-data-table td{
+.table-data-table td{
     font-size: var(--table-body-font-size);
     font-weight: var(--table-body-font);
     border-bottom: var(--table-body-border);
     padding: 6px 20px;
 }
-.Browser-data-table td:first-child {
+.table-data-table td:first-child {
     display: flex;
     align-items: center;
 }
-.Browser-data-table tbody tr:hover{
+.table-data-table tbody tr:hover{
     background-color: var(--table-body-hover);
 }
-.Browser-data-table td:first-child img{
+.table-data-table td:first-child img{
     margin-right: 10px;
 }
-.Browser-data-table td:last-child {
+.table-data-table td:last-child {
     text-align: right;
 }
