@@ -1,0 +1,21 @@
+@import "../../style/theme.css";
+.pageview-include-content{
+    position: relative;
+    width: 60%;
+    background-color: var(--chart-background);
+    border-radius: 10px;
+    margin-right: 20px; /* other div tag will be changed*/
+}
+.other-contents{
+    display: flex;
+}
+.other{
+    width: 40%;
+}
+.otherone{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    background-color: var(--chart-background);
+    border-radius: 15px;
+}
