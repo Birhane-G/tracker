@@ -1,7 +1,6 @@
 import React from 'react'
 import { Doughnut } from "react-chartjs-2";
 import Chart from "chart.js/auto";
-import "../../style/chart.css"
 export const Piechart = () => {
     const labels = [
       "Actions",
