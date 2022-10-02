@@ -2,7 +2,7 @@
 
 .header{
     position: fixed;
-    width: 95%;
+    width: 90%;
     height: 55px;
     background-color: var(--background-color);
     border-radius: 10px;
@@ -10,4 +10,17 @@
 }
 .children{
     padding: 70px 30px 0 30px;
+}
+.header-right{
+    display: flex;
+    justify-content: right;
+    padding: 12px 150px;
+}
+.icons{
+    display: flex;
+    color: white;
+    cursor: pointer;
+}
+.help{
+    margin-right: 25px;
 }
