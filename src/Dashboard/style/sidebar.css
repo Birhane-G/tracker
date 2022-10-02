@@ -8,7 +8,7 @@
     display: flex;
 }
 main{
-    padding: 20px 20px 20px 30px;
+    padding: 2px 0 0 10px;
     width: 100%;
 }
 .menu-con{
@@ -38,6 +38,7 @@ main{
     height: 645px;
     background: var(--background-color);
     border-radius: 15px;
+    z-index: 2;
 }
 .side-top-logo-container{
     background: var(--main-color);

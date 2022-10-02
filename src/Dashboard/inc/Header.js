@@ -1,11 +1,12 @@
 import React from "react";
-import "../style/header.css";
-function Header() {
+import "../style/header.css"
+export const Header = ({ children }) => {
   return (
-      <div className="Every-page-header">
-        <div className="Every-page-header-content"></div>
+    <section>
+      <div className="Header-container">
+        <div className="header"></div>
       </div>
+      <div className="children">{children}</div>
+    </section>
   );
-}
-
-export default Header;
+};
