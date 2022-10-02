@@ -20,7 +20,7 @@ export const Piechart = () => {
     };
   return (
     <div className='real-time-visitor-pie-chart'>
-          <div className='real-time-text'>
+          <div className='table-title'>
             <h3>Last 30m</h3>
           </div>
         <Doughnut data={data} />

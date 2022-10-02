@@ -3,7 +3,7 @@
     display: flex;
 }
 .popularpage-content{
-    width: 35%;
+    width: 50%;
     background-color: var(--chart-background);
     border-radius: var( --card-border-size);
     box-shadow: var(--card-shadow);
