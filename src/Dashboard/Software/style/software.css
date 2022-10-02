@@ -8,7 +8,6 @@
 }
 .one{
     width: 100%;
-    height: 390px;
     background-color: var(--card-bg);
     box-shadow: var(--card-shadow);
     border-radius: var(--card-border-size);
@@ -58,4 +57,7 @@
 }
 .table-data-table td:last-child {
     text-align: right;
+}
+.piechart{
+    width: 85%;
 }
