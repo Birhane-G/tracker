@@ -8,7 +8,7 @@
     display: flex;
 }
 main{
-    padding: 2px 0 0 10px;
+    /* padding: 2px 0 0 10px; */
     width: 100%;
 }
 .menu-con{
@@ -33,11 +33,11 @@ main{
 }
 .side-bar-content{
     position: relative;
-    top: 5px;
-    left: 5px;
-    height: 645px;
+    /* top: 5px;
+    left: 5px; */
+    height: 655px;
     background: var(--background-color);
-    border-radius: 15px;
+    /* border-radius: 15px; */
     z-index: 2;
 }
 .side-top-logo-container{
