@@ -12,6 +12,7 @@ import Location from "./Dashboard/Location/Location";
 import Visitor from "./Dashboard/Visitor/Visitor";
 import Sidebar from "./Dashboard/inc/Sidebar";
 import { Header } from "./Dashboard/inc/Header";
+import { Setting } from "./Dashboard/setting/Setting";
 function App() {
   return (
     <>
@@ -28,6 +29,7 @@ function App() {
             <Route exact path="/device" element={<Device />} />
             <Route exact path="/software" element={<Software />} />
             <Route exact path="/location" element={<Location />} />
+            <Route exact path="/setting" element={<Setting />} />
           </Routes>
           </Header>
         </Sidebar>
