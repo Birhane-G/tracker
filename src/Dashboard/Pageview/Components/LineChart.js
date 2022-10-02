@@ -38,7 +38,7 @@ const LineChart = () => {
   };
   return (
     <div className="page-performance-line-chart">
-      <div className="page-performance-title">
+      <div className="table-title">
         <h3>page performance</h3>
       </div>
       <div className="page-performance-data">
