@@ -3,6 +3,7 @@ import "./style/software.css";
 import Browser from "./components/Browser";
 import { OperatingS } from "./components/OperatingS";
 import { Engine } from "./components/Engine";
+import { Plugin } from "./components/Plugin";
 
 export const Software = () => {
   return (
@@ -16,7 +17,9 @@ export const Software = () => {
       <div className="one">
         <Engine />
       </div>
-      <div className="one"></div>
+      <div className="one">
+        <Plugin />
+      </div>
     </div>
   );
 };
