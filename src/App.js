@@ -11,12 +11,13 @@ import { Software } from "./Dashboard/Software/Software";
 import Location from "./Dashboard/Location/Location";
 import Visitor from "./Dashboard/Visitor/Visitor";
 import Sidebar from "./Dashboard/inc/Sidebar";
-
+import { Header } from "./Dashboard/inc/Header";
 function App() {
   return (
     <>
       <BrowserRouter>
         <Sidebar>
+          <Header>
           <Routes>
             {/* <Route exact path="/" element={<Home />} />
             <Route exact path="/login" element={<Login />} />
@@ -28,6 +29,7 @@ function App() {
             <Route exact path="/software" element={<Software />} />
             <Route exact path="/location" element={<Location />} />
           </Routes>
+          </Header>
         </Sidebar>
       </BrowserRouter>
     </>
