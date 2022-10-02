@@ -1,8 +1,8 @@
 import React from "react";
 import "./style/software.css";
 import Browser from "./components/Browser";
-import {OperatingS} from "./components/OperatingS";
-
+import { OperatingS } from "./components/OperatingS";
+import { Engine } from "./components/Engine";
 
 export const Software = () => {
   return (
@@ -13,7 +13,9 @@ export const Software = () => {
       <div className="one">
         <OperatingS />
       </div>
-      <div className="one"></div>
+      <div className="one">
+        <Engine />
+      </div>
       <div className="one"></div>
     </div>
   );
