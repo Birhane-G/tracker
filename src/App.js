@@ -8,7 +8,7 @@ import Dashboard from "./Dashboard/Dashboard/Dashboard";
 import Pageview from "./Dashboard/Pageview/Pageview";
 import Device from "./Dashboard/Device/Device";
 import { Software } from "./Dashboard/Software/Software";
-import Location from "./Dashboard/Location/Location";
+import {Location} from "./Dashboard/Location/Location";
 import Visitor from "./Dashboard/Visitor/Visitor";
 import Sidebar from "./Dashboard/inc/Sidebar";
 import { Header } from "./Dashboard/inc/Header";
