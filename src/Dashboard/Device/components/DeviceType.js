@@ -23,43 +23,43 @@ const DeviceType = () => {
           <tbody>
             <tr>
               <td>
-                <img src={Smartphone} className="icons"/>  Smartphone
+                <img src={Smartphone} alt="" className="icons"/>  Smartphone
               </td>
               <td>1200</td>
             </tr>
             <tr>
               <td>
-                <img src={Desktop} className="icons"/>  Desktop
+                <img src={Desktop} alt="" className="icons"/>  Desktop
               </td>
               <td>1200</td>
             </tr>
             <tr>
               <td>
-                <img src={Tablet} className="icons"/>  Tablet
+                <img src={Tablet} alt="" className="icons"/>  Tablet
               </td>
               <td>1200</td>
             </tr>
             <tr>
               <td>
-                <img src={Wearable} className="icons"/>  Wearable
+                <img src={Wearable} alt="" className="icons"/>  Wearable
               </td>
               <td>1200</td>
             </tr>
               <tr>
               <td>
-                <img src={Peripheral} className="icons"/>  Peripheral
+                <img src={Peripheral} alt="" className="icons"/>  Peripheral
               </td>
               <td>1200</td>
             </tr>
               <tr>
               <td>
-                <img src={Car_browser} className="icons"/>  Car Browser
+                <img src={Car_browser} alt="" className="icons"/>  Car Browser
               </td>
               <td>1200</td>
             </tr>
               <tr>
               <td>
-                <img src={Unknown} className="icons"/>  Unknown
+                <img src={Unknown} alt="" className="icons"/>  Unknown
               </td>
               <td>1200</td>
             </tr>

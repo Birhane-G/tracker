@@ -4,19 +4,7 @@
   box-sizing: border-box;
 }
 :root{
-<<<<<<< HEAD
   --body-color: #cccbe9;
-=======
-<<<<<<< HEAD
-  --main-color:   #8db9fa;
-  --nav-text: #ffcb22;
-  --text-color: black;
-  --background-color: #00032c;
-  --body-color: #cee4f8;
-=======
-  --body-color: #cccbe9;
->>>>>>> 33490e1cb161b1e97c9079995e644d051e667c43
->>>>>>> 9ee782e3abde1b9693c1bd7ffbd0567c26273a09
 }
 body{
   background-color: var(--body-color);
