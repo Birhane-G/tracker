@@ -48,7 +48,7 @@ export const DeviceModel = () => {
             <td>
               <img src={Samsung} className="icons"/> Samsung S20
             </td>
-            <td>1000</td>
+            <td>10git 00</td>
           </tr>
            <tr>
             <td>
