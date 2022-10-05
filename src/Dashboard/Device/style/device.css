@@ -1,0 +1,49 @@
+@import "../../style/theme.css";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Cards{
+   display: flex;
+}
+.cards-contents{
+    width: 100%;
+    position: relative;
+    left: 0%;
+    top: 5px;
+    background-color: var(--main-color);
+}
+.device-cards{
+    left:25px;
+    top: 2px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 1fr));
+    gap: 40px;
+    position: absolute;
+}
+.device-cards .device{
+    background-color: var(--main-color);
+}
+.device-cards .type {
+    position: absolute;
+    width: 1000px;
+    height: 330px;
+    border-radius: 15px;
+}
+.device-cards .brand, 
+.device-cards .model,
+.device-cards .screenResolution{
+    top: 350px;
+    position: relative;
+    padding-left: 22px;
+    width: 260px;
+    height: 630px;
+    border-radius: 15px;
+}
+.device-cards h1{
+    color:var(--cards-text) ;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 5px;
+}
