@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "theme.css";
 *{
     margin: 0;
@@ -76,3 +77,5 @@ main{
     color: var(--background-color);
     opacity: 0.6;
 }
+=======
+>>>>>>> 9ee782e3abde1b9693c1bd7ffbd0567c26273a09

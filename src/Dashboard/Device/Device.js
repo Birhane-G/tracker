@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+<<<<<<<< HEAD:src/Dashboard/Device/Device.js
 import React from "react";
 // import {PieChart,
 //   Pie,
@@ -142,3 +144,37 @@ function piechart(){
  }
 
  export default Device;
+========
+>>>>>>>> 9ee782e3abde1b9693c1bd7ffbd0567c26273a09:src/Dashboard/pages/Device.js
+=======
+import React from "react";
+import "./style/software.css";
+import DeviceType from "./components/DeviceType";
+import { DeviceBrand } from "./components/DeviceBrand";
+import { DeviceModel } from "./components/DeviceModel";
+import { Plugin } from "./components/Plugin";
+
+function Device() {
+ 
+  return (
+    <div className="software-container">
+      <div className="one">
+        <DeviceType />
+      </div>
+      <div className="one">
+        <DeviceModel />
+        
+      </div>
+      <div className="one">
+        <DeviceBrand/>
+
+      </div>
+      <div className="one">
+        <Plugin />
+      </div>
+    </div>
+  );
+
+};
+export default Device;
+>>>>>>> 9ee782e3abde1b9693c1bd7ffbd0567c26273a09
