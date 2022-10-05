@@ -1,5 +1,4 @@
 import React from "react";
-import { Sidebar } from "./Dashboard";
 import {
   LineChart,
   CartesianGrid,
@@ -93,20 +92,13 @@ const data = [
 ];
 function Pageview() {
   return (
-    <>
-      <div className="Dashboard-include-content">
-        <div className="dashboard-sidebar">
-          <Sidebar />
-        </div>
-        <div className="dashboard-content">
+      <div className="pageview-include-content">
           <PageViewPerformance />
           <div className="other-contents">
             <PageView />
             <Other />
-          </div>
         </div>
       </div>
-    </>
   );
 }
 export function PageViewPerformance() {
@@ -126,7 +118,7 @@ export function PageViewPerformance() {
                 <CartesianGrid strokeDasharray="7 1" />
                 <XAxis dataKey="date" />
                 <YAxis dataKey="time" />
-                <Tooltip style={{ x: 0, y: 0, width: 100, height: 100 }} />
+                <Tooltip style={{ x: 0, y: 0, width: 100, height: 50 }} />
                 <Legend />
                 <Line type="" dataKey="Avg page load Time" stroke="#8884d8" />
                 <Line type="" dataKey="Avg Network Time" stroke="#82ca9d" />
@@ -357,90 +349,6 @@ function PageView() {
             <td>400</td>
             <td>100</td>
             <td>40%</td>
-          </tr>
-          <tr>
-            <td>/index</td>
-            <td>400</td>
-            <td>100</td>
-            <td>70%</td>
-          </tr>
-          <tr>
-            <td>/index</td>
-            <td>400</td>
-            <td>100</td>
-            <td>80%</td>
-          </tr>
-          <tr>
-            <td>/index</td>
-            <td>400</td>
-            <td>100</td>
-            <td>90%</td>
-          </tr>
-          <tr>
-            <td>/index</td>
-            <td>400</td>
-            <td>100</td>
-            <td>40%</td>
-          </tr>
-          <tr>
-            <td>/index</td>
-            <td>400</td>
-            <td>100</td>
-            <td>70%</td>
-          </tr>
-          <tr>
-            <td>/index</td>
-            <td>400</td>
-            <td>100</td>
-            <td>80%</td>
-          </tr>
-          <tr>
-            <td>/index</td>
-            <td>400</td>
-            <td>100</td>
-            <td>90%</td>
-          </tr>
-          <tr>
-            <td>/index</td>
-            <td>400</td>
-            <td>100</td>
-            <td>40%</td>
-          </tr>
-          <tr>
-            <td>/index</td>
-            <td>400</td>
-            <td>100</td>
-            <td>70%</td>
-          </tr>
-          <tr>
-            <td>/index</td>
-            <td>400</td>
-            <td>100</td>
-            <td>80%</td>
-          </tr>
-          <tr>
-            <td>/index</td>
-            <td>400</td>
-            <td>100</td>
-            <td>90%</td>
-          </tr>
-          <tr>
-            <td>/index</td>
-            <td>400</td>
-            <td>100</td>
-            <td>40%</td>
-          </tr>
-          <tr>
-            <td>/index</td>
-            <td>400</td>
-            <td>100</td>
-            <td>70%</td>
-          </tr>
-          <tr>
-            <td>/index</td>
-            <td>400</td>
-            <td>100</td>
-            <td>80%</td>
           </tr>
         </tbody>
       </table>

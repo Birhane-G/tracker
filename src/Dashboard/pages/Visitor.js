@@ -1,17 +1,9 @@
 import React from 'react'
-import { Sidebar } from './Dashboard'
 function Visitor() {
   return (
-    <>
       <div className="Dashboard-include-content">
-        <div className="dashboard-sidebar">
-          <Sidebar />
-        </div>
-        <div className="dashboard-content">
-          
-        </div>
+        <h1>Visitor page</h1>
       </div>
-    </>
   )
 }
 

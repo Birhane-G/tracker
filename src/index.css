@@ -4,7 +4,15 @@
   box-sizing: border-box;
 }
 :root{
+<<<<<<< HEAD
+  --main-color:   #8db9fa;
+  --nav-text: #ffcb22;
+  --text-color: black;
+  --background-color: #00032c;
+  --body-color: #cee4f8;
+=======
   --body-color: #cccbe9;
+>>>>>>> 33490e1cb161b1e97c9079995e644d051e667c43
 }
 body{
   background-color: var(--body-color);

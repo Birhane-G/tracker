@@ -1,19 +1,15 @@
 import React from "react";
 import "../style/location_dash.css";
-import { Sidebar } from "./Dashboard";
 function Location() {
   return (
     <section>
-      <>
         <div className="Dashboard-include-content">
           <div className="dashboard-sidebar">
-            <Sidebar />
           </div>
           <div className="dashboard-content">
             <Content />
           </div>
         </div>
-      </>
     </section>
   );
 }
