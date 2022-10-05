@@ -6,7 +6,6 @@ import { DeviceModel } from "./components/DeviceModel";
 import { Plugin } from "./components/Plugin";
 
 function Device() {
- 
   return (
     <div className="software-container">
       <div className="one">
@@ -16,13 +15,13 @@ function Device() {
         <DeviceModel />
       </div>
       <div className="one">
-        <DeviceBrand/>
+        <DeviceBrand />
       </div>
       <div className="one">
         <Plugin />
       </div>
     </div>
   );
-};
+}
 
 export default Device;
