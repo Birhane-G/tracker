@@ -1,0 +1,9 @@
+@import "../../style/theme.css";
+
+.setting{
+    width: 100%;
+    height: 600px;
+    background-color: var(--card-bg);
+    border-radius: var(--card-border-size);
+    box-shadow: var(--card-shadow);
+}

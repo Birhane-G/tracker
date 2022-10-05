@@ -8,7 +8,11 @@ import {
 } from "react-icons/ai";
 import { BsFillPersonCheckFill } from "react-icons/bs";
 import { BiClipboard, BiDevices, BiCurrentLocation } from "react-icons/bi";
+<<<<<<< HEAD
 import { CgWebsite } from "react-icons/cg";
+=======
+import { CgWebsite, CgComponents } from "react-icons/cg";
+>>>>>>> 33490e1cb161b1e97c9079995e644d051e667c43
 import "../style/sidebar.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -35,6 +39,14 @@ const Sidebar = ({ children }) => {
       icon: <BiDevices style={{ fontSize: "26px" }} />,
     },
     {
+<<<<<<< HEAD
+=======
+      path: "/Software",
+      name: "Software",
+      icon: <CgComponents style={{ fontSize: "26px" }} />,
+    },
+    {
+>>>>>>> 33490e1cb161b1e97c9079995e644d051e667c43
       path: "/Location",
       name: "Location",
       icon: <BiCurrentLocation style={{ fontSize: "26px" }} />,

@@ -1,0 +1,14 @@
+@import "../../style/theme.css";
+.location-container{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+    grid-template-rows: 400px auto;
+    gap: 25px;
+}
+.one{
+    width: 100%;
+    background-color: var(--card-bg);
+    box-shadow: var(--card-shadow);
+    border-radius: var(--card-border-size);
+}
+

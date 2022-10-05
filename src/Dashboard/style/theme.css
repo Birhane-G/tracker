@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Convergence&family=Fira+Sans:ital,wght@0,700;1,900&family=Inter+Tight:wght@200&family=Roboto:wght@500&family=Signika:wght@700&display=swap');
+:root{
+    --main-color:   #8db9fa;
+    --chart-background:  #e3e3fc;
+    --table-border-color:   #c3d7f5;
+    --table-title: rgb(97, 93, 93);
+    --thead-background:  #d6d6da;
+    --nav-text: #ffcb22;
+    --text-color: black;
+    --background-color: #00032c;
+    --service-color:rgb(235, 102, 41);
+    /*  card style */
+    --card-bg:#e3e3fc;
+    --card-title: 18px;
+    --card-title-color: #961823;
+    --card-title-font: 'Roboto', sans-serif;
+    --card-border-size : 5px;
+    --card-shadow: rgba(0,0,0,0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 5px 0px;
+    --card-border-bottom: #00032c;
+    /* table style */
+    --table-head-bg: #515874;
+    --table-head-color: white;
+    --table-head-font: 'Roboto', sans-serif;
+
+    --table-body-font: 'Inter Tight', sans-serif;
+    --table-body-font-size: 15px;
+    --table-body-border: 1px solid #cccbe9;
+    --table-body-hover: #cccbe9;
+}
