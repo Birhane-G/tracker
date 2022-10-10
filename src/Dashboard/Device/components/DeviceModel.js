@@ -22,49 +22,49 @@ export const DeviceModel = () => {
         <tbody>
           <tr>
             <td>
-              <img src={Apple} className="icons"/> Iphone 12
+              <img src={Apple} alt="" className="icons"/> Iphone 12
             </td>
             <td>1200</td>
           </tr>
           <tr>
             <td>
-              <img src={Samsung} className="icons"/> Samsung Note 10
+              <img src={Samsung} alt="" className="icons"/> Samsung Note 10
             </td>
             <td>1200</td>
           </tr>
           <tr>
             <td>
-              <img src={Dell} className="icons"/> Dell Optiplex 790
+              <img src={Dell} alt="" className="icons"/> Dell Optiplex 790
             </td>
             <td>1200</td>
           </tr>
           <tr>
             <td>
-              <img src={Hp} className="icons"/> HP Probook
+              <img src={Hp} alt="" className="icons"/> HP Probook
             </td>
             <td>1200</td>
           </tr>
            <tr>
             <td>
-              <img src={Samsung} className="icons"/> Samsung S20
+              <img src={Samsung} alt="" className="icons"/> Samsung S20
             </td>
             <td>10git 00</td>
           </tr>
            <tr>
             <td>
-              <img src={Apple} className="icons"/> Iphone 7+
+              <img src={Apple} alt="" className="icons"/> Iphone 7+
             </td>
             <td>100</td>
           </tr>
            <tr>
             <td>
-              <img src={Hp} className="icons"/> HP Elitebook
+              <img src={Hp} alt="" className="icons"/> HP Elitebook
             </td>
             <td>70</td>
           </tr>
            <tr>
             <td>
-              <img src={Nokia} className="icons"/> Nokia A1
+              <img src={Nokia} alt="" className="icons"/> Nokia A1
             </td>
             <td>60</td>
           </tr>

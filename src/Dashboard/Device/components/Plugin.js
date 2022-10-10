@@ -20,25 +20,25 @@ export const Plugin = () => {
           <tbody>
             <tr>
               <td>
-                <img src={PDF} className="icons"/> pdf
+                <img src={PDF} alt="" className="icons"/> pdf
               </td>
               <td>1200</td>
             </tr>
             <tr>
               <td>
-                <img src={flash} className="icons"/> flash
+                <img src={flash} alt="" className="icons"/> flash
               </td>
               <td>1200</td>
             </tr>
             <tr>
               <td>
-                <img src={Cookie} className="icons"/> cookie
+                <img src={Cookie} alt="" className="icons"/> cookie
               </td>
               <td>1200</td>
             </tr>
             <tr>
               <td>
-                <img src={java} className="icons"/> java
+                <img src={java} alt="" className="icons"/> java
               </td>
               <td>1200</td>
             </tr>
