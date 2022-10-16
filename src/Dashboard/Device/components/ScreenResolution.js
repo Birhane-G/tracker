@@ -1,9 +1,5 @@
 import React from 'react'
-import PDF from "../icons/devices/camera.png"
-import Cookie from "../icons/devices/console.png"
-import flash from "../icons/devices/phablet.png"
-import java from "../icons/devices/desktop.png"
-export const Plugin = () => {
+export const ScreenResolution = () => {
   return (
     <div className="Browser-container">
       <div className="table-title">
@@ -13,32 +9,32 @@ export const Plugin = () => {
         <table cellSpacing={0} cellPadding={0} className="table-data-table">
           <thead>
             <tr>
-              <th>Plugin</th>
+              <th>Screen Resolution</th>
               <th>Visits</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>
-                <img src={PDF} alt="" className="icons"/> pdf
+                1280 x 800
               </td>
               <td>1200</td>
             </tr>
             <tr>
               <td>
-                <img src={flash} alt="" className="icons"/> flash
+                 920 x 800
               </td>
               <td>1200</td>
             </tr>
             <tr>
               <td>
-                <img src={Cookie} alt="" className="icons"/> cookie
+                600 x 420
               </td>
               <td>1200</td>
             </tr>
             <tr>
               <td>
-                <img src={java} alt="" className="icons"/> java
+              1900 x 1020
               </td>
               <td>1200</td>
             </tr>
