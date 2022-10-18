@@ -1,10 +1,35 @@
-import React from 'react'
-import Linux from "../icons/os/LIN.png"
-import mac from "../icons/os/MAC.png"
-import window from "../icons/os/WIN.png"
-import ubuntu from "../icons/os/UBT.png"
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 export const OperatingS = () => {
+  const [Opersys, setOpersys] = useState([]);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    axios.get("http://192.168.1.11:8000/api/operatingsystem").then((result) => {
+      if (result.data.status === 200) {
+        // console.log(result.data.value[0]['label'])
+        setLoading(false);
+        setOpersys(result.data.value);
+      }
+    });
+  }, []);
+
+  var Datas = "";
+  if (loading) {
+    Datas = (
+          <h3>LOADING....</h3> 
+    );
+  } else {
+    // console.log(Continent);
+    Datas = Opersys.map((item) => {
+      return (
+        <tr key={item}>
+          <td><img src={item.logo} alt="Browser"/>{item.label}</td>
+          <td>{item.nb_visits}</td>
+        </tr>
+      );
+    })
+  }
   return (
     <div className="Browser-container">
     <div className="table-title">
@@ -19,30 +44,7 @@ export const OperatingS = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>
-              <img src={Linux} className="icons"/> Linux
-            </td>
-            <td>1200</td>
-          </tr>
-          <tr>
-            <td>
-              <img src={mac} className="icons"/> mac
-            </td>
-            <td>1200</td>
-          </tr>
-          <tr>
-            <td>
-              <img src={window} className="icons"/> Window
-            </td>
-            <td>1200</td>
-          </tr>
-          <tr>
-            <td>
-              <img src={ubuntu} className="icons"/> Ubuntu
-            </td>
-            <td>1200</td>
-          </tr>
+          {Datas}
         </tbody>
       </table>
     </div>

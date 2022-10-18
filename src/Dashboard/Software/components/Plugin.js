@@ -1,13 +1,39 @@
-import React from 'react'
-import PDF from "../icons/plugins/pdf.png"
-import Cookie from "../icons/plugins/cookie.png"
-import flash from "../icons/plugins/flash.png"
-import java from "../icons/plugins/java.png"
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+
 export const Plugin = () => {
+  const [Plugins, setPlugins] = useState([]);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    axios.get("http://192.168.1.11:8000/api/plugin").then((result) => {
+      if (result.data.status === 200) {
+        // console.log(result.data.value[0]['label'])
+        setLoading(false);
+        setPlugins(result.data.value);
+      }
+    });
+  }, []);
+
+  var Datas = "";
+  if (loading) {
+    Datas = (
+          <h3>LOADING....</h3> 
+    );
+  } else {
+    // console.log(Continent);
+    Datas = Plugins.map((item) => {
+      return (
+        <tr key={item}>
+          <td><img src={item.logo} alt="Browser"/>{item.label}</td>
+          <td>{item.nb_visits}</td>
+        </tr>
+      );
+    })
+  }
   return (
     <div className="Browser-container">
       <div className="table-title">
-        <h3>Browser</h3>
+        <h3>Plugin</h3>
       </div>
       <div className="table-data">
         <table cellSpacing={0} cellPadding={0} className="table-data-table">
@@ -18,30 +44,7 @@ export const Plugin = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>
-                <img src={PDF} className="icons"/> pdf
-              </td>
-              <td>1200</td>
-            </tr>
-            <tr>
-              <td>
-                <img src={flash} className="icons"/> flash
-              </td>
-              <td>1200</td>
-            </tr>
-            <tr>
-              <td>
-                <img src={Cookie} className="icons"/> cookie
-              </td>
-              <td>1200</td>
-            </tr>
-            <tr>
-              <td>
-                <img src={java} className="icons"/> java
-              </td>
-              <td>1200</td>
-            </tr>
+           {Datas}
           </tbody>
         </table>
       </div>
