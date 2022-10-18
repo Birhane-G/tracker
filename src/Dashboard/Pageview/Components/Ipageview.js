@@ -1,6 +1,18 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 export const Ipageview = () => {
+  const [PageView, setPageView] = useState([]);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    axios.get("http://192.168.1.11:8000/api/plugin").then((result) => {
+      if (result.data.status === 200) {
+        // console.log(result.data.value[0]['label'])
+        setLoading(false);
+        setPageView(result.data.value);
+      }
+    });
+  }, []);
   return (
     <div className="pageview-include-content">
       <div className="table-title">

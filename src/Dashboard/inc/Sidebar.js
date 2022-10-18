@@ -44,16 +44,6 @@ const Sidebar = ({ children }) => {
       name: "Location",
       icon: <BiCurrentLocation style={{ fontSize: "26px" }} />,
     },
-    {
-      path: "/Website",
-      name: "Website",
-      icon: <CgWebsite style={{ fontSize: "26px" }} />,
-    },
-    {
-      path: "/Setting",
-      name: "Setting",
-      icon: <AiTwotoneSetting style={{ fontSize: "26px" }} />,
-    },
   ];
   const [Press, setPress] = useState(true);
   const Click = () => setPress(!Press);

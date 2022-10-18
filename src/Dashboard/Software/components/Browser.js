@@ -1,10 +1,35 @@
-import React from "react";
-import Firefox from "../icons/browsers/FF.png";
-import chrome from "../icons/browsers/CF.png";
-import opera from "../icons/browsers/OH.png";
-import IE from "../icons/browsers/IE.png";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 const Browser = () => {
+  const [Browser, setBrowser] = useState([]);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    axios.get("http://192.168.1.11:8000/api/Browser").then((result) => {
+      if (result.data.status === 200) {
+        // console.log(result.data.value[0]['label'])
+        setLoading(false);
+        setBrowser(result.data.value);
+      }
+    });
+  }, []);
+
+  var Datas = "";
+  if (loading) {
+    Datas = (
+          <h3>LOADING....</h3> 
+    );
+  } else {
+    // console.log(Continent);
+    Datas = Browser.map((item) => {
+      return (
+        <tr key={item}>
+          <td><img src={item.logo} alt="Browser"/>{item.label}</td>
+          <td>{item.nb_visits}</td>
+        </tr>
+      );
+    })
+  }
   return (
     <div className="Browser-container">
       <div className="table-title">
@@ -19,30 +44,7 @@ const Browser = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>
-                <img src={Firefox} className="icons"/> Firefox
-              </td>
-              <td>1200</td>
-            </tr>
-            <tr>
-              <td>
-                <img src={chrome} className="icons"/> chrome
-              </td>
-              <td>1200</td>
-            </tr>
-            <tr>
-              <td>
-                <img src={opera} className="icons"/> opera
-              </td>
-              <td>1200</td>
-            </tr>
-            <tr>
-              <td>
-                <img src={IE} className="icons"/> Internet Explore
-              </td>
-              <td>1200</td>
-            </tr>
+            {Datas}
           </tbody>
         </table>
       </div>
