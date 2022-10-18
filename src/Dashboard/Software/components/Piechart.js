@@ -3,7 +3,6 @@ import axios from "axios";
 import { Pie } from "react-chartjs-2";
 
 export const Piechart = () => {
-
   const [Engines, setEngines] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -15,43 +14,42 @@ export const Piechart = () => {
       }
     });
   }, []);
-  var Labels = [Engines.map((item) => {
-      return (
-        item.label
-      );
-    })]
-    var Data = [Engines.map((item) => {
-      return (
-        item.nb_visits
-      )
-    })]
-    const data = {
-      labels: Labels,
-      datasets: [
-        {
-          label: "# of Votes",
-          data: Data , 
-          backgroundColor: [
-            "#8db9fa",
-            "#d43617",
-            "#c717d4",
-            "#d49c17",
-            "#17d463",
-            "#c9e919",
-          ],
-          borderColor: [
-            "white",
-          ],
-          borderWidth: 1,
-        },
-      ],
+  
+  var Labels = [
+    Engines.map((item) => {
+      return item.label;
+    }),
+  ];
+  var Data = [
+    Engines.map((item) => {
+      return item.nb_visits;
+    }),
+  ];
+  const data = {
+    labels: Labels,
+    datasets: [
+      {
+        label: "# of Votes",
+        data: Data,
+        backgroundColor: [
+          "#8db9fa",
+          "#d43617",
+          "#c717d4",
+          "#d49c17",
+          "#17d463",
+          "#c9e919",
+        ],
+        borderColor: ["white"],
+        borderWidth: 1,
+      },
+    ],
   };
-const options = {
-  responsive: true,
-}
+  const options = {
+    responsive: true,
+  };
   return (
     <div className="piechart">
-        <Pie options={options} data={data} className="pie"/>
+      <Pie options={options} data={data} className="pie" />
     </div>
   );
 };
