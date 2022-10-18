@@ -1,9 +1,9 @@
 import React from "react";
-import "./style/software.css";
+import "./style/devices.css";
 import DeviceType from "./components/DeviceType";
 import { DeviceBrand } from "./components/DeviceBrand";
 import { DeviceModel } from "./components/DeviceModel";
-import { Plugin } from "./components/Plugin";
+import { ScreenResolution } from "./components/ScreenResolution";
 
 function Device() {
   return (
@@ -18,7 +18,7 @@ function Device() {
         <DeviceBrand />
       </div>
       <div className="one">
-        <Plugin />
+        <ScreenResolution />
       </div>
     </div>
   );
