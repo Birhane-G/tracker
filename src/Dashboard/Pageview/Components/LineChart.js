@@ -1,20 +1,20 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+// import React, { useState, useEffect } from "react";
+// import axios from "axios";
 import { Line } from "react-chartjs-2";
 import Chart from "chart.js/auto";
 
 const LineChart = () => {
-  const [Plugins, setPlugins] = useState([]);
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    axios.get("http://192.168.1.11:8000/api/").then((result) => {
-      if (result.data.status === 200) {
-        // console.log(result.data.value[0]['label'])
-        setLoading(false);
-        setPlugins(result.data.value);
-      }
-    });
-  }, []);
+  // const [Plugins, setPlugins] = useState([]);
+  // const [loading, setLoading] = useState(true);
+  // useEffect(() => {
+  //   axios.get("http://192.168.1.11:8000/api/PageView").then((result) => {
+  //     if (result.data.status === 200) {
+  //       // console.log(result.data.value[0]['label'])
+  //       setLoading(false);
+  //       setPlugins(result.data.value);
+  //     }
+  //   });
+  // }, []);
   const labels = [
     "January",
     "February",
