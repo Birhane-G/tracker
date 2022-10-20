@@ -49,3 +49,15 @@
     border: 1px solid var(--main-color);
     border-radius: 10px;
 }
+.visitor-log-Content{
+    margin-left: 15px;
+}
+.Country-Name{
+    display: flex;
+    align-items: center;
+}
+.Country-Name img{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}

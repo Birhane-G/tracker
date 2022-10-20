@@ -5,7 +5,7 @@ export const Ipageview = () => {
   const [PageView, setPageView] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    axios.get("http://192.168.1.11:8000/api/plugin").then((result) => {
+    axios.get("http://192.168.1.11:8000/api/PageView").then((result) => {
       if (result.data.status === 200) {
         // console.log(result.data.value[0]['label'])
         setLoading(false);
