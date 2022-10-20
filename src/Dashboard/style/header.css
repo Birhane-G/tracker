@@ -7,7 +7,6 @@
     width: 100%;
     height: 55px;
     background-color: var(--background-color);
-    /* border-radius: 10px; */
     z-index: 1;
 }
 .children{
@@ -16,13 +15,10 @@
 .header-right{
     display: flex;
     justify-content: right;
-    padding: 12px 100px;
+    padding: 12px 40px;
 }
 .icons{
     display: flex;
     color: white;
     cursor: pointer;
-}
-.help{
-    margin-right: 25px;
 }

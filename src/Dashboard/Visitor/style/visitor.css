@@ -4,14 +4,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-.Visitor-contaner{
-    display: flex;
+.Visitor-content{
     width: 100%;
 }
+.Visitor-contaner{
+    display: flex;
+}
 .Visitor-log{
-    width: 80%;
+    width: 70%;
     background-color: var(--chart-background);
     border-radius: 10px;
+}
+.Real-Time{
+    margin-left: 10px;
+    width: 30%;
 }
 .real-time-visitor-pie-chart{
     position: relative;
@@ -35,10 +41,6 @@
     margin-right: 10px;
     font-family: 'Convergence', sans-serif; 
 }
-.Real-Time{
-    margin-left: 10px;
-    width: 20%;
-}
 .Visitor-Channel-type{
     width: 100%;
     background-color: var(--chart-background);
@@ -60,4 +62,15 @@
     width: 15px;
     height: 15px;
     margin-right: 5px;
+}
+.visitor-log-Content{
+    display: flex;
+    justify-content: space-between;
+}
+.Software{
+    margin-bottom: 10px;
+}
+.Software img{
+    width: 20px;
+    height: 20px;
 }
