@@ -25,8 +25,6 @@ export const DeviceModel = () => {
           <td>1</td>
           <td>{item.label}</td>
           <td>{item.nb_visits}</td>
-       
-
         </tr>
       );
     });
@@ -44,7 +42,6 @@ export const DeviceModel = () => {
             <th>No</th>
             <th>Device Model</th>
             <th>Visits</th>
-
           </tr>
         </thead>
         {/* <tbody>
