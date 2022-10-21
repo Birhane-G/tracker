@@ -1,12 +1,36 @@
-import React from "react";
-import Desktop from "../icons/devices/desktop.png";
-import Smartphone from "../icons/devices/smartphone.png";
-import Tablet from "../icons/devices/tablet.png";
-import Wearable from "../icons/devices/wearable.png";
-import Peripheral from "../icons/devices/peripheral.png"
-import Car_browser from "../icons/devices/car_browser.png"
-import Unknown from "../icons/devices/unknown.png"
+import React, { useEffect,useState } from "react";
+import axios from "axios";
+
 const DeviceType = () => {
+  const [Dtype, setDtype] = useState([]);
+  const [loading, setWait] = useState(true);
+  useEffect(()=>{
+    axios.get("http://192.168.43.155:8000/api/DeviceType").then((result) => {
+    if (result.data.status === 200){
+       setWait(false);
+        setDtype(result.data.value);
+    }
+  });
+    }, []);
+  var Datas = "";
+  if (loading) {
+    Datas = (
+          <h3>Loading...</h3> 
+    );
+  } else {
+
+    Datas = Dtype.map((item) => {
+      return (
+        <tr key={item}>
+          <td>1</td>
+          <td>{item.label}</td>
+          <td>{item.nb_visits}</td>
+       
+
+        </tr>
+      );
+    });
+  }
   return (
     <div className="Browser-container">
       <div className="table-title">
@@ -17,53 +41,11 @@ const DeviceType = () => {
           <thead>
             <tr>
               <th>Devices</th>
-              <th></th>
+              <th>Visits</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>
-                <img src={Smartphone} alt="" className="icons"/>  Smartphone
-              </td>
-              <td>1200</td>
-            </tr>
-            <tr>
-              <td>
-                <img src={Desktop} alt="" className="icons"/>  Desktop
-              </td>
-              <td>1200</td>
-            </tr>
-            <tr>
-              <td>
-                <img src={Tablet} alt="" className="icons"/>  Tablet
-              </td>
-              <td>1200</td>
-            </tr>
-            <tr>
-              <td>
-                <img src={Wearable} alt="" className="icons"/>  Wearable
-              </td>
-              <td>1200</td>
-            </tr>
-              <tr>
-              <td>
-                <img src={Peripheral} alt="" className="icons"/>  Peripheral
-              </td>
-              <td>1200</td>
-            </tr>
-              <tr>
-              <td>
-                <img src={Car_browser} alt="" className="icons"/>  Car Browser
-              </td>
-              <td>1200</td>
-            </tr>
-              <tr>
-              <td>
-                <img src={Unknown} alt="" className="icons"/>  Unknown
-              </td>
-              <td>1200</td>
-            </tr>
-          </tbody>
+       
+          <tbody>{Datas}</tbody>
         </table>
       </div>
     </div>

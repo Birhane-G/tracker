@@ -1,25 +1,53 @@
-import React from 'react'
-import Apple from "../icons/brand/Apple.png"
-import Samsung from "../icons/brand/Samsung.png"
-import Dell from "../icons/brand/Dell.png"
-import Hp from "../icons/brand/HP.png"
-import Nokia from "../icons/brand/Nokia.png"
+import React, { useState, useEffect } from 'react'
+import axios from "axios";
 
 export const DeviceModel = () => {
+  const [Model, setModel] = useState([]);
+  const [loading, setWait] = useState(true);
+  useEffect(() => {
+    axios.get("http://192.168.43.155:8000/api/DeviceModel").then((result) => {
+      if (result.data.status === 200) {
+        setWait(false);
+        setModel(result.data.value);
+      }
+    });
+  }, []);
+  var Datas = "";
+  if (loading) {
+    Datas = (
+          <h3>Loading...</h3> 
+    );
+  } else {
+
+    Datas = Model.map((item) => {
+      return (
+        <tr key={item}>
+          <td>1</td>
+          <td>{item.label}</td>
+          <td>{item.nb_visits}</td>
+       
+
+        </tr>
+      );
+    });
+  }
+  
   return (
     <div className="Browser-container">
     <div className="table-title">
-      <h3>Operating System</h3>
+      <h3>Device Model</h3>
     </div>
     <div className="table-data">
       <table cellSpacing={0} cellPadding={0} className="table-data-table">
         <thead>
           <tr>
+            <th>No</th>
             <th>Device Model</th>
             <th>Visits</th>
+
           </tr>
         </thead>
-        <tbody>
+        {/* <tbody>
           <tr>
             <td>
               <img src={Apple} alt="" className="icons"/> Iphone 12
@@ -68,7 +96,8 @@ export const DeviceModel = () => {
             </td>
             <td>60</td>
           </tr>
-        </tbody>
+        </tbody> */}
+         <tbody>{Datas}</tbody>
       </table>
     </div>
   </div>
