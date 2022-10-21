@@ -5,7 +5,9 @@ export const Visitorlog = () => {
   const [Visitors, setVisitors] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    axios.get("http://192.168.1.11:8000/api/VisitorLog").then((result) => {
+    const HomeIp =  '192.168.1.11:8000';
+    const CreativeIp = '192.168.43.155:8000';
+    axios.get(`http://${CreativeIp}/api/VisitorLog`).then((result) => {
       if (result.data.status === 200) {
         setLoading(false);
         setVisitors(result.data.value);

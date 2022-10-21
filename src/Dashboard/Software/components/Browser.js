@@ -2,10 +2,13 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const Browser = () => {
+
   const [Browser, setBrowser] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    axios.get("http://192.168.1.11:8000/api/Browser").then((result) => {
+    const HomeIp =  '192.168.1.11:8000';
+    const CreativeIp = '192.168.43.155:8000';
+    axios.get(`http://${CreativeIp}/api/Browser`).then((result) => {
       if (result.data.status === 200) {
         // console.log(result.data.value[0]['label'])
         setLoading(false);
@@ -24,7 +27,7 @@ const Browser = () => {
     Datas = Browser.map((item) => {
       return (
         <tr key={item}>
-          <td><img src={item.logo} alt="Browser"/>{item.label}</td>
+          <td><img src={require(`../../${item.logo}`)} alt=""/>{item.label}</td>
           <td>{item.nb_visits}</td>
         </tr>
       );

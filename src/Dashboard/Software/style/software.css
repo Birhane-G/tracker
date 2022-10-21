@@ -40,10 +40,10 @@
     text-align: right;
 }
 .table-data-table td{
-    font-size: var(--table-body-font-size);
+    font-size: 15px;
     font-weight: var(--table-body-font);
     border-bottom: var(--table-body-border);
-    padding: 6px 20px;
+    padding: 6px 10px;
 }
 .table-data-table td:first-child {
     display: flex;
@@ -57,6 +57,14 @@
 }
 .table-data-table td:last-child {
     text-align: right;
+}
+.log-Text{
+    display: flex;
+    align-items: center;
+}
+.log-Text img{
+    width: 20px;
+    height: 10px;
 }
 .piechart{
     width: 85%;

@@ -5,7 +5,9 @@ export const Country = () => {
   const [Country, setCountry] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    axios.get("http://192.168.1.11:8000/api/Country").then((result) => {
+    const HomeIp = "192.168.1.11:8000";
+    const CreativeIp = "192.168.43.155:8000";
+    axios.get(`http://${CreativeIp}/api/Country`).then((result) => {
       if (result.data.status === 200) {
         // console.log(result.data.value[0]['label'])
         setLoading(false);
@@ -15,23 +17,24 @@ export const Country = () => {
   }, []);
 
   var Datas = "";
-  var src = "";
   if (loading) {
-    Datas = (
-          <h3>LOADING....</h3> 
-    );
+    Datas = <h3>LOADING....</h3>;
   } else {
-    // console.log(Continent);
     Datas = Country.map((item) => {
       return (
         <tr key={item}>
           <td>1</td>
-          <td><img src={item.logo} alt="Country"/>{item.label}</td>
+          <td>
+            <div className="log-Text">
+              <img src={require(`../../${item.logo}`)} alt="Country" />
+              {item.label}
+            </div>
+          </td>
           <td>{item.nb_visits}</td>
           <td>{item.nb_actions}</td>
         </tr>
       );
-    })
+    });
   }
   return (
     <div className="container">
@@ -48,9 +51,7 @@ export const Country = () => {
               <th>Actions</th>
             </tr>
           </thead>
-          <tbody>
-          {Datas}
-          </tbody>
+          <tbody>{Datas}</tbody>
         </table>
       </div>
     </div>

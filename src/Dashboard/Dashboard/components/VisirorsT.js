@@ -19,7 +19,9 @@ const VisirorsODD = () => {
   const [OverTime, setOverTime] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    axios.get("http://192.168.1.11:8000/api/VisitorOverDay").then((result) => {
+    const HomeIp =  '192.168.1.11:8000';
+    const CreativeIp = '192.168.43.155';
+    axios.get(`http://${CreativeIp}api/VisitorOverDay`).then((result) => {
       if (result.data.status === 200) {
         setLoading(false);
         setOverTime(result.data.value);
