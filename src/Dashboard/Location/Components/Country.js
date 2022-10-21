@@ -1,6 +1,41 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 export const Country = () => {
+  const [Country, setCountry] = useState([]);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const HomeIp = "192.168.1.11:8000";
+    const CreativeIp = "192.168.43.155:8000";
+    axios.get(`http://${CreativeIp}/api/Country`).then((result) => {
+      if (result.data.status === 200) {
+        // console.log(result.data.value[0]['label'])
+        setLoading(false);
+        setCountry(result.data.value);
+      }
+    });
+  }, []);
+
+  var Datas = "";
+  if (loading) {
+    Datas = <h3>LOADING....</h3>;
+  } else {
+    Datas = Country.map((item) => {
+      return (
+        <tr key={item}>
+          <td>1</td>
+          <td>
+            <div className="log-Text">
+              <img src={require(`../../${item.logo}`)} alt="Country" />
+              {item.label}
+            </div>
+          </td>
+          <td>{item.nb_visits}</td>
+          <td>{item.nb_actions}</td>
+        </tr>
+      );
+    });
+  }
   return (
     <div className="container">
       <div className="table-title">
@@ -12,21 +47,11 @@ export const Country = () => {
             <tr>
               <th>Rank</th>
               <th>Country</th>
-              <th>Number of Users</th>
+              <th>Visitors</th>
+              <th>Actions</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Ethiopia</td>
-              <td>56</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Nigeria</td>
-              <td>42</td>
-            </tr>
-          </tbody>
+          <tbody>{Datas}</tbody>
         </table>
       </div>
     </div>

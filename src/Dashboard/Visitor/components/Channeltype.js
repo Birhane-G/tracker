@@ -1,6 +1,34 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 export const Channeltype = () => {
+  const [ChannelType, setChannelType] = useState([]);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const HomeIp =  '192.168.1.11:8000';
+    const CreativeIp = '192.168.43.155:8000';
+    axios.get(`http://${CreativeIp}/api/ChannelType`).then((result) => {
+      if (result.data.status === 200) {
+        setLoading(false);
+        setChannelType(result.data.value);
+      }
+    });
+  }, []);
+  var Datas = "";
+  if (loading) {
+    Datas = (
+          <h3>LOADING....</h3> 
+    );
+  } else {
+    Datas = ChannelType.map((item) => {
+      return (
+        <tr key={item}>
+          <td>{item.label}</td>
+          <td>{item.nb_uniq_visitors}</td>
+        </tr>
+      );
+    })
+  }
   return (
     <div className="Visitor-Channel-type">
       <div className="table-title">
@@ -15,34 +43,11 @@ export const Channeltype = () => {
             <thead>
               <tr>
                 <th>Channel</th>
-                <th>Visits</th>
+                <th>Uniq_Visits</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Google</td>
-                <td>200</td>
-              </tr>
-              <tr>
-                <td>linkedin</td>
-                <td>300</td>
-              </tr>
-              <tr>
-                <td>facebook</td>
-                <td>200</td>
-              </tr>
-              <tr>
-                <td>instagram</td>
-                <td>200</td>
-              </tr>
-              <tr>
-                <td>reddit</td>
-                <td>200</td>
-              </tr>
-              <tr>
-                <td>twitter</td>
-                <td>200</td>
-              </tr>
+              {Datas}
             </tbody>
           </table>
         </div>

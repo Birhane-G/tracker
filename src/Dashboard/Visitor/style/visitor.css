@@ -4,14 +4,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-.Visitor-contaner{
-    display: flex;
+.Visitor-content{
     width: 100%;
 }
+.Visitor-contaner{
+    display: flex;
+}
 .Visitor-log{
-    width: 80%;
+    width: 70%;
     background-color: var(--chart-background);
     border-radius: 10px;
+}
+.Real-Time{
+    margin-left: 10px;
+    width: 30%;
 }
 .real-time-visitor-pie-chart{
     position: relative;
@@ -35,10 +41,6 @@
     margin-right: 10px;
     font-family: 'Convergence', sans-serif; 
 }
-.Real-Time{
-    margin-left: 10px;
-    width: 20%;
-}
 .Visitor-Channel-type{
     width: 100%;
     background-color: var(--chart-background);
@@ -48,4 +50,37 @@
     overflow: auto;
     border: 1px solid var(--main-color);
     border-radius: 10px;
+}
+.Country-Name{
+    display: flex;
+    align-items: center;
+}
+.Country-Name img{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+.visitor-log-Content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.Hr_line hr{
+    width: 95%;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.Software img{
+    width: 20px;
+    height: 20px;
+}
+.right{
+    text-align: right;
+}
+.center{
+    margin-left: 90px;
 }

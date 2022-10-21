@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import { Line } from "react-chartjs-2";
-import Chart from "chart.js/auto";
+// import Chart from "chart.js/auto";
 
 const LineChart = () => {
+  const [Plugins, setPlugins] = useState([]);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    axios.get("http://192.168.1.11:8000/api/PagePerformance").then((result) => {
+      if (result.data.status === 200) {
+        setLoading(false);
+        setPlugins(result.data.value);
+        // console.log(result);
+      }
+    });
+  }, []);
+
+  
   const labels = [
     "January",
     "February",
@@ -17,7 +31,7 @@ const LineChart = () => {
     labels: labels,
     datasets: [
       {
-        label: "Avg page load Time",
+        label: Plugins.avg_time_network,
         backgroundColor: "#dc105a",
         borderColor: "#dc105a",
         data: [0.15, 0.2, 0.7, 0.4, 1, 0.77, 0.57],

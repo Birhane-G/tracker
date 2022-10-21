@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import { Line } from "react-chartjs-2";
 import Chart from "chart.js/auto";
 export const VisirorsT = () => {
@@ -15,8 +16,20 @@ export const VisirorsT = () => {
 };
 
 const VisirorsODD = () => {
+  const [OverTime, setOverTime] = useState([]);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const HomeIp =  '192.168.1.11:8000';
+    const CreativeIp = '192.168.43.155';
+    axios.get(`http://${CreativeIp}api/VisitorOverDay`).then((result) => {
+      if (result.data.status === 200) {
+        setLoading(false);
+        setOverTime(result.data.value);
+      }
+    });
+  }, []);
   const labels = ["Mon", "tus", "wed", "tur", "fri", "sat", "sun"];
-
+    
   const data = {
     labels: labels,
     datasets: [
@@ -24,7 +37,7 @@ const VisirorsODD = () => {
         label: "visits",
         backgroundColor: "#dc105a",
         borderColor: "#dc105a",
-        data: [0.15, 0.2, 0.7, 0.4, 1, 0.77, 0.57],
+        data: [],
       },
     ],
   };

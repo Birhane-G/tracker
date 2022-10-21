@@ -1,14 +1,38 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import { Pie } from "react-chartjs-2";
 
 export const Piechart = () => {
-  const labels = ["Edge", "Gecko", "Trident", "Webkit", "Blink", "Other"];
+  const [Engines, setEngines] = useState([]);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const HomeIp =  '192.168.1.11:8000';
+    const CreativeIp = '192.168.43.155:8000';
+    axios.get(`http://${CreativeIp}/api/engine`).then((result) => {
+      if (result.data.status === 200) {
+        // console.log(result.data.value[0]['label'])
+        setLoading(false);
+        setEngines(result.data.value);
+      }
+    });
+  }, []);
+  
+  var Labels = [
+    Engines.map((item) => {
+      return item.label;
+    }),
+  ];
+  var Data = [
+    Engines.map((item) => {
+      return item.nb_visits;
+    }),
+  ];
   const data = {
-    labels: labels,
+    labels: Labels,
     datasets: [
       {
         label: "# of Votes",
-        data: [12, 19, 3, 5, 2, 3],
+        data: Data,
         backgroundColor: [
           "#8db9fa",
           "#d43617",
@@ -17,19 +41,17 @@ export const Piechart = () => {
           "#17d463",
           "#c9e919",
         ],
-        borderColor: [
-          "white",
-        ],
+        borderColor: ["white"],
         borderWidth: 1,
       },
     ],
   };
-const options = {
-  responsive: true,
-}
+  const options = {
+    responsive: true,
+  };
   return (
     <div className="piechart">
-      <Pie options={options} data={data} className="pie"/>
+      <Pie options={options} data={data} className="pie" />
     </div>
   );
 };
