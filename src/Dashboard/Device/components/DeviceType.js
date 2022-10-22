@@ -5,7 +5,7 @@ const DeviceType = () => {
   const [Dtype, setDtype] = useState([]);
   const [loading, setWait] = useState(true);
   useEffect(()=>{
-    axios.get("http://192.168.43.155:8000/api/DeviceType").then((result) => {
+    axios.get("http://localhost:8000/api/DeviceType").then((result) => {
     if (result.data.status === 200){
        setWait(false);
         setDtype(result.data.value);
@@ -21,8 +21,10 @@ const DeviceType = () => {
 
     Datas = Dtype.map((item) => {
       return (
+        
         <tr key={item}>
-          <td>1</td>
+           <td>1</td>
+          <td><img src={require(`../../${item.logo}`)} alt=""/>{item.label}</td>
           <td>{item.label}</td>
           <td>{item.nb_visits}</td>
        

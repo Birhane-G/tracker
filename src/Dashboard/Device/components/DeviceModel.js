@@ -5,7 +5,7 @@ export const DeviceModel = () => {
   const [Model, setModel] = useState([]);
   const [loading, setWait] = useState(true);
   useEffect(() => {
-    axios.get("http://192.168.43.155:8000/api/DeviceModel").then((result) => {
+    axios.get("http://localhost:8000/api/DeviceModel").then((result) => {
       if (result.data.status === 200) {
         setWait(false);
         setModel(result.data.value);
