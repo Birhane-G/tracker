@@ -4,7 +4,7 @@ export const ScreenResolution = () => {
    const [Resolution, setResolution] = useState([]);
   const [loading, setWait] = useState(true);
   useEffect(() => {
-    axios.get("http://192.168.43.155:8000/api/ScreenResolution").then((result) => {
+    axios.get("http://localhost:8000/api/ScreenResolution/").then((result) => {
       if (result.data.status === 200) {
         setWait(false);
         setResolution(result.data.value);
@@ -33,7 +33,7 @@ export const ScreenResolution = () => {
   return (
     <div className="Browser-container">
       <div className="table-title">
-        <h3>Browser</h3>
+        <h3>Screen Resolution</h3>
       </div>
       <div className="table-data">
         <table cellSpacing={0} cellPadding={0} className="table-data-table">
