@@ -10,7 +10,6 @@ export const Piechart = () => {
     const CreativeIp = "192.168.43.155:8000";
     axios.get(`http://${HomeIp}/api/engine`).then((result) => {
       if (result.data.status === 200) {
-        // console.log(result.data.value[0]['label'])
         setLoading(false);
         setEngines(result.data.value);
       }

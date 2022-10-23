@@ -17,9 +17,8 @@ export const OperatingS = () => {
 
   var Datas = "";
   if (loading) {
-    Datas = <h3>LOADING....</h3>;
+    Datas = <snap>LOADING....</snap>;
   } else {
-    // console.log(Continent);
     Datas = Opersys.map((item) => {
       return (
         <tr key={item}>

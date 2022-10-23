@@ -18,7 +18,7 @@ export const Country = () => {
 
   var Datas = "";
   if (loading) {
-    Datas = <h3>LOADING....</h3>;
+    Datas = <snap>LOADING....</snap>;
   } else {
     Datas = Country.map((item) => {
       return (
