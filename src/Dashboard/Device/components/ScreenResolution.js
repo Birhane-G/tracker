@@ -35,7 +35,7 @@ export const ScreenResolution = () => {
   return (
     <div className="Browser-container">
       <div className="table-title">
-        <h3>Browser</h3>
+        <h3>Screen Resolution</h3>
       </div>
       <div className="table-data">
         <table cellSpacing={0} cellPadding={0} className="table-data-table">

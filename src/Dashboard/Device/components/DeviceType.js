@@ -23,8 +23,10 @@ const DeviceType = () => {
 
     Datas = Dtype.map((item) => {
       return (
+        
         <tr key={item}>
-          <td>1</td>
+           <td>1</td>
+          <td><img src={require(`../../${item.logo}`)} alt=""/>{item.label}</td>
           <td>{item.label}</td>
           <td>{item.nb_visits}</td>
        

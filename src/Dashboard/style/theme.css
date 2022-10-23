@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Convergence&family=Fira+Sans:ital,wght@0,700;1,900&family=Inter+Tight:wght@200&family=Roboto:wght@500&family=Signika:wght@700&display=swap');
 :root{
     --main-color:   #8db9fa;
+    --main-hover-color:#7c9ddd;
     --chart-background:  #e3e3fc;
     --table-border-color:   #c3d7f5;
     --table-title: rgb(97, 93, 93);
