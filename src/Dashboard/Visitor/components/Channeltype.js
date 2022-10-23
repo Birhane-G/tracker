@@ -17,7 +17,7 @@ export const Channeltype = () => {
   var Datas = "";
   if (loading) {
     Datas = (
-          <h3>LOADING....</h3> 
+          <snap>LOADING....</snap> 
     );
   } else {
     Datas = ChannelType.map((item) => {

@@ -16,7 +16,7 @@ export const ScreenResolution = () => {
   var Datas = "";
   if (loading) {
     Datas = (
-          <h3>Loading...</h3> 
+          <snap>Loading...</snap> 
     );
   } else {
 

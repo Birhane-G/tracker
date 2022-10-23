@@ -11,7 +11,6 @@ const LineChart = () => {
       if (result.data.status === 200) {
         setLoading(false);
         setPlugins(result.data.value);
-        // console.log(result);
       }
     });
   }, []);

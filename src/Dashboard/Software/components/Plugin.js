@@ -17,7 +17,7 @@ export const Plugin = () => {
 
   var Datas = "";
   if (loading) {
-    Datas = <h3>LOADING....</h3>;
+    Datas = <snap>LOADING....</snap>;
   } else {
     // console.log(Continent);
     Datas = Plugins.map((item) => {

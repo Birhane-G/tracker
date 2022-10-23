@@ -18,9 +18,8 @@ const Browser = () => {
 
   var Datas = "";
   if (loading) {
-    Datas = <h3>LOADING....</h3>;
+    Datas = <snap>LOADING....</snap>;
   } else {
-    // console.log(Continent);
     Datas = Browser.map((item) => {
       return (
         <tr key={item}>

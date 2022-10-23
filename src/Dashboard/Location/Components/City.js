@@ -17,10 +17,9 @@ export const City = () => {
   var Datas = "";
   if (loading) {
     Datas = (
-          <h3>LOADING....</h3> 
+          <snap>LOADING....</snap> 
     );
   } else {
-    // console.log(Continent);
     Datas = City.map((item) => {
       return (
         <tr key={item}>
