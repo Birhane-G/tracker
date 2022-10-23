@@ -6,10 +6,9 @@ export const Continent = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     const HomeIp =  '192.168.1.11:8000';
-    const CreativeIp = '192.168.43.155:8000';
+    // const CreativeIp = '192.168.43.155:8000';
     axios.get(`http://${HomeIp}/api/Continent`).then((result) => {
       if (result.data.status === 200) {
-        // console.log(result.data.value[0]['label'])
         setLoading(false);
         setContinent(result.data.value);
       }
@@ -21,7 +20,7 @@ export const Continent = () => {
           <h3>LOADING....</h3> 
     );
   } else {
-    // console.log(Continent);
+    console.log(Continent);
     Datas = Continent.map((item) => {
       return (
         <tr key={item}>

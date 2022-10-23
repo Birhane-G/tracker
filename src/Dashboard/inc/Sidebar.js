@@ -94,6 +94,7 @@ const Sidebar = ({ children }) => {
         </div>
       </motion.div>
       <main>{children}</main>
+     
     </div>
   );
 };

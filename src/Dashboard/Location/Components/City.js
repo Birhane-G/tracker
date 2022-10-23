@@ -6,7 +6,7 @@ export const City = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     const HomeIp =  '192.168.1.11:8000';
-    const CreativeIp = '192.168.43.155:8000';
+    // const CreativeIp = '192.168.43.155:8000';
     axios.get(`http://${HomeIp}/api/City`).then((result) => {
       if (result.data.status === 200) {
         setLoading(false);
