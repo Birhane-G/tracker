@@ -3,36 +3,34 @@ import axios from "axios";
 
 export const Ipageview = () => {
   const [PageView, setPageView] = useState([]);
-  const [PageCont, setPageCont] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     const HomeIp =  '192.168.1.11:8000';
-    const CreativeIp = '192.168.43.155:8000';
+    // const CreativeIp = '192.168.43.155:8000';
     axios.get(`http://${HomeIp}/api/PageView`).then((result) => {
       if (result.data.status === 200) {
         setLoading(false);
         setPageView(result.data.value.original.pageview);
-        // console.log(result.data.value.original.pageview);
-        // setPageCont(result.data.value.original.Alldata);
       }
     });
   }, []);
+  // const valueArray = JSON.parse(PageView);
+  console.log(PageView)
   var Datas = "";
   if (loading) {
     Datas = (
-          <h3>LOADING....</h3> 
+          <snap>LOADING....</snap> 
     );
-  } else {
-    Datas = PageCont.map((item) => {
+  } 
+  else {
+    Datas = Object.keys(PageView).map((item) =>
+    {
       return (
-        <tr>
-          <td>{item.segment}</td>
-          <td>{}</td>
-          <td>{}</td>
-          <td>{}</td>
-        </tr>
+          <td>
+            <tr>{item.nb_pageviews}</tr>
+          </td>
       );
-    })
+    });
   }
   return (
     <div className="pageview-include-content">
