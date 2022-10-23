@@ -8,7 +8,7 @@ export const Piechart = () => {
   useEffect(() => {
     const HomeIp = "192.168.1.11:8000";
     const CreativeIp = "192.168.43.155:8000";
-    axios.get(`http://${CreativeIp}/api/engine`).then((result) => {
+    axios.get(`http://${HomeIp}/api/engine`).then((result) => {
       if (result.data.status === 200) {
         // console.log(result.data.value[0]['label'])
         setLoading(false);

@@ -5,7 +5,9 @@ const DeviceType = () => {
   const [Dtype, setDtype] = useState([]);
   const [loading, setWait] = useState(true);
   useEffect(()=>{
-    axios.get("http://192.168.43.155:8000/api/DeviceType").then((result) => {
+    const HomeIp =  '192.168.1.11:8000';
+    const CreativeIp = '192.168.43.155:8000';
+    axios.get(`http://${HomeIp}/api/DeviceType`).then((result) => {
     if (result.data.status === 200){
        setWait(false);
         setDtype(result.data.value);
