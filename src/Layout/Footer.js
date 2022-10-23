@@ -4,12 +4,10 @@ import earald from "../images/partners/Earald.jpg";
 import nibret from "../images/partners/nibret.jpg";
 import erq from "../images/partners/erq.png";
 import creativ from "../images/partners/creativehub.jpeg";
-// import telegram from "../images/icons/telegram.svg"
 import twitter from "../images/icons/twitter.svg";
 import linkedin from "../images/icons/linkedin.svg";
 import instagram from "../images/icons/instagram.svg";
 import facebook from "../images/icons/facebook.svg";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Footer() {
   return (

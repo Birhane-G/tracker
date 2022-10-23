@@ -1,8 +1,8 @@
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
-import { getApp } from "./Config/helper";
+import { getApp } from "./Config/Route";
 function App() {
-    const Currentapp = getApp();
+  const Currentapp = getApp();
   return (
     <>
       <BrowserRouter>

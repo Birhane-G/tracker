@@ -10,11 +10,14 @@ import { Location } from "../Dashboard/Location/Location";
 import Pageview from "../Dashboard/Pageview/Pageview";
 import { Software } from "../Dashboard/Software/Software";
 import Error from "../pages/Error";
-
+import Login from "../pages/Login";
+import Register from "../pages/Register";
 export const IndexRoutes = () => {
   return (
     <Routes>
       <Route exact path="/" element={<Home />} />
+      <Route exact path="/Login" element={<Login />} />
+      <Route exact path="/registration" element={<Register />} />
       <Route exact path="*" element={<Error />} />
     </Routes>
   );

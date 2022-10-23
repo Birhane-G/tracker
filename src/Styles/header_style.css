@@ -30,9 +30,10 @@ header{
     height: 45px;
     padding-left: 40px;
 }
-.navbar{
+.navbar-r{
     padding-right: 60px;
     transition: 0.5s;
+    background: none;
 }
 .navigation ul{
     display: flex;

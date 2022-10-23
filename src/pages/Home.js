@@ -22,7 +22,7 @@ window.onscroll = function () {
 
 let navbar = document.getElementById("navbar");
 function sticky() {
-  if (window.pageYOffset >= 0) {
+  if (window.pageYOffset >= 25) {
     navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
