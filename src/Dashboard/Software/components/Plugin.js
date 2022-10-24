@@ -5,11 +5,10 @@ export const Plugin = () => {
   const [Plugins, setPlugins] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    const HomeIp =  '192.168.1.11:8000';
-    const CreativeIp = '192.168.43.155:8000';
-    axios.get(`http://${CreativeIp}/api/plugin`).then((result) => {
+    const HomeIp = "192.168.1.11:8000";
+    const CreativeIp = "192.168.43.155:8000";
+    axios.get(`http://${HomeIp}/api/plugin`).then((result) => {
       if (result.data.status === 200) {
-        // console.log(result.data.value[0]['label'])
         setLoading(false);
         setPlugins(result.data.value);
       }
@@ -18,19 +17,22 @@ export const Plugin = () => {
 
   var Datas = "";
   if (loading) {
-    Datas = (
-          <h3>LOADING....</h3> 
-    );
+    Datas = <snap>LOADING....</snap>;
   } else {
     // console.log(Continent);
     Datas = Plugins.map((item) => {
       return (
         <tr key={item}>
-          <td><img src={require(`../../${item.logo}`)} alt="Browser"/>{item.label}</td>
+          <td>
+            <div className="log-Text">
+              <img src={require(`../../${item.logo}`)} alt="Country" />
+              {item.label}
+            </div>
+          </td>
           <td>{item.nb_visits}</td>
         </tr>
       );
-    })
+    });
   }
   return (
     <div className="Browser-container">
@@ -45,11 +47,9 @@ export const Plugin = () => {
               <th>Visits</th>
             </tr>
           </thead>
-          <tbody>
-           {Datas}
-          </tbody>
+          <tbody>{Datas}</tbody>
         </table>
       </div>
     </div>
-  )
-}
+  );
+};

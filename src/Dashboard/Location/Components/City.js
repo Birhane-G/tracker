@@ -6,8 +6,8 @@ export const City = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     const HomeIp =  '192.168.1.11:8000';
-    const CreativeIp = '192.168.43.155:8000';
-    axios.get(`http://${CreativeIp}/api/Country`).then((result) => {
+    // const CreativeIp = '192.168.43.155:8000';
+    axios.get(`http://${HomeIp}/api/City`).then((result) => {
       if (result.data.status === 200) {
         setLoading(false);
         setCity(result.data.value);
@@ -17,10 +17,9 @@ export const City = () => {
   var Datas = "";
   if (loading) {
     Datas = (
-          <h3>LOADING....</h3> 
+          <snap>LOADING....</snap> 
     );
   } else {
-    // console.log(Continent);
     Datas = City.map((item) => {
       return (
         <tr key={item}>

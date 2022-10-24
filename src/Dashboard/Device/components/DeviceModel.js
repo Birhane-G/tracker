@@ -5,7 +5,9 @@ export const DeviceModel = () => {
   const [Model, setModel] = useState([]);
   const [loading, setWait] = useState(true);
   useEffect(() => {
-    axios.get("http://192.168.43.155:8000/api/DeviceModel").then((result) => {
+    const HomeIp =  '192.168.1.11:8000';
+    const CreativeIp = '192.168.43.155:8000';
+    axios.get(`http://${HomeIp}/api/DeviceModel`).then((result) => {
       if (result.data.status === 200) {
         setWait(false);
         setModel(result.data.value);
@@ -15,7 +17,7 @@ export const DeviceModel = () => {
   var Datas = "";
   if (loading) {
     Datas = (
-          <h3>Loading...</h3> 
+          <snap>Loading...</snap> 
     );
   } else {
 
@@ -25,8 +27,6 @@ export const DeviceModel = () => {
           <td>1</td>
           <td>{item.label}</td>
           <td>{item.nb_visits}</td>
-       
-
         </tr>
       );
     });
@@ -44,7 +44,6 @@ export const DeviceModel = () => {
             <th>No</th>
             <th>Device Model</th>
             <th>Visits</th>
-
           </tr>
         </thead>
         {/* <tbody>

@@ -9,7 +9,7 @@ function Header() {
           <img src={logo} alt="Tracker Logo" />
           <h1>Tracker</h1>
         </div>
-        <div className="navbar">
+        <div className="navbar-r">
           <nav className="navigation">
             <ul>
               <a href="/">
@@ -27,7 +27,7 @@ function Header() {
               <a href="/">
                 <li>Help?</li>
               </a>
-              <a href="/login">
+              <a href="/Login">
                 <li className="login-btn">Login</li>
               </a>
             </ul>

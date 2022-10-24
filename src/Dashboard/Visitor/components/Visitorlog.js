@@ -7,7 +7,7 @@ export const Visitorlog = () => {
   useEffect(() => {
     const HomeIp =  '192.168.1.11:8000';
     const CreativeIp = '192.168.43.155:8000';
-    axios.get(`http://${CreativeIp}/api/VisitorLog`).then((result) => {
+    axios.get(`http://${HomeIp}/api/VisitorLog`).then((result) => {
       if (result.data.status === 200) {
         setLoading(false);
         setVisitors(result.data.value);
@@ -16,7 +16,7 @@ export const Visitorlog = () => {
   }, []);
   var Datas = "";
   if (loading) {
-    Datas = <h3>LOADING....</h3>;
+    Datas = <snap>LOADING....</snap>;
   } else {
     Datas = Visitors.map((item) => {
       return (

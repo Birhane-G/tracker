@@ -6,17 +6,16 @@ export const Piechart = () => {
   const [Engines, setEngines] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    const HomeIp =  '192.168.1.11:8000';
-    const CreativeIp = '192.168.43.155:8000';
-    axios.get(`http://${CreativeIp}/api/engine`).then((result) => {
+    const HomeIp = "192.168.1.11:8000";
+    const CreativeIp = "192.168.43.155:8000";
+    axios.get(`http://${HomeIp}/api/engine`).then((result) => {
       if (result.data.status === 200) {
-        // console.log(result.data.value[0]['label'])
         setLoading(false);
         setEngines(result.data.value);
       }
     });
   }, []);
-  
+
   var Labels = [
     Engines.map((item) => {
       return item.label;
@@ -50,8 +49,10 @@ export const Piechart = () => {
     responsive: true,
   };
   return (
-    <div className="piechart">
-      <Pie options={options} data={data} className="pie" />
+    <div className="Piechart-Container">
+      <div className="piechart">
+        <Pie options={options} data={data} className="pie" />
+      </div>
     </div>
   );
 };

@@ -7,7 +7,7 @@ export const Channeltype = () => {
   useEffect(() => {
     const HomeIp =  '192.168.1.11:8000';
     const CreativeIp = '192.168.43.155:8000';
-    axios.get(`http://${CreativeIp}/api/ChannelType`).then((result) => {
+    axios.get(`http://${HomeIp}/api/ChannelType`).then((result) => {
       if (result.data.status === 200) {
         setLoading(false);
         setChannelType(result.data.value);
@@ -17,7 +17,7 @@ export const Channeltype = () => {
   var Datas = "";
   if (loading) {
     Datas = (
-          <h3>LOADING....</h3> 
+          <snap>LOADING....</snap> 
     );
   } else {
     Datas = ChannelType.map((item) => {

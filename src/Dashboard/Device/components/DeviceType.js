@@ -5,7 +5,9 @@ const DeviceType = () => {
   const [Dtype, setDtype] = useState([]);
   const [loading, setWait] = useState(true);
   useEffect(()=>{
-    axios.get("http://192.168.43.155:8000/api/DeviceType").then((result) => {
+    const HomeIp =  '192.168.1.11:8000';
+    const CreativeIp = '192.168.43.155:8000';
+    axios.get(`http://${HomeIp}/api/DeviceType`).then((result) => {
     if (result.data.status === 200){
        setWait(false);
         setDtype(result.data.value);
@@ -15,14 +17,16 @@ const DeviceType = () => {
   var Datas = "";
   if (loading) {
     Datas = (
-          <h3>Loading...</h3> 
+          <snap>Loading...</snap> 
     );
   } else {
 
     Datas = Dtype.map((item) => {
       return (
+        
         <tr key={item}>
-          <td>1</td>
+           <td>1</td>
+          <td><img src={require(`../../${item.logo}`)} alt=""/>{item.label}</td>
           <td>{item.label}</td>
           <td>{item.nb_visits}</td>
        

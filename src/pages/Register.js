@@ -33,7 +33,7 @@ function Register() {
             </form>
             <div className="usr">
               <h1>
-                Already have an account? <a href="/">Login</a>
+                Already have an account? <a href="/Login">Login</a>
               </h1>
             </div>
           </div>

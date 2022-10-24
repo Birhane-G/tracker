@@ -7,9 +7,8 @@ export const Region = () => {
   useEffect(() => {
     const HomeIp =  '192.168.1.11:8000';
     const CreativeIp = '192.168.43.155:8000';
-    axios.get(`http://${CreativeIp}/api/Region`).then((result) => {
+    axios.get(`http://${HomeIp}/api/Region`).then((result) => {
       if (result.data.status === 200) {
-        // console.log(result.data.value[0]['label'])
         setLoading(false);
         setRegion(result.data.value);
       }
@@ -19,7 +18,7 @@ export const Region = () => {
   var Datas = "";
   if (loading) {
     Datas = (
-          <h3>LOADING....</h3> 
+          <snap>LOADING....</snap> 
     );
   } else {
     // console.log(Continent);

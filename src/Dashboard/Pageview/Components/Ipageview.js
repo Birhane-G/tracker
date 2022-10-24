@@ -5,14 +5,33 @@ export const Ipageview = () => {
   const [PageView, setPageView] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    axios.get("http://192.168.1.11:8000/api/PageView").then((result) => {
+    const HomeIp =  '192.168.1.11:8000';
+    // const CreativeIp = '192.168.43.155:8000';
+    axios.get(`http://${HomeIp}/api/PageView`).then((result) => {
       if (result.data.status === 200) {
-        // console.log(result.data.value[0]['label'])
         setLoading(false);
-        setPageView(result.data.value);
+        setPageView(result.data.value.original.pageview);
       }
     });
   }, []);
+  // const valueArray = JSON.parse(PageView);
+  console.log(PageView)
+  var Datas = "";
+  if (loading) {
+    Datas = (
+          <snap>LOADING....</snap> 
+    );
+  } 
+  else {
+    Datas = Object.keys(PageView).map((item) =>
+    {
+      return (
+          <td>
+            <tr>{item.nb_pageviews}</tr>
+          </td>
+      );
+    });
+  }
   return (
     <div className="pageview-include-content">
       <div className="table-title">
@@ -29,210 +48,7 @@ export const Ipageview = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>90%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>40%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>70%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>80%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>90%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>40%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>70%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>80%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>90%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>40%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>70%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>80%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>90%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>40%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>70%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>80%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>90%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>40%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>70%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>80%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>90%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>40%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>70%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>80%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>90%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>40%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>70%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>80%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>90%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>40%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>70%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>80%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>90%</td>
-            </tr>
-            <tr>
-              <td>/index</td>
-              <td>400</td>
-              <td>100</td>
-              <td>40%</td>
-            </tr>
+            {Datas}
           </tbody>
         </table>
         </div>
