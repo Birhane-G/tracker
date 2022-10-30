@@ -51,8 +51,7 @@ const Sidebar = ({ children }) => {
     <div className="sidebar">
       <motion.div
         animate={{ width: Press ? "15%" : "50px" }}
-        className="side-bar-content"
-      >
+        className="side-bar-content">
       
         <div className="side-bar-content">
           <div className="menu-con">
@@ -64,17 +63,13 @@ const Sidebar = ({ children }) => {
             />
           </div>
           <div className="side-top-logo-container">  <nav>
-   <ul>
-     <li class="sub-menu-parent" tab-index="0">
-       <a href="#"class="sub-menu-title">Websites</a>
-       <ul class="sub-menu">
-         <li><a href="#"class="Drop1">#1 TestSite</a></li>
-         <li><a href="#"class="Drop2">#2 TestSite</a></li>
-         <li><a href="#"class="Drop3">#3 TestSite</a></li>
-         <li><a href="#"class="Drop4">#4 TestSite</a></li>
-       </ul>
-     </li>
-     </ul>
+      <div class="profile-block"> 
+       <div class="profile-picture big-profile-picture clear">
+          <img width="90px" height="80" alt="" src="http://upload.wikimedia.org/wikipedia/commons/e/e1/Anne_Hathaway_Face.jpg" ></img>
+        </div>
+            <h1 class="user-name">Abebe Bikila</h1>
+              <p class="site-title">testwebsite.com</p>                                    
+                </div>
  </nav>
  </div>
           <div className="side-bar-center-content">
