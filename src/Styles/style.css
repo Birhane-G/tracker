@@ -59,7 +59,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 100px;
-    gap: 30px;
+    gap: 80px;
 }
 .why-tracker .box{
     width: 300px;
