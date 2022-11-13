@@ -8,13 +8,16 @@ import "../Styles/style.css";
 function Body() {
   return (
     <section className="body">
-      <div className="front">
-        <div className="Enter-site">
-          <h1>Welcome to Tracker</h1>
-          <button>Let's Start Tracking</button>
+      <div class="backimg">
+        <div className="front">
+          <div className="Enter-site">
+            <h1>Welcome to Tracker</h1>
+            <button>Let's Start Tracking</button>
+          </div>
         </div>
-        <div class="backimg"></div>
+        <div className="bottom"> </div>
       </div>
+
     </section>
   );
 }
@@ -24,51 +27,34 @@ function Discription() {
     <section className="Tracker-disc">
       <div className="why-tracker">
         <div className="box">
-          <h2>Sample Text</h2>
+          <h2>Easy to use</h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s,
+            Easily navigate through a user-friendly interface to get the data you need, faster.
           </p>
         </div>
         <div className="box">
-          <h2>Sample Text</h2>
+          <h2>Analytics</h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s.
+            Contextualize data and test results with replays, visualizations, and feedback. Find and solve the costliest website frustrations quickly.
           </p>
         </div>
         <div className="box">
-          <h2>Sample Text</h2>
+          <h2>Uncover web traffic journeys with real user data</h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s.
+            Explore user journeys and pinpoint platforms that drive the most website traffic.
+            Discover the most promising platforms for ad placement and marketing partnerships.
           </p>
         </div>
         <div className="box">
-          <h2>Sample Text</h2>
+          <h2>Product</h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s.
+            See what users actually do so you can optimize functionality with confidence. Catch bugs before they spread and prioritize feature updates.
           </p>
         </div>
         <div className="box">
-          <h2>Sample Text</h2>
+          <h2>Monitor all your website’s changes 24/7</h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s.
-          </p>
-        </div>
-        <div className="box">
-          <h2>Sample Text</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s.
+            The more profitable your project is, the more expensive each error costs. Monitor website changes to keep your business running.
           </p>
         </div>
       </div>
