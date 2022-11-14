@@ -27,9 +27,9 @@ function Header() {
               <a href="/">
                 <li>Help?</li>
               </a>
-              <button onClick="/login" className="login-btn">
+              <a href="/Login" className="login-btn">
                 Login
-              </button>
+              </a>
             </ul>
           </nav>
         </div>
@@ -44,7 +44,7 @@ window.onscroll = function () {
 
 let navbar = document.getElementById("navbar");
 function sticky() {
-  if (window.pageYOffset >= 150) {
+  if (window.pageYOffset >= 120) {
     navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
