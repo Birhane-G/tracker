@@ -27,9 +27,9 @@ function Header() {
               <a href="/">
                 <li>Help?</li>
               </a>
-              <a href="/Login">
-                <li className="login-btn">Login</li>
-              </a>
+              <button className="login-btn">
+                Login
+              </button>
             </ul>
           </nav>
         </div>
@@ -38,4 +38,16 @@ function Header() {
   );
 }
 
+window.onscroll = function () {
+  sticky();
+};
+
+let navbar = document.getElementById("navbar");
+function sticky() {
+  if (window.pageYOffset >= 100) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
 export default Header;

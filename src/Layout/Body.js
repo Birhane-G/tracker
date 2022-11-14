@@ -8,13 +8,16 @@ import "../Styles/style.css";
 function Body() {
   return (
     <section className="body">
-      <div className="front">
-        <div className="Enter-site">
-          <h1>Welcome to Tracker</h1>
-          <button>Let's Start Tracking</button>
+      <div class="backimg">
+        <div className="front">
+          <div className="Enter-site">
+            <h1>Welcome to Tracker</h1>
+            <button>Let's Start Tracking</button>
+          </div>
         </div>
-        <div class="backimg"></div>
+        <div className="bottom"> </div>
       </div>
+
     </section>
   );
 }
@@ -23,16 +26,17 @@ function Discription() {
   return (
     <section className="Tracker-disc">
       <div className="why-tracker">
-      <div className="box">
+        <div className="box">
           <h2>Easy to use</h2>
           <p>
           Easily navigate through a user-friendly interface to get the data you need, faster. In addition discover the most promising platforms for ad placement and marketing partnerships.
+
           </p>
         </div>
         <div className="box">
           <h2>Analytics</h2>
           <p>
-          Contextualize data and test results with replays, visualizations, and feedback. Find and solve the costliest website frustrations quickly.
+            Contextualize data and test results with replays, visualizations, and feedback. Find and solve the costliest website frustrations quickly.
           </p>
         </div>
         <div className="box">
@@ -44,7 +48,7 @@ function Discription() {
         <div className="box">
           <h2>Product</h2>
           <p>
-          See what users actually do so you can optimize functionality with confidence. Catch bugs before they spread and prioritize feature updates.
+            See what users actually do so you can optimize functionality with confidence. Catch bugs before they spread and prioritize feature updates.
           </p>
         </div>
         <div className="box">

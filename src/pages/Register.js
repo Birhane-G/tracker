@@ -26,7 +26,7 @@ function Register() {
               <input type="password" name="pass" placeholder="Password" />
               <br />
               <input type="password" name="cpass" placeholder="Confirm Password" />
-              <input type="text" name="weburl" placeholder="Website URL" />
+              <input type="text" name="weburl" placeholder="Input Website URL" />
               <div className="btn_register">
                 <a href="/">Register</a>
               </div>
