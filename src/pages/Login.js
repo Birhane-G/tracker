@@ -1,4 +1,3 @@
-import "../Styles/login_style.css";
 import logo from "../images/Trackerlogo.png";
 function Login() {
   return (
