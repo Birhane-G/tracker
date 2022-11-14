@@ -253,7 +253,7 @@ input {
 }
 .partners {
   margin: 0 auto;
-  padding-left: 60px;
+   padding-left: 60px; 
 }
 
 .partner-cont {
@@ -276,6 +276,7 @@ input {
 .testimonial_header {
   text-align: center;
   margin-bottom: 200px;
+  margin-top: 2px;
 }
 
 .testimonial_header h1 {
@@ -363,6 +364,11 @@ input {
   max-width: 1200px;
   margin: auto;
 }
+.social-links{
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .container .row {
   display: flex;
@@ -409,29 +415,35 @@ ul {
 }
 
 .footer-col ul li a:hover {
-  margin-left: 5px;
+  margin: 2px;
   transition: 0.8s;
+  color:grey;
 }
 
 .footer-col .social-links a {
   display: inline-block;
-  width: 40%;
-  text-align: center;
+  width: 90px;
+  margin-left: 50px;
   transition: all 0.5s ease;
 }
 .footer-col .social-links a:hover {
-  background-color: var(--main-color);
+  width: 90%;
+  filter: invert(90%);
 }
 
 .footer-col .partners img {
   width: 120px;
+  height: 50px;
+  margin-left: -70px;
   border-radius: 5px;
   background-color: white;
+  
 }
 .footer-col .social-links img {
   padding-top: 9px;
   height: 35px;
   color: white;
+
 }
 /* footer end */
 

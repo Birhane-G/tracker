@@ -15,7 +15,7 @@ function Footer() {
         <div class="row">
           <div class="footer-col">
             <h4 class="important_links">Important Links</h4>
-            <ul>
+            <ul class="">
               <li>
                 <a href="/">Home</a>
               </li>
