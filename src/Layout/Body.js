@@ -29,7 +29,8 @@ function Discription() {
         <div className="box">
           <h2>Easy to use</h2>
           <p>
-            Easily navigate through a user-friendly interface to get the data you need, faster.
+          Easily navigate through a user-friendly interface to get the data you need, faster. In addition discover the most promising platforms for ad placement and marketing partnerships.
+
           </p>
         </div>
         <div className="box">
@@ -39,10 +40,9 @@ function Discription() {
           </p>
         </div>
         <div className="box">
-          <h2>Uncover web traffic journeys with real user data</h2>
+          <h2>Uncover journeys</h2>
           <p>
-            Explore user journeys and pinpoint platforms that drive the most website traffic.
-            Discover the most promising platforms for ad placement and marketing partnerships.
+          Explore user journeys and pinpoint platforms that drive the most website traffic with real user data.
           </p>
         </div>
         <div className="box">
@@ -52,9 +52,9 @@ function Discription() {
           </p>
         </div>
         <div className="box">
-          <h2>Monitor all your website’s changes 24/7</h2>
+          <h2>Monitor changes</h2>
           <p>
-            The more profitable your project is, the more expensive each error costs. Monitor website changes to keep your business running.
+          The more profitable your project is, the more expensive each error costs. Monitor website changes 24/7 to keep your business running.
           </p>
         </div>
       </div>
@@ -108,14 +108,13 @@ function Testimonial() {
               <p>I was not expecting it to be this good but it actually is.</p>
             </blockquote>
             <h3>Sprit Yoga</h3>
-            <h4>Classic Music Streaming</h4>
           </figcaption>
         </figure>
         <figure class="customer_tetsimonial">
           <figcaption>
             <blockquote>
               <p>
-                It's great to have this kind of tool at my disposal, its great.{" "}
+                It's great to have this kind of tool at my disposal, its awsome.
               </p>
             </blockquote>
             <h3>Ingredia Nutrisha</h3>
