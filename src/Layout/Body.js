@@ -3,21 +3,19 @@ import earald from "../images/partners/Earald.jpg";
 import nibret from "../images/partners/nibret.jpg";
 import erq from "../images/partners/erq.png";
 import creativ from "../images/partners/creativehub.jpeg";
-import "../Styles/style.css";
 
 function Body() {
   return (
     <section className="body">
       <div class="backimg">
         <div className="front">
-          <div className="Enter-site">
+          <div className="Enter-site-home">
             <h1>Welcome to Tracker</h1>
             <button>Let's Start Tracking</button>
           </div>
         </div>
         <div className="bottom"> </div>
       </div>
-
     </section>
   );
 }

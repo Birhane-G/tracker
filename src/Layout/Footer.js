@@ -1,5 +1,4 @@
 import React from "react";
-import "../Styles/footer_style.css";
 import earald from "../images/partners/Earald.jpg";
 import nibret from "../images/partners/nibret.jpg";
 import erq from "../images/partners/erq.png";

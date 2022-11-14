@@ -5,14 +5,12 @@
 body {
   background-color: white;
 }
-
 /* Header  */
 header {
   position: fixed;
   width: 100%;
   z-index: 1;
 }
-
 .Header-cont {
   display: flex;
   align-items: center;
@@ -30,7 +28,9 @@ header {
   height: 45px;
   padding-left: 40px;
 }
-
+.logo h1{
+  color: #f4af1b;
+}
 .navbar-r {
   padding-right: 60px;
   transition: 0.5s;
@@ -50,20 +50,17 @@ header {
   list-style: none;
   margin-left: 20px;
   font-size: 20px;
-  color: #28334aff;
+  color: white;
   font-weight: 400;
 }
-
 .navigation ul a:hover li {
-  color: white;
+  color: #f4af1b;
 }
-
 .sticky {
-  background: #79addc;
+  background: #f4af1b;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   height: 70px;
 }
-
 .sticky .logo {
   margin-left: 10px;
   transition: 0.5s;
@@ -73,22 +70,36 @@ header {
   margin-right: 10px;
   transition: 0.2s;
 }
+.sticky .login-btn{
+  background: #00154f;
+  color: white;
+}
 
+.sticky  .navigation ul li {
+  color: #00154f;
+}
+.sticky  .navigation ul a:hover li {
+  color: white;
+}
+.sticky .logo h1{
+  color: #00154f;
+}
 button {
   all: unset;
 }
 
 .login-btn {
-  background: var(--service-color);
+  background: #f4af1b;
   padding: 6px 20px;
   border-radius: 6px;
-  color: white;
+  color:#00154f;
 }
 
 .login-btn:hover {
   background: none;
+  padding: 4px 18px;
   border: 2px solid white;
-  color: white !important;
+  color: white ;
   transition: 0.2s;
 }
 
@@ -164,39 +175,40 @@ input {
   background: url("./images/map-background.svg") no-repeat;
   background-size: 125% 620px;
   height: 620px;
-  background-color: #79addc;
+  background-color: #00154f;
 }
 
-.Enter-site {
+.Enter-site-home {
   text-align: center;
   padding-top: 20vh;
   width: 50%;
 }
 
-.Enter-site h1 {
+.Enter-site-home h1 {
   font-size: 5rem;
-  color: #28334aff;
-}
-
-.Enter-site button {
-  all: unset;
-}
-
-.Enter-site button {
-  font-size: 2rem;
-  padding: 10px;
-  background: rgb(235, 102, 41);
-  border-radius: 0.5rem;
-  transition: 0.2s;
   color: white;
 }
 
-.Enter-site button:hover {
-  background: none;
-  border: 2px solid white;
-  transition: 0.2s;
+.Enter-site-home button {
+  all: unset;
 }
 
+.Enter-site-home button {
+  font-size: 2rem;
+  padding: 8px 8px;
+  background: #f4af1b;
+  border-radius: 0.5rem;
+  transition: 0.2s;
+  color: #00154f;
+}
+
+.Enter-site-home button:hover {
+  background: none;
+  color: #f4af1b;
+  padding: 6px 7px;
+  border: 2px solid #f4af1b;
+  transition: 0.2s;
+}
 .bottom {
   width: 0;
   height: 0;

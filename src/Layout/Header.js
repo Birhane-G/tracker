@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../images/Trackerlogo.png";
-import "../Styles/header_style.css";
+
 function Header() {
   return (
     <header id="navbar">
@@ -27,7 +27,7 @@ function Header() {
               <a href="/">
                 <li>Help?</li>
               </a>
-              <button className="login-btn">
+              <button onClick="/login" className="login-btn">
                 Login
               </button>
             </ul>
@@ -44,7 +44,7 @@ window.onscroll = function () {
 
 let navbar = document.getElementById("navbar");
 function sticky() {
-  if (window.pageYOffset >= 100) {
+  if (window.pageYOffset >= 150) {
     navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
