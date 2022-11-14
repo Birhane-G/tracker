@@ -78,21 +78,16 @@ function Footer() {
             <h4>follow us</h4>
             <div class="social-links">
               <a href="/">
-                <i class="facebook-icon">
-                  <img src={facebook} alt="facebook" />
-                </i>
+                <img src={facebook} alt="facebook" />
               </a>
               <a href="/">
-                <i class="twitter-icon">
-                  {" "}
-                  <img src={twitter} alt="facebook" />
-                </i>
+                <img src={twitter} alt="facebook" />
               </a>
               <a href="/">
-                <i class="instagram-icon"> <img src={instagram} alt="facebook" /></i>
+                <img src={instagram} alt="facebook" />
               </a>
               <a href="/">
-                <i class="linkedin-icon"> <img src={linkedin} alt="facebook" /></i>
+                <img src={linkedin} alt="facebook" />
               </a>
             </div>
           </div>
