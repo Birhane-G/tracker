@@ -27,8 +27,7 @@ function Discription() {
         <div className="box">
           <h2>Easy to use</h2>
           <p>
-          Easily navigate through a user-friendly interface to get the data you need, faster. In addition discover the most promising platforms for ad placement and marketing partnerships.
-
+            Easily navigate through a user-friendly interface to get the data you need, faster. In addition discover the most promising platforms for ad placement and marketing partnerships.
           </p>
         </div>
         <div className="box">
@@ -40,7 +39,7 @@ function Discription() {
         <div className="box">
           <h2>Uncover journeys</h2>
           <p>
-          Explore user journeys and pinpoint platforms that drive the most website traffic with real user data.
+            Explore user journeys and pinpoint platforms that drive the most website traffic with real user data.
           </p>
         </div>
         <div className="box">
@@ -52,7 +51,7 @@ function Discription() {
         <div className="box">
           <h2>Monitor changes</h2>
           <p>
-          The more profitable your project is, the more expensive each error costs. Monitor website changes 24/7 to keep your business running.
+            The more profitable your project is, the more expensive each error costs. Monitor website changes 24/7 to keep your business running.
           </p>
         </div>
       </div>
@@ -62,7 +61,7 @@ function Discription() {
 
 function Partner() {
   return (
-    <section>
+    <section className="partenerts-container">
       <div className="partners">
         <div className="partner-cont">
           <div className="box">
