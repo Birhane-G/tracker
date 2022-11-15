@@ -1,4 +1,4 @@
-@import url('./asset/css/theme.css');
+@import url("./asset/css/theme.css");
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 
@@ -17,18 +17,18 @@ header {
   justify-content: space-between;
 }
 
-.logo {
+.logo-header {
   display: flex;
   align-items: center;
   transition: 0.5s;
 }
 
-.logo img {
+.logo-header img {
   width: 85px;
   height: 45px;
   padding-left: 40px;
 }
-.logo h1{
+.logo-header h1 {
   color: #f4af1b;
 }
 .navbar-r {
@@ -61,27 +61,27 @@ header {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   height: 70px;
 }
-.sticky .logo {
+.sticky .logo-header {
   margin-left: 10px;
   transition: 0.5s;
 }
 
 .sticky .navbar {
   margin-right: 10px;
-  transition: 0.2s;
+  transition: 0.2s;/* border: 1px solid #f4af1b; */
 }
-.sticky .login-btn{
+.sticky .login-btn {
   background: #00154f;
   color: white;
 }
 
-.sticky  .navigation ul li {
+.sticky .navigation ul li {
   color: #00154f;
 }
-.sticky  .navigation ul a:hover li {
+.sticky .navigation ul a:hover li {
   color: white;
 }
-.sticky .logo h1{
+.sticky .logo-header h1 {
   color: #00154f;
 }
 button {
@@ -92,81 +92,157 @@ button {
   background: #f4af1b;
   padding: 6px 20px;
   border-radius: 6px;
-  color:#00154f;
+  color: #00154f;
 }
 
 .login-btn:hover {
   background: none;
   padding: 4px 18px;
   border: 2px solid white;
-  color: white ;
+  color: white;
   transition: 0.2s;
 }
-
-.Back {
+/* login style */
+.Back-login {
   position: absolute;
-  border-top: 600px solid var(--service-color);
-  border-right: 600px solid transparent;
+  width: 60%;
+  border-top: 615px solid #00154f;
+  border-right: 615px solid transparent;
 }
-
 .login-contents {
   display: flex;
   justify-content: right;
   margin-right: 20px;
   padding-top: 20px;
 }
-
+.logo a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+.logo img {
+  width: 85px;
+  height: 45px;
+  padding-left: 40px;
+}
+.logo h1{
+  color: #00154f;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+}
 .content {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 150px;
-  right: 200px;
+  left: 260px;
+  margin: 150px auto;
+}
+.newusr h1 {
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
   float: right;
 }
-
-.newusr {
-  position: relative;
-  padding-bottom: 10px;
-  left: 150px;
-}
-
-.newusr h1 {
-  font-size: 18px;
-}
-
-input {
+.form-cont input {
   padding: 10px;
   width: 140%;
   height: 40px;
+  color: black;
   margin-bottom: 6px;
-  border: 1px solid var(--service-color);
+  border: 1px solid #f4af1b;
   border-radius: 5px;
 }
+.btn-login{
+  margin: 10px 0;
+}
+.btn-login a{
+  background-color: #f4af1b;
+  border-radius: 5px;
+  padding: 8px 10px;
+  color: white;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+.btn-login a:hover {
+  background: none;
+  border: 2px solid #f4af1b;
+  color: #f4af1b;
+}
+.forget {
+  font-size: 14px;
+}
+/* register */
+.Back{
+  position: absolute;
+  width: 60%;
+  border-top: 615px solid #00154f;
+  border-right: 615px solid transparent;
+}
+.register-content{
+  display: flex;
+  justify-content: right;
+  margin-right: 20px;
+  padding-top: 20px;
+}
+.form-reg-cont input{
+  padding: 10px;
+  width: 80%;
+  height: 40px;
+  margin-bottom: 6px;
+  border: 1px solid #f4af1b;
+  color: black;
+  border-radius: 5px;
+}
+.usr{
+  position: relative;
+  padding-top: 30px;
+}
+.usr h1{
+  font-size: 18px; 
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
 
-.btn_login {
+.form-reg-cont input[type=text]{
+  padding: 10px;
+  width: 46%;
+  height: 40px;
+  margin-bottom: 6px;
+  margin-right: 6px;
+  border: 1px solid #f4af1b;
+  border-radius: 5px;
+  color: black;
+}
+.form-reg-cont input[type=email],
+.form-reg-cont input[type=password]{
+  padding: 10px;
+  width: 94%;
+  height: 40px;
+  margin-bottom: 6px;
+  border: 1px solid #f4af1b;
+  border-radius: 5px;
+  color: black;
+}
+.btn_register{
   margin: 10px 0 20px 0;
 }
-
-.btn_login .btn-login {
-  background-color: var(--service-color);
+.btn_register a{
+  background-color: #f4af1b;
   padding: 8px 16px;
   border-radius: 5px;
-  color: var(--nav-text);
+  color: white;
   text-decoration: none;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 700;
 }
-
-.btn_login .btn-login:hover {
+.btn_register a:hover{
   background: none;
-  border: 2px solid var(--service-color);
-  color: var(--service-color);
-}
-
-.forget {
-  font-size: 14px;
+  border: 2px solid #f4af1b;
+  color: #f4af1b;
 }
 
 /* Body */
@@ -174,7 +250,8 @@ input {
   padding-top: 95px;
   background: url("./images/map-background.svg") no-repeat;
   background-size: 125% 620px;
-  height: 620px;
+  height: 100vh;
+  overflow: hidden;
   background-color: #00154f;
 }
 
@@ -237,7 +314,7 @@ input {
 .why-tracker .box {
   width: 300px;
 }
-.box h2{
+.box h2 {
   text-align: center;
 }
 .box p {
@@ -245,7 +322,7 @@ input {
 }
 /* discription end */
 /* Partner component stylesheet */
-.partenerts-container{
+.partenerts-container {
   width: 100%;
   height: 350px;
   background-color: #00154f;
@@ -287,11 +364,12 @@ input {
 
 .customer_tetsimonial {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  color: #9e9e9e;
+  color: black;
   display: inline-block;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   margin: 35px 10px 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   max-width: 310px;
   min-width: 250px;
   position: relative;
@@ -299,8 +377,7 @@ input {
   width: 100%;
   background-color: #ffffff;
   border-radius: 5px;
-  border-top: 5px solid #d2652d;
-
+  border-top: 5px solid #f4af1b;
 }
 
 .customer_tetsimonial *,
@@ -321,9 +398,9 @@ input {
   background-color: #fff;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  color: #d2652d;
+  color: #f4af1b;
   content: "\f10e";
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   font-size: 32px;
   font-style: normal;
   left: 50%;
@@ -334,7 +411,7 @@ input {
 }
 
 .customer_tetsimonial h3 {
-  color: #3c3c3c;
+  color: black;
   font-size: 20px;
   font-weight: 300;
   line-height: 24px;
@@ -448,28 +525,28 @@ ul {
 /* footer end */
 
 /* error page */
-.error-page{
+.error-page {
   display: flex;
   justify-content: center;
   background-color: #00154f;
   /* background: url(../images/Services-Website-Analytics.png) no-repeat center #00154f; */
   height: 619px;
 }
-.error{
+.error {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 60px;
   align-items: center;
 }
-.error-image img{
+.error-image img {
   width: 450px;
   height: 450px;
 }
-.error-text h1{
+.error-text h1 {
   font-size: 180px;
   color: #f4af1b;
 }
-.error-text p{
+.error-text p {
   color: white;
   font-size: 50px;
 }
