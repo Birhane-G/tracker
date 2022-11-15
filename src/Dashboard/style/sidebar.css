@@ -8,7 +8,6 @@
     display: flex;
 }
 main{
-    /* padding: 2px 0 0 10px; */
     width: 100%;
 }
 .menu-con{
@@ -33,13 +32,11 @@ main{
 }
 .side-bar-content{
     position: relative;
-    /* top: 5px;
-    left: 5px; */
-    height: 655px;
+    height: 100vh;
+    overflow: auto;
     background: var(--background-color);
-    /* border-radius: 15px; */
     z-index: 2;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .side-top-logo-container{
     background: var(--main-color);
@@ -59,7 +56,6 @@ main{
 .sub-menu-parent:hover{
     background: var(--main-hover-color);
 }
-
 .sub-menu { 
   visibility: hidden;
   opacity: 0;

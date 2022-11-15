@@ -17,18 +17,18 @@ header {
   justify-content: space-between;
 }
 
-.logo {
+.logo-header {
   display: flex;
   align-items: center;
   transition: 0.5s;
 }
 
-.logo img {
+.logo-header img {
   width: 85px;
   height: 45px;
   padding-left: 40px;
 }
-.logo h1 {
+.logo-header h1 {
   color: #f4af1b;
 }
 .navbar-r {
@@ -61,14 +61,14 @@ header {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   height: 70px;
 }
-.sticky .logo {
+.sticky .logo-header {
   margin-left: 10px;
   transition: 0.5s;
 }
 
 .sticky .navbar {
   margin-right: 10px;
-  transition: 0.2s;
+  transition: 0.2s;/* border: 1px solid #f4af1b; */
 }
 .sticky .login-btn {
   background: #00154f;
@@ -81,7 +81,7 @@ header {
 .sticky .navigation ul a:hover li {
   color: white;
 }
-.sticky .logo h1 {
+.sticky .logo-header h1 {
   color: #00154f;
 }
 button {
@@ -120,6 +120,11 @@ button {
   align-items: center;
   text-decoration: none;
   cursor: pointer;
+}
+.logo img {
+  width: 85px;
+  height: 45px;
+  padding-left: 40px;
 }
 .logo h1{
   color: #00154f;
@@ -245,7 +250,8 @@ button {
   padding-top: 95px;
   background: url("./images/map-background.svg") no-repeat;
   background-size: 125% 620px;
-  height: 620px;
+  height: 100vh;
+  overflow: hidden;
   background-color: #00154f;
 }
 
@@ -357,11 +363,12 @@ button {
 
 .customer_tetsimonial {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  color: #9e9e9e;
+  color: black;
   display: inline-block;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   margin: 35px 10px 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   max-width: 310px;
   min-width: 250px;
   position: relative;
@@ -369,7 +376,7 @@ button {
   width: 100%;
   background-color: #ffffff;
   border-radius: 5px;
-  border-top: 5px solid #d2652d;
+  border-top: 5px solid #f4af1b;
 }
 
 .customer_tetsimonial *,
@@ -390,7 +397,7 @@ button {
   background-color: #fff;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  color: #d2652d;
+  color: #f4af1b;
   content: "\f10e";
   font-family: "FontAwesome";
   font-size: 32px;
@@ -403,7 +410,7 @@ button {
 }
 
 .customer_tetsimonial h3 {
-  color: #3c3c3c;
+  color: black;
   font-size: 20px;
   font-weight: 300;
   line-height: 24px;
