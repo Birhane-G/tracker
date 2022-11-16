@@ -24,6 +24,7 @@ function Discription() {
   return (
     <section className="Tracker-disc">
       <div className="why-tracker">
+        <h1>Why Use Tracker</h1>
         <div className="box">
           <h2>Easy to use</h2>
           <p>
@@ -64,6 +65,7 @@ function Partner() {
     <section className="partenerts-container">
       <div className="partners">
         <div className="partner-cont">
+        <h1>Our Partners</h1>
           <div className="box">
             <img src={earald} alt="Earald Ict " />
           </div>

@@ -44,7 +44,7 @@ window.onscroll = function () {
 
 let navbar = document.getElementById("navbar");
 function sticky() {
-  if (window.pageYOffset >= 100) {
+  if (window.pageYOffset >= 120) {
     navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");

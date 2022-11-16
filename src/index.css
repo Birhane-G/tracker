@@ -311,14 +311,24 @@ button {
   grid-template-rows: 100px;
   gap: 80px;
 }
+.why-tracker h1{
+  position: absolute;
+  margin-top: -20vh;
+  margin-left: 65vh;
+  font-size: 40px;
+  color: #00154f;
+  
+}
 .why-tracker .box {
   width: 300px;
 }
 .box h2 {
   text-align: center;
+  color: #00154f;
 }
 .box p {
   text-align: justify;
+  color: #00154f;
 }
 /* discription end */
 /* Partner component stylesheet */
@@ -340,6 +350,13 @@ button {
   gap: 50px;
   padding-top: 130px;
 }
+.partner-cont h1{
+  position: absolute;
+  margin-top: -20vh;
+  margin-left: 75vh;
+  font-size: 40px;
+  color: #fff;
+}
 .partner-cont .box img {
   background-color: white;
   border-radius: 5%;
@@ -360,6 +377,7 @@ button {
   font-size: 40px;
   text-align: center;
   padding-bottom: 30px;
+  color: #00154f;
 }
 
 .customer_tetsimonial {
