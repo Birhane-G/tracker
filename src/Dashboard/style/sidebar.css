@@ -44,84 +44,33 @@ main{
     height: 120px;
     border-radius: 0px 20px 20px 0;
 }
-/* Drop down start */
-.sub-menu-title{
-    text-align: center;
-    font-size: 18px;
+/* profile */
+.profile-picture {
+	border-radius: 100%;
+	overflow: hidden;
+    margin-top: 2px;
+	
 }
-.sub-menu-parent {
-     position: relative; 
-     z-index: 1;
+	.big-profile-picture {
+		margin: 0px auto;		
+		border: 1px solid #50597b;
+		width: 70px;
+		height: 70px;
+	}
+	.small-profile-picture {
+		border: 2px solid #50597b;
+		width: 20px;
+		height: 20px;
+	}
+    .user-name{
+        font-size: 25x;
+        color: var(--background-color);
+        margin-left: 2%;
     }
-.sub-menu-parent:hover{
-    background: var(--main-hover-color);
+.site-title{
+    font-size: 15px;
+    margin-left: 2%;
 }
-.sub-menu { 
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  transform: translateY(-2em);
-  z-index: -1;
-  transition: all 0.8s ease-in-out 0.8s, visibility 0s linear 0.3s, z-index 10s linear 0.001s;
-  border-radius: 20px 20px 50px 0;
-
-}
-
-.sub-menu-parent:focus .sub-menu,
-.sub-menu-parent:focus-within .sub-menu,
-.sub-menu-parent:hover .sub-menu {
-  visibility: visible; 
-  opacity: 1;
-  z-index: 1;
-  transform: translateY(0%);
-  transition-delay: 0s, 0s, 0.3s;
-}
-nav a { 
-    color: var(--background-color); 
-    display: block; 
-    padding: 1.5em 1em; 
-    text-decoration: none; 
-    
-}
-nav a:hover { color: var(--background-color) }
-nav ul,
-nav ul li { 
-    list-style-type: none; 
-    padding: 0; margin: 0; }
-
-nav > ul { 
-    background:var(--main-color); 
-    text-align: center; 
-}
-
-nav > ul > li:first-child { 
-    border-left: none; }
-
-.sub-menu {
-  background: var(--main-color);
-}
- .Drop1:hover {
-           background:var(--main-hover-color);
-          color: var(--background-color);         
-        }
-.Drop2:hover {
-           background:var(--main-hover-color);
-          color: var(--background-color);         
-        }
- .Drop3:hover {
-          background:var(--main-hover-color);
-          color: var(--background-color);       
-        }
-.Drop4:hover {
-           background:var(--main-hover-color);
-          color: var(--background-color);
-          border-radius:  0px 0px 50px 0;
-         
-        }
-/* Drop down end */
 
 .side-bar-center-content{
     position: relative;
