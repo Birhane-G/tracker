@@ -5,8 +5,7 @@ export const Ipageview = () => {
   const [PageView, setPageView] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    const HomeIp =  '192.168.1.11:8000';
-    // const CreativeIp = '192.168.43.155:8000';
+    const HomeIp =  '192.168.0.37:8000';
     axios.get(`http://${HomeIp}/api/PageView`).then((result) => {
       if (result.data.status === 200) {
         setLoading(false);

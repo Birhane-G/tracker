@@ -1,13 +1,12 @@
-import React, {useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { Pie } from "react-chartjs-2";
-import axios from 'axios';
+import axios from "axios";
 
 export const Brands = () => {
-   const [Brands, setBrands] = useState([]);
+  const [Brands, setBrands] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    const HomeIp =  '192.168.1.11:8000';
-    const CreativeIp = '192.168.43.155:8000';
+    const HomeIp = "192.168.0.37:8000";
     axios.get(`http://${HomeIp}/api/DeviceModel`).then((result) => {
       if (result.data.status === 200) {
         // console.log(result.data.value[0]['label'])
@@ -16,8 +15,8 @@ export const Brands = () => {
       }
     });
   }, []);
- // const labels = ["Samsung", "IPhone", "Tecno", "HTC", "Nexus", "Other"];
-   var Labels = [
+  // const labels = ["Samsung", "IPhone", "Tecno", "HTC", "Nexus", "Other"];
+  var Labels = [
     Brands.map((item) => {
       return item.label;
     }),
@@ -26,8 +25,8 @@ export const Brands = () => {
     Brands.map((item) => {
       return item.nb_visits;
     }),
-  ]; 
- const data = {
+  ];
+  const data = {
     labels: Labels,
     datasets: [
       {
@@ -41,19 +40,17 @@ export const Brands = () => {
           "#17d463",
           "#c9e919",
         ],
-        borderColor: [
-          "white"
-        ],
+        borderColor: ["white"],
         borderWidth: 0.5,
       },
     ],
   };
-const options = {
-  responsive: true,
-}
+  const options = {
+    responsive: true,
+  };
   return (
     <div className="piechart">
-      <Pie options={options} data={data} className="pie"/>
+      <Pie options={options} data={data} className="pie" />
     </div>
   );
 };

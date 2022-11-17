@@ -5,8 +5,7 @@ export const Plugin = () => {
   const [Plugins, setPlugins] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    const HomeIp = "192.168.1.11:8000";
-    const CreativeIp = "192.168.43.155:8000";
+    const HomeIp = '192.168.0.37:8000';
     axios.get(`http://${HomeIp}/api/plugin`).then((result) => {
       if (result.data.status === 200) {
         setLoading(false);
@@ -19,7 +18,6 @@ export const Plugin = () => {
   if (loading) {
     Datas = <snap>LOADING....</snap>;
   } else {
-    // console.log(Continent);
     Datas = Plugins.map((item) => {
       return (
         <tr key={item}>
