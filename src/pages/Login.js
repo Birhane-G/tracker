@@ -1,4 +1,4 @@
-import logo from "../images/Trackerlogo.png";
+import logo from "../images/Trackerlogo2.png";
 function Login() {
   return (
     <section className="try">

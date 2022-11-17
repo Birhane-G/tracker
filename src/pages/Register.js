@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../images/Trackerlogo.png";
+import logo from "../images/Trackerlogo2.png";
 
 function Register() {
   return (
