@@ -1,29 +1,27 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Line } from "react-chartjs-2";
-// import Chart from "chart.js/auto";
+import Chart from "chart.js/auto";
 
 const LineChart = () => {
   const [Plugins, setPlugins] = useState([]);
-  const [loading, setLoading] = useState(true);
   useEffect(() => {
-    axios.get("http://192.168.1.11:8000/api/PagePerformance").then((result) => {
+    const HomeIp = "192.168.0.37:8000";
+    axios.get(`http://${HomeIp}/api/PagePerformance`).then((result) => {
       if (result.data.status === 200) {
-        setLoading(false);
         setPlugins(result.data.value);
       }
     });
   }, []);
 
-  
   const labels = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
+    "Monday",
+    "Tuesday",
+    "Wednsday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
   ];
 
   const data = {
@@ -54,8 +52,7 @@ const LineChart = () => {
       <div className="table-title">
         <h3>page performance</h3>
       </div>
-      <div className="page-performance-data">
-        </div>
+      <div className="page-performance-data"></div>
       <Line width={"10%"} height={2} data={data} />
     </div>
   );

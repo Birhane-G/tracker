@@ -37,13 +37,13 @@ const VisirorsODD = () => {
   ];
 
   const data = {
-    labels: [Labels],
+    labels: ["Mon","Tus","Wen","Thu","Fir","Sat","Sun"],
     datasets: [
       {
         label: "visits",
         backgroundColor: "#dc105a",
         borderColor: "#dc105a",
-        data: [],
+        data: [10,1,20,15,9,8,7],
       },
     ],
   };

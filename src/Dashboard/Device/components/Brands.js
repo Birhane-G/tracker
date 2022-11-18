@@ -14,15 +14,7 @@ export const Brands = () => {
   }, []);
   var Labels = [
     Brands.map((item) => {
-      var i;
-      var value = new Array();
-      // console.log(value);
-      for (i = 0; i <= Brands.length; i++) {
-          var t = i.toString();
-          // var num = Brands[t].label;
-          // console.log(t)
-          // value.push(t)
-      }
+      return item.label;
     }),
   ];
   var Data = [
@@ -31,7 +23,6 @@ export const Brands = () => {
     }),
   ];
   const data = {
-
     labels: [Labels],
 
     datasets: [
