@@ -44,6 +44,7 @@ export const Ipageview = () => {
               <th>Pageview</th>
               <th>Unique Pageview</th>
               <th>Bounce Rate</th>
+              <th>Visit Length</th>
             </tr>
           </thead>
           <tbody>
