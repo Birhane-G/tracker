@@ -15,8 +15,13 @@ export const Brands = () => {
   var Labels = [
     Brands.map((item) => {
       var i;
-      for (i = 0; i >= Brands.length; i++) {
-        console.log([item[i].label]);
+      var value = new Array();
+      // console.log(value);
+      for (i = 0; i <= Brands.length; i++) {
+          var t = i.toString();
+          // var num = Brands[t].label;
+          // console.log(t)
+          // value.push(t)
       }
     }),
   ];
