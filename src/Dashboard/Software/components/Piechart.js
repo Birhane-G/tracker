@@ -26,11 +26,11 @@ export const Piechart = () => {
     }),
   ];
   const data = {
-    labels: Labels,
+    labels: [Labels],
     datasets: [
       {
         label: "# of Votes",
-        data: Data,
+        data: [20,10,3],
         backgroundColor: [
           "#8db9fa",
           "#d43617",
