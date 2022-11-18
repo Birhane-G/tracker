@@ -31,7 +31,9 @@ export const Brands = () => {
     }),
   ];
   const data = {
+
     labels: [Labels],
+
     datasets: [
       {
         label: "# of Votes",
