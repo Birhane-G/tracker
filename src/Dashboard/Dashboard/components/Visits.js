@@ -3,13 +3,11 @@ import axios from "axios";
 
 export const Visits = () => {
   const [tot, settot] = useState([]);
-  // const [loading, setLoading] = useState(true);
   useEffect(() => {
     const HomeIp = "192.168.0.37:8000";
     axios.get(`http://${HomeIp}/api/TotalVisitors`).then((result) => {
       if (result.data.status === 200) {
         settot(result.data.value);
-        // setLoading(false);
       }
     });
   }, []);

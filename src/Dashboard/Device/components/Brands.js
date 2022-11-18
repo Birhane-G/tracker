@@ -4,21 +4,20 @@ import axios from "axios";
 
 export const Brands = () => {
   const [Brands, setBrands] = useState([]);
-  const [loading, setLoading] = useState(true);
   useEffect(() => {
     const HomeIp = "192.168.0.37:8000";
-    axios.get(`http://${HomeIp}/api/DeviceModel`).then((result) => {
+    axios.get(`http://${HomeIp}/api/DeviceBrand`).then((result) => {
       if (result.data.status === 200) {
-        // console.log(result.data.value[0]['label'])
-        setLoading(false);
         setBrands(result.data.value);
       }
     });
   }, []);
-  // const labels = ["Samsung", "IPhone", "Tecno", "HTC", "Nexus", "Other"];
   var Labels = [
     Brands.map((item) => {
-      return item.label;
+      var i;
+      for (i = 0; i >= Brands.length; i++) {
+        console.log([item[i].label]);
+      }
     }),
   ];
   var Data = [
@@ -27,11 +26,13 @@ export const Brands = () => {
     }),
   ];
   const data = {
-    labels: Labels,
+
+    labels: [Labels],
+
     datasets: [
       {
         label: "# of Votes",
-        data: Data,
+        data: [5, 8, 1],
         backgroundColor: [
           "#8db9fa",
           "#d43617",

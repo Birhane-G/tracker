@@ -51,8 +51,8 @@ const Sidebar = ({ children }) => {
     <div className="sidebar">
       <motion.div
         animate={{ width: Press ? "15%" : "50px" }}
-        className="side-bar-content">
-      
+        className="side-bar-content"
+      >
         <div className="side-bar-content">
           <div className="menu-con">
             <div className="menu-back"></div>
@@ -62,16 +62,19 @@ const Sidebar = ({ children }) => {
               className="menu"
             />
           </div>
-          <div className="side-top-logo-container">  <nav>
-      <div class="profile-block"> 
-       <div class="profile-picture big-profile-picture clear">
-          <img width="90px" height="80" alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Abebe_Bikila%2C_1972_card.jpg/461px-Abebe_Bikila%2C_1972_card.jpg?20160711053925" ></img>
-        </div>
-            <h1 class="user-name">Abebe Bikila</h1>
-              <p class="site-title">testwebsite.com</p>                                    
+          <div className="side-top-logo-container">
+            <div className="profile-block">
+              <div className="big-profile-picture">
+                <div className="profile-picture">
+                  <img width="60px" height="50" alt="" src={require(`../../images/img`)}></img>
                 </div>
- </nav>
- </div>
+                <div>
+                  <h3>Natnael Taye</h3>
+                  <p>Earaldwebsite</p>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="side-bar-center-content">
             <div className="side-bar-top-content-nav">
               <ul>
@@ -89,7 +92,6 @@ const Sidebar = ({ children }) => {
         </div>
       </motion.div>
       <main>{children}</main>
-     
     </div>
   );
 };
