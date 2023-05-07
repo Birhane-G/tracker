@@ -2,32 +2,47 @@ import logo from "../images/Trackerlogo2.png";
 function Login() {
   return (
     <section className="try">
-      <div className="Back-login"> </div>
-      <div className="login">
-        <div className="login-contents">
-          <div className="login-cont">
+      <div class="container">
+        <div class="screen">
+          <div class="screen__content">
             <div className="logo">
               <a href="/">
                 <img src={logo} alt="Tracker Logo" />
                 <h1>Tracker</h1>
               </a>
             </div>
-          </div>
-        </div>
-        <div className="content">
-          <div className="form-cont">
-            <div className="newusr">
-              <h1>
-                New user? <a href="/registration">Signup</a>
-              </h1>
-            </div>
-            <input type="text" name="uname" placeholder="Email" />
-            <br />
-            <input type="password" name="pass" placeholder="Password" />
-              <div className="btn-login">
-                <a href="/">Login</a>
+            <form class="login">
+              <div class="login__field">
+                <input
+                  type="text"
+                  class="login__input"
+                  placeholder="User name / Email"
+                />
               </div>
-            <a href="/"><h4 className="forget">Forget Password?</h4></a>
+              <div class="login__field">
+                <input
+                  type="password"
+                  class="login__input"
+                  placeholder="Password"
+                />
+              </div>
+              <button class="button login__signup">
+                <span class="button__text">Log In </span>
+              </button>
+              <div className="create_account">
+				<br></br>
+                <h4>Don't have an account?</h4>
+                <button class="button login__signup">
+                  <span class="button__text"><a href="/Registration">sign up for tracker </a></span>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="screen__background">
+            <span class="screen__background__shape screen__background__shape4"></span>
+            <span class="screen__background__shape screen__background__shape3"></span>
+            <span class="screen__background__shape screen__background__shape2"></span>
+            <span class="screen__background__shape screen__background__shape1"></span>
           </div>
         </div>
       </div>
