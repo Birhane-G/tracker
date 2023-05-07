@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root{
+    --body-color: #f6f6Eb;
+    --main-color: rgb(223, 227, 233);
+    --nav-text: #f7efd6;
+    --text-color: #ffb307;
+    --service-color:#79addc;
+  }

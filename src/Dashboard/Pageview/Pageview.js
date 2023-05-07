@@ -18,8 +18,6 @@ function Pageview() {
 function Other() {
   return (
     <div className="other">
-      <div className="otherone"></div>
-      <div className="otherone"></div>
     </div>
   );
 }

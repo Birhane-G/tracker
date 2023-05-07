@@ -14,24 +14,30 @@ export const VisirorsT = () => {
     </div>
   );
 };
-
 const VisirorsODD = () => {
   const [OverTime, setOverTime] = useState([]);
-  const [loading, setLoading] = useState(true);
   useEffect(() => {
-    const HomeIp =  '192.168.1.11:8000';
-    const CreativeIp = '192.168.43.155';
-    axios.get(`http://${CreativeIp}api/VisitorOverDay`).then((result) => {
+    const HomeIp = "192.168.0.37:8000";
+    axios.get(`http://${HomeIp}api/VisitorOverDay`).then((result) => {
       if (result.data.status === 200) {
-        setLoading(false);
+        console.log(result.data.status);
         setOverTime(result.data.value);
       }
     });
   }, []);
-  const labels = ["Mon", "tus", "wed", "tur", "fri", "sat", "sun"];
-    
+  var Labels = [
+    OverTime.map((item) => {
+      return item.label;
+    }),
+  ];
+  var Data = [
+    OverTime.map((item) => {
+      return item.nb_visits;
+    }),
+  ];
+
   const data = {
-    labels: labels,
+    labels: [Labels],
     datasets: [
       {
         label: "visits",

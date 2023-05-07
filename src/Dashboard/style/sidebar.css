@@ -1,109 +1,99 @@
 @import "theme.css";
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.sidebar{
-    display: flex;
+.sidebar {
+  display: flex;
 }
-main{
-    /* padding: 2px 0 0 10px; */
-    width: 100%;
+main {
+  width: 100%;
 }
-.menu-con{
-    position: relative;
-    top: 40px;
-    left: 5px;
-    float: right;
+.menu-con {
+  position: relative;
+  top: 40px;
+  left: 5px;
+  float: right;
 }
-.menu-back{
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background-color: var(--background-color);
-    border-radius: 50%;
-    cursor: pointer;
+.menu-back {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: var(--background-color);
+  border-radius: 50%;
+  cursor: pointer;
 }
-.menu{
-    float: right;
-    color: var(--main-color);
-    cursor: pointer;
-    transform: rotate(180deg);
+.menu {
+  float: right;
+  color: var(--main-color);
+  cursor: pointer;
+  transform: rotate(180deg);
+  z-index: 5;
 }
-.side-bar-content{
-    position: relative;
-    /* top: 5px;
-    left: 5px; */
-    height: 655px;
-    background: var(--background-color);
-    /* border-radius: 15px; */
-    z-index: 2;
+.side-bar-content {
+  position: relative;
+  height: 100vh;
+  overflow: auto;
+  background: var(--background-color);
+  overflow-x: hidden;
 }
-.side-top-logo-container{
-    background: var(--main-color);
-    width: 95%;
-    height: 120px;
-    border-radius: 20px 20px 50px 0;
+.side-top-logo-container {
+  background: var(--main-color);
+  width: 95%;
+  height: 120px;
+  border-radius: 0px 20px 20px 0;
 }
 /* profile */
-        .profile-picture {
-	border-radius: 100%;
-	overflow: hidden;
-    margin-top: 1px;
-	
-}
-	.big-profile-picture {
-		margin: 0px auto;		
-		border: 1px solid #50597b;
-		width: 50px;
-		height: 50px;
-	}
-	.small-profile-picture {
-		border: 2px solid #50597b;
-		width: 20px;
-		height: 20px;
-	}
-    .user-name{
-        font-size: 25x;
-        color: var(--background-color);
-        margin-left: 2%;
-    }
-.site-title{
-    font-size: 15px;
-    margin-left: 2%;
-}
-/* Drop down end */
-
-.side-bar-center-content{
-    position: relative;
-    top: 30px;
-    font-size: 22px;
-    padding: 15%;
-}
-.side-bar-top-content-nav{
-    position: relative;
+.profile-block{
     display: flex;
     justify-content: center;
+    padding-top: 10px;
 }
-.side-bar-top-content-nav ul a{
-    text-decoration: none;
+.profile-picture {
+  border-radius: 100%;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #50597b;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
-.style{
-    margin-right: 5px;
+.big-profile-picture h1 {
+    font-size: 10x;
 }
-.side-bar-top-content-nav ul a li{
-    display: flex;
-    align-items: center;
-    color: var(--main-color);
-    list-style: none;
-    text-transform: uppercase;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 550;
-    padding: 2px 20px;
+.big-profile-picture p{
+  text-align: center;
 }
-.side-bar-top-content-nav ul a li:hover{
-    background-color: var(--main-color);
-    color: var(--background-color);
-    opacity: 0.6;
+.side-bar-center-content {
+  position: relative;
+  top: 30px;
+}
+.side-bar-top-content-nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.side-bar-top-content-nav ul a {
+  text-decoration: none;
+}
+.style {
+  margin-right: 5px;
+}
+.side-bar-top-content-nav ul a li {
+  display: flex;
+  align-items: center;
+  color: var(--main-color);
+  list-style: none;
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 550;
+  padding: 2px 20px;
+}
+.side-bar-top-content-nav ul a li:hover {
+  background-color: var(--main-color);
+  color: var(--background-color);
+  opacity: 0.6;
 }

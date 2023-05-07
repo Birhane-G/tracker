@@ -3,17 +3,18 @@ import earald from "../images/partners/Earald.jpg";
 import nibret from "../images/partners/nibret.jpg";
 import erq from "../images/partners/erq.png";
 import creativ from "../images/partners/creativehub.jpeg";
-import "../Styles/style.css";
 
 function Body() {
   return (
     <section className="body">
-      <div className="front">
-        <div className="Enter-site">
-          <h1>Welcome to Tracker</h1>
-          <button>Let's Start Tracking</button>
+      <div class="backimg">
+        <div className="front">
+          <div className="Enter-site-home">
+            <h1>Welcome to Tracker</h1>
+            <button>Let's Start Tracking</button>
+          </div>
         </div>
-        <div class="backimg"></div>
+        <div className="bottom"> </div>
       </div>
     </section>
   );
@@ -24,51 +25,33 @@ function Discription() {
     <section className="Tracker-disc">
       <div className="why-tracker">
         <div className="box">
-          <h2>Sample Text</h2>
+          <h2>Easy to use</h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s,
+            Easily navigate through a user-friendly interface to get the data you need, faster. In addition discover the most promising platforms for ad placement and marketing partnerships.
           </p>
         </div>
         <div className="box">
-          <h2>Sample Text</h2>
+          <h2>Analytics</h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s.
+            Contextualize data and test results with replays, visualizations, and feedback. Find and solve the costliest website frustrations quickly.
           </p>
         </div>
         <div className="box">
-          <h2>Sample Text</h2>
+          <h2>Uncover journeys</h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s.
+            Explore user journeys and pinpoint platforms that drive the most website traffic with real user data.
           </p>
         </div>
         <div className="box">
-          <h2>Sample Text</h2>
+          <h2>Product</h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s.
+            See what users actually do so you can optimize functionality with confidence. Catch bugs before they spread and prioritize feature updates.
           </p>
         </div>
         <div className="box">
-          <h2>Sample Text</h2>
+          <h2>Monitor changes</h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s.
-          </p>
-        </div>
-        <div className="box">
-          <h2>Sample Text</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s.
+            The more profitable your project is, the more expensive each error costs. Monitor website changes 24/7 to keep your business running.
           </p>
         </div>
       </div>
@@ -78,7 +61,7 @@ function Discription() {
 
 function Partner() {
   return (
-    <section>
+    <section className="partenerts-container">
       <div className="partners">
         <div className="partner-cont">
           <div className="box">
@@ -122,14 +105,13 @@ function Testimonial() {
               <p>I was not expecting it to be this good but it actually is.</p>
             </blockquote>
             <h3>Sprit Yoga</h3>
-            <h4>Classic Music Streaming</h4>
           </figcaption>
         </figure>
         <figure class="customer_tetsimonial">
           <figcaption>
             <blockquote>
               <p>
-                It's great to have this kind of tool at my disposal, its great.{" "}
+                It's great to have this kind of tool at my disposal, its awsome.
               </p>
             </blockquote>
             <h3>Ingredia Nutrisha</h3>

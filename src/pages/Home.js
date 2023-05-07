@@ -16,16 +16,4 @@ function Home() {
   );
 }
 
-window.onscroll = function () {
-  sticky();
-};
-
-let navbar = document.getElementById("navbar");
-function sticky() {
-  if (window.pageYOffset >= 25) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
 export default Home;

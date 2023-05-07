@@ -1,6 +1,6 @@
 import React from "react";
 import error from "../images/error.png";
-import "../Styles/error_style.css";
+
 function Error() {
   return (
   <section className="error-page">

@@ -1,5 +1,4 @@
 import React from "react";
-import "../Styles/footer_style.css";
 import earald from "../images/partners/Earald.jpg";
 import nibret from "../images/partners/nibret.jpg";
 import erq from "../images/partners/erq.png";
@@ -16,7 +15,7 @@ function Footer() {
         <div class="row">
           <div class="footer-col">
             <h4 class="important_links">Important Links</h4>
-            <ul>
+            <ul class="">
               <li>
                 <a href="/">Home</a>
               </li>
@@ -79,21 +78,16 @@ function Footer() {
             <h4>follow us</h4>
             <div class="social-links">
               <a href="/">
-                <i class="facebook-icon">
-                  <img src={facebook} alt="facebook" />
-                </i>
+                <img src={facebook} alt="facebook" />
               </a>
               <a href="/">
-                <i class="twitter-icon">
-                  {" "}
-                  <img src={twitter} alt="facebook" />
-                </i>
+                <img src={twitter} alt="facebook" />
               </a>
               <a href="/">
-                <i class="instagram-icon"> <img src={instagram} alt="facebook" /></i>
+                <img src={instagram} alt="facebook" />
               </a>
               <a href="/">
-                <i class="linkedin-icon"> <img src={linkedin} alt="facebook" /></i>
+                <img src={linkedin} alt="facebook" />
               </a>
             </div>
           </div>

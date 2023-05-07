@@ -6,10 +6,13 @@
     gap: 25px;
 }
 .one{
-    width: 100%;
     background-color: var(--card-bg);
     box-shadow: var(--card-shadow);
     border-radius: var(--card-border-size);
+}
+.table-data-table img{
+    width: 15px;
+    height: 15px;
 }
 .table-title h3{
     font-size: var(--card-title);
@@ -56,10 +59,6 @@
 .log-Text{
     display: flex;
     align-items: center;
-}
-.log-Text img{
-    width: 20px;
-    height: 20px;
 }
 .Piechart-Container{
     display: flex;

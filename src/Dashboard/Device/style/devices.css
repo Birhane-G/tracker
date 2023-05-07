@@ -1,14 +1,6 @@
-@import "../../style/theme.css";
 
-.software-container{
-    display: grid;
-    grid-template-columns: repeat(2, minmax(auto, 1fr));
-    grid-template-rows: 400px auto;
-    gap: 25px;
+@import "../../style/theme.css";
+.piechart{
+    margin: 0 auto;
 }
-.one{
-    width: 100%;
-    background-color: var(--card-bg);
-    box-shadow: var(--card-shadow);
-    border-radius: var(--card-border-size);
-}
+

@@ -1,11 +1,11 @@
 import React from "react";
 import logo from "../images/Trackerlogo.png";
-import "../Styles/header_style.css";
+
 function Header() {
   return (
     <header id="navbar">
       <div className="Header-cont">
-        <div className="logo">
+        <div className="logo-header">
           <img src={logo} alt="Tracker Logo" />
           <h1>Tracker</h1>
         </div>
@@ -27,8 +27,8 @@ function Header() {
               <a href="/">
                 <li>Help?</li>
               </a>
-              <a href="/Login">
-                <li className="login-btn">Login</li>
+              <a href="/Login" className="login-btn">
+                Login
               </a>
             </ul>
           </nav>
@@ -38,4 +38,16 @@ function Header() {
   );
 }
 
+window.onscroll = function () {
+  sticky();
+};
+
+let navbar = document.getElementById("navbar");
+function sticky() {
+  if (window.pageYOffset >= 100) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
 export default Header;

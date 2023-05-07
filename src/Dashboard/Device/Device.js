@@ -9,13 +9,13 @@ function Device() {
   return (
     <div className="software-container">
       <div className="one">
-        <DeviceType />
+        <DeviceBrand />
       </div>
       <div className="one">
         <DeviceModel />
       </div>
       <div className="one">
-        <DeviceBrand />
+        <DeviceType />
       </div>
       <div className="one">
         <ScreenResolution />
