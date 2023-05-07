@@ -221,14 +221,13 @@ a{
 .signup_form {
 	width: 320px;
 	padding: 20px;
-	padding-top: 156px;
+	padding-top: 70px;
 }
 
 .login__field {
 	padding: 20px 0px;	
 	position: relative;	
 }
-
 .login__icon {
 	position: absolute;
 	top: 30px;
@@ -283,7 +282,44 @@ a{
 	margin-left: auto;
 	color: #7875B5;
 }
+/* Addsite */
+.addsite_field h1{
+  width: 500px;
+  font-size: 35px;
+}
+.addsite_title_text{
+  padding-left:50px;
+  color: grey;
+}
+select {
+  background-color: transparent;
+  border: none;
+}
 
+option {
+  background-color: white;
+  opacity: 0.7;
+}
+.blurry-background {
+
+  
+  width: 320px;
+  position: fixed;
+}
+
+.accept-text {
+  background-color: white;
+  border-radius: 8px;
+  font-size: 15px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.accept-text a{
+  color: blue;
+  cursor: pointer;
+}
 
 /* Body */
 .backimg {

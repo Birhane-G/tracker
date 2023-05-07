@@ -30,10 +30,12 @@ function Login() {
                 <span class="button__text">Log In </span>
               </button>
               <div className="create_account">
-				<br></br>
+                <br></br>
                 <h4>Don't have an account?</h4>
                 <button class="button login__signup">
-                  <span class="button__text"><a href="/Registration">sign up for tracker </a></span>
+                  <span class="button__text">
+                    <a href="/Registration">sign up for tracker </a>
+                  </span>
                 </button>
               </div>
             </form>
