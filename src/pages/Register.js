@@ -44,20 +44,20 @@ function Register() {
 
   return (
     <section className="try">
-      <div class="container">
-        <div class="screen">
-          <div class="screen__content">
+      <div ClassName="container">
+        <div ClassName="screen">
+          <div ClassName="screen__content">
             <div className="logo">
               <a href="/">
                 <img src={logo} alt="Tracker Logo" />
                 <h1>Tracker</h1>
               </a>
             </div>
-            <form onSubmit={handleSubmit} class="signup_form">
-              <div class="login__field">
+            <form onSubmit={handleSubmit} ClassName="signup_form">
+              <div ClassName="login__field">
                 <input
                   type="text"
-                  class="register_input login__input"
+                  ClassName="register_input login__input"
                   placeholder="User name / Email"
                   onChange={handleChange}
                 />
@@ -68,7 +68,7 @@ function Register() {
                 )}
                 <input
                   type="password"
-                  class="register_input login__input"
+                  ClassName="register_input login__input"
                   placeholder="Password"
                   value={password}
                   onChange={handlePasswordChange}
@@ -79,7 +79,7 @@ function Register() {
 
                 <input
                   type="password"
-                  class="register_input login__input"
+                  ClassName="register_input login__input"
                   placeholder="Confirm Password"
                   value={confirmPassword}
                   onChange={handleConfirmPasswordChange}
@@ -91,25 +91,25 @@ function Register() {
               {!passwordsMatch && (
                 <div style={{ color: "red" }}>Passwords do not match!</div>
               )}
-              <button type="submit" class="button login__signup">
-                <span class="button__text">Register </span>
+              <button type="submit" ClassName="button login__signup">
+                <span ClassName="button__text">Register </span>
               </button>
               <div className="create_account">
               <br></br>
                 <h4>Already Registered ?</h4>
-                <button class="button login__signup">
-                  <span class="button__text">
+                <button ClassName="button login__signup">
+                  <span ClassName="button__text">
                     <a href="/Login">Login to tracker </a>
                   </span>
                 </button>
               </div>
             </form>
           </div>
-          <div class="screen__background">
-            <span class="screen__background__shape screen__background__shape4"></span>
-            <span class="screen__background__shape screen__background__shape3"></span>
-            <span class="screen__background__shape screen__background__shape2"></span>
-            <span class="screen__background__shape screen__background__shape1"></span>
+          <div ClassName="screen__background">
+            <span ClassName="screen__background__shape screen__background__shape4"></span>
+            <span ClassName="screen__background__shape screen__background__shape3"></span>
+            <span ClassName="screen__background__shape screen__background__shape2"></span>
+            <span ClassName="screen__background__shape screen__background__shape1"></span>
           </div>
         </div>
       </div>
