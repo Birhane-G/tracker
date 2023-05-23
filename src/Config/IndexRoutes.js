@@ -13,7 +13,6 @@ import Error from "../pages/Error";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Addsite from "../pages/Addsite";
-import Testpage from "../pages/Testpage";
 export const IndexRoutes = () => {
   return (
     <Routes>
@@ -21,7 +20,6 @@ export const IndexRoutes = () => {
       <Route exact path="/Login" element={<Login />} />
       <Route exact path="/registration" element={<Register />} />
       <Route exact path="/addsite" element={<Addsite/>} />
-      <Route exact path="/Testpage" element={<Testpage/>} />
       <Route exact path="*" element={<Error />} />
     </Routes>
   );
